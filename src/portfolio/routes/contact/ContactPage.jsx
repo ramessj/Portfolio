@@ -1,8 +1,14 @@
 export const ContactPage = () => {
 	return (
-		<div>
-			<h1>Contacto</h1>
-		</div>
+		<>
+			<div className="fullSection">
+				<h3>1</h3>
+			</div>
+					
+			<div className="nanana">
+				<span>rama</span>
+			</div>
+		</>
 	);
 };
 

@@ -18,7 +18,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 			outerStyle={{
 				pointerEvents: 'none',
 				inset: '-1px',
-				background: `radial-gradient(1000px circle,rgba(255,255,255,.06), transparent 40%)`,
+				background: `radial-gradient(800px circle,rgba(255,255,255,.06), transparent 40%)`,
 			}}
 			clickables={[
 				'a',
