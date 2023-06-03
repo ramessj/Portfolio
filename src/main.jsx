@@ -1,6 +1,6 @@
 import ReactDOM from 'react-dom/client';
-import { App } from './App.jsx';
 import AnimatedCursor from 'react-animated-cursor';
+import { App } from './App.jsx';
 
 import './index.css';
 
@@ -17,7 +17,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 			showSystemCursor={false}
 			outerStyle={{
 				pointerEvents: 'none',
-				position: 'absolute',
 				inset: '-1px',
 				background: `radial-gradient(1000px circle,rgba(255,255,255,.06), transparent 40%)`,
 			}}

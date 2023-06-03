@@ -1,9 +1,25 @@
-
 export const HomePage = () => {
 	return (
-		<div>
-			<h1>HomePage</h1>
+		<>
+			<div className="fullSection">
+				<h3>1</h3>
+			</div>
+			<div className="fullSection">
+				<h3>2</h3>
+			</div>
+			<div className="fullSection">
+				<h3>3</h3>
+			</div>
+			<div className="fullSection">
+				<h3>4</h3>
+			</div>
+			<div className="fullSection">
+				<h3>5</h3>
+			</div>
 
-		</div>
-	)
-}
+			<div className="nanana">
+				<span>rama</span>
+			</div>
+		</>
+	);
+};

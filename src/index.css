@@ -5,7 +5,6 @@
 
 	background: rgb(15 23 42);
 	color: #fff;
-	overflow: hidden;
 }
 
 a {
@@ -19,15 +18,38 @@ a {
 	margin: 0;
 }
 
-html,
-body {
+html {
+	scroll-behavior: smooth;
 	max-width: 100dvw;
+	scroll-snap-type: y mandatory;
+	-webkit-overflow-scrolling: touch;
+	max-height: 100dvh;
 }
 
 .main {
 	display: flex;
-	min-height: calc(100vh - 5rem);
-	padding: 1rem;
+	flex-direction: column;
+	padding-top: 4rem;
+}
+
+.fullSection {
+	scroll-snap-align: start end;
+	scroll-snap-stop: always;
+	display: flex;
 	justify-content: center;
-	margin: 1rem;
+	align-items: center;
+	height: 100vh;
+}
+
+.fullSection:first-child {
+	background-color: #474747;
+}
+
+.fullSection:nth-child(2n) {
+	background-color: #681e1e71;
+}
+
+.nanana {
+	height: 0px;
+	opacity: 0;
 }
