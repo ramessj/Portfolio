@@ -6,9 +6,8 @@ export const Parallax = ({ sections }) => {
 		offset: ['0.1', 'end end'],
 	});
 	const scaleX = useSpring(scrollYProgress, {
-		stiffness: 120,
-		damping: 300,
-		restDelta: 0.5,
+		stiffness: 90,
+		damping: 15,
 	});
 
 	const backgroundColor = useTransform(
@@ -16,6 +15,11 @@ export const Parallax = ({ sections }) => {
 		[0.1, 1],
 		['#fffbda', '#ffe600']
 	);
+
+	const variants = {
+		visible: { opacity: 1, scale: 1 },
+		hidden: { opacity: 0, scale: 0 },
+	};
 
 	return (
 		<motion.div
@@ -25,9 +29,10 @@ export const Parallax = ({ sections }) => {
 			{sections.map((section) => (
 				<section key={sections.indexOf(section) + 1}>
 					<motion.div
-						initial={{ opacity: 0, scale: 0.5 }}
-						whileInView={{ opacity: 1, scale: 1 }}
-						transition={{ duration: 0.6 }}>
+						initial="hidden"
+						whileInView="visible"
+						transition={{ type: 'spring', duration: 1.3 }}
+						variants={variants}>
 						{section}
 					</motion.div>
 				</section>
