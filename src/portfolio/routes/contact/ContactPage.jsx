@@ -1,14 +1,12 @@
+import { Parallax } from '../../components/Parallax/Parallax';
+import { Contact1 } from './Contact1';
+
+const contactSections = [<Contact1 key={0} />];
+
 export const ContactPage = () => {
 	return (
 		<>
-			<div className="fullSection">
-				<h3>1</h3>
-			</div>
-					
-			<div className="nanana">
-				<span>rama</span>
-			</div>
+			<Parallax sections={contactSections} />
 		</>
 	);
 };
-
