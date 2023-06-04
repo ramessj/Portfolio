@@ -6,7 +6,7 @@ function useParallax(value, distance) {
 	return useTransform(value, [0, 1], [-distance, distance]);
 }
 
-function Image({ id }) {
+function Image({ section, id }) {
 	const ref = useRef(null);
 	const { scrollYProgress } = useScroll({
 		target: ref
@@ -15,15 +15,19 @@ function Image({ id }) {
 
 	return (
 		<section>
-			<div ref={ref}>
-				<h4>Rama</h4>
+			<div ref={ref} >
+				<img className='imgFnd' src='/01.webp'></img>
+				<div>
+				{section.text2}, {section.text}
+			</div>
 			</div>
 			<motion.h2 style={{ y }}>{`#0${id}`}</motion.h2>
+			
 		</section>
 	);
 }
 
-export const Parallax = () => {
+export const Parallax = ( {sections} ) => {
 	const { scrollYProgress } = useScroll();
 	const scaleX = useSpring(scrollYProgress, {
 		stiffness: 300,
@@ -31,13 +35,13 @@ export const Parallax = () => {
 		restDelta: 0,
 	});
 
-	const array = [1, 2, 3, 4, 5];
+	// const array = [1, 2, 3, 4, 5];
 
 	return (
 		<>
 			
-			{array.map((image) => (
-				<Image key={array.indexOf(image)} id={image} />
+			{sections.map((section) => (
+				<Image key={sections.indexOf(section) + 1} id={sections.indexOf(section) + 1} section={section}/>
 			))}
 			<motion.div className="progress" style={{ scaleX }} />
 		</>

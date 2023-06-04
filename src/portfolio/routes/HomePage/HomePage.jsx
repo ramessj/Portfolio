@@ -1,25 +1,24 @@
+import { Parallax } from "../../components/Parallax/Parallax";
+
+const homeSections = [{
+	text: 'home1',
+	text2: 'test1'
+},
+{
+	text: 'home2',
+	text2: 'test2'
+},
+{
+	text: 'home3',
+	text2: 'test3'
+}]
+
+
+
 export const HomePage = () => {
 	return (
 		<>
-			<div className="fullSection">
-				<h3>1</h3>
-			</div>
-			<div className="fullSection">
-				<h3>2</h3>
-			</div>
-			<div className="fullSection">
-				<h3>3</h3>
-			</div>
-			<div className="fullSection">
-				<h3>4</h3>
-			</div>
-			<div className="fullSection">
-				<h3>5</h3>
-			</div>
-
-			<div className="nanana">
-				<span>rama</span>
-			</div>
+			<Parallax sections={homeSections}/>
 		</>
 	);
 };
