@@ -26,12 +26,10 @@ html {
 	margin: 0;
 }
 
-
-
-.nanana {
+/* .nanana {
 	height: 0.01rem;
 	opacity: 0;
-}
+} */
 
 /* *************************************************** */
 
@@ -71,7 +69,7 @@ h2 {
 }
 
 section {
-	height: 100dvh;
+	height: 100vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -91,11 +89,9 @@ section > div {
 
 .progress {
 	position: fixed;
-	left: 20%;
-	right: 20%;
-	height: 0.01rem;
-	background: white;
+	left: 22%;
+	right: 22%;
+	height: 2px;
 
-	bottom: 2.5rem;
+	bottom: 3rem;
 }
-
