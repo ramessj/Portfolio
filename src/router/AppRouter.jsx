@@ -9,7 +9,7 @@ export const AppRouter = () => {
 	return (
 		<>
 			<Header></Header>
-			<main className="main">
+			{/* <main className="main"> */}
 				<Routes>
 					<Route path="about" element={<AboutPage />} />
 					<Route path="projects" element={<ProjectsPage />} />
@@ -18,7 +18,7 @@ export const AppRouter = () => {
 
 					<Route path="/*" element={<Navigate to={'/'} />} />
 				</Routes>
-			</main>
+			{/* </main> */}
 		</>
 	);
 };
