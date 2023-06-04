@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import { motion,  useScroll, useSpring, useTransform } from 'framer-motion';
+import { motion, useScroll, useSpring, useTransform } from 'framer-motion';
 
 export const Parallax = ({ sections }) => {
 	const { scrollYProgress } = useScroll({
@@ -11,29 +11,34 @@ export const Parallax = ({ sections }) => {
 		restDelta: 0.5,
 	});
 
-
-	// const y = useMotionValue(scrollYProgress);
-	const backgroundColor = useTransform(scrollYProgress, [0.1, 1], ['#fffbda', '#ffe600'])
+	const backgroundColor = useTransform(
+		scrollYProgress,
+		[0.1, 1],
+		['#fffbda', '#ffe600']
+	);
 
 	return (
 		<motion.div
 			initial={{ opacity: 0 }}
 			whileInView={{ opacity: 1 }}
-			
 			transition={{ duration: 0.5 }}>
 			{sections.map((section) => (
 				<section key={sections.indexOf(section) + 1}>
 					<motion.div
 						initial={{ opacity: 0, scale: 0.5 }}
-						whileInView={{ opacity: 1,  scale: 1 }}
-						transition={{  duration: 0.6 }}>
+						whileInView={{ opacity: 1, scale: 1 }}
+						transition={{ duration: 0.6 }}>
 						{section}
 					</motion.div>
 				</section>
 			))}
 
-				{sections.length > 1 && <motion.div className="progress" style={{ scaleX, backgroundColor}} />}
-			
+			{sections.length > 1 && (
+				<motion.div
+					className="progress"
+					style={{ scaleX, backgroundColor }}
+				/>
+			)}
 		</motion.div>
 	);
 };
