@@ -22,7 +22,7 @@ html {
 	scroll-behavior: smooth;
 	scroll-snap-type: y mandatory;
 	overflow: scroll;
-	-webkit-overflow-scrolling: touch;
+	/* -webkit-overflow-scrolling: touch; */
 	margin: 0;
 }
 
