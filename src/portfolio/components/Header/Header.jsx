@@ -8,9 +8,7 @@ const selected = 'selected';
 const notSelected = 'notSelected';
 
 export const Header = () => {
-
 	const toggler = document.getElementById('menuToggler');
-
 
 	const { onSetLang } = useUiStore();
 
@@ -33,8 +31,8 @@ export const Header = () => {
 		<header>
 			<NavLink
 				to={'/'}
-				className={location.pathname == `/` ? selected : notSelected}>
-				HOME
+				className={  location.pathname == `/` ? selected : notSelected}>
+				<span className='rq'>{`<`}</span> RQ <span className='rq'>{`/>`}</span>
 			</NavLink>
 
 			<div style={{ position: 'fixed', top: 5, left: '50%' }}>
@@ -50,7 +48,7 @@ export const Header = () => {
 			</div>
 
 			<div className="menu-wrap">
-				<input type="checkbox" className="toggler" id="menuToggler" />
+				<input type="checkbox" className="toggler" id="menuToggler" placeholder='toggleMenu'></input>
 				<div id="hamburger" className="hamburger">
 					<div id="hamburger-lines"></div>
 				</div>

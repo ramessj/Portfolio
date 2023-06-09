@@ -8,7 +8,7 @@
 		'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
 		'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
 
-	background: rgb(22, 37, 71);
+	background: #162547;
 
 	color: #fff;
 	--bright-color: #ff4d5a;
@@ -132,6 +132,15 @@ header {
 	-ms-flex-pack: justify;
 	justify-content: space-between;
 	z-index: 10;
+}
+
+header > a {
+	font-size: 1.5rem;
+}
+
+.rq {
+	color: yellow;
+	font-size: 1.25rem;
 }
 
 .navbrand {
@@ -265,6 +274,8 @@ header {
 	overflow: hidden;
 }
 
+
+
 .menu-wrap .menu,
 .menu-wrap .menu > #menusub1 {
 	display: flex;
@@ -273,45 +284,31 @@ header {
 }
 
 .menu-wrap .menu > #menusub1 {
-	background-image: -webkit-gradient(
-		linear,
-		left top,
-		right top,
-		from(#072142),
-		color-stop(42%, #8c2b7a),
-		to(var(--bright-color))
-	);
-	background-image: -webkit-linear-gradient(
-		left,
-		#072142,
-		#8c2b7a 42%,
-		var(--bright-color)
-	);
-	background-image: -o-linear-gradient(
-		left,
-		#072142,
-		#8c2b7a 42%,
-		var(--bright-color)
-	);
-	background-image: linear-gradient(
-		90deg,
-		#072142,
-		#8c2b7a 42%,
-		var(--bright-color)
-	);
+	background-image: -webkit-gradient(		240deg,		#162547,		#162547 33%,	 rgb(255, 255, 110)	);
+	background-image: -webkit-linear-gradient(		240deg,		#162547,		#162547 33%,	 rgb(255, 255, 110)	);
+	background-image: -o-linear-gradient(		240deg,		#162547,		#162547 33%,	 rgb(255, 255, 110)	);
+	background-image: linear-gradient(		240deg,		#162547,		#162547 33%,	 rgb(255, 255, 110)	);
 	width: 100vw;
 	height: 100vh;
 	flex: none;
 	-webkit-transform: translate3d(0, -150%, 0);
 	transform: translate3d(0, -150%, 0);
-	transition: all 0.7s ease;
+	transition: all 0.65s ease;
+	-webkit-transition: all 0.65s ease;
+	-moz-transition: all 0.65s ease;
+	-ms-transition: all 0.65s ease;
+	-o-transition: all 0.65s ease;
 }
 
 .menu-wrap .menu > #menusub1 > #menusub2 {
 	max-width: 90vw;
 	max-height: 100vh;
 	opacity: 0;
-	transition: opacity 2s ease;
+	transition: opacity 0.1s ease 0.1s;
+	-webkit-transition: opacity 0.1s ease 0.1s;
+	-moz-transition: opacity 0.1s ease 0.1s;
+	-ms-transition: opacity 0.1s ease 0.1s;
+	-o-transition: opacity 0.1s ease 0.1s;
 }
 
 #menu-links {
@@ -517,10 +514,8 @@ a {
 	font-family: proxima;
 }
 
-
 .home1container h2:nth-child(2) {
 	color: white;
-	
 }
 
 .hellodot {
