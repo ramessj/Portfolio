@@ -9,16 +9,14 @@ export const AppRouter = () => {
 	return (
 		<>
 			<Header></Header>
-			{/* <main className="main"> */}
-				<Routes>
-					<Route path="about" element={<AboutPage />} />
-					<Route path="projects" element={<ProjectsPage />} />
-					<Route path="contact" element={<ContactPage />} />
-					<Route path="/" element={<HomePage />} />
+			<Routes>
+				<Route path="about" element={<AboutPage />} />
+				<Route path="projects" element={<ProjectsPage />} />
+				<Route path="contact" element={<ContactPage />} />
+				<Route path="/" element={<HomePage />} />
 
-					<Route path="/*" element={<Navigate to={'/'} />} />
-				</Routes>
-			{/* </main> */}
+				<Route path="/*" element={<Navigate to={'/'} />} />
+			</Routes>
 		</>
 	);
 };

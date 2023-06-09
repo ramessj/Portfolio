@@ -44,6 +44,7 @@ export const Parallax = ({ sections }) => {
 					style={{ scaleX, backgroundColor }}
 				/>
 			)}
+			<div className="bgLighterEffect"></div>
 		</motion.div>
 	);
 };

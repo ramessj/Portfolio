@@ -1,68 +1,83 @@
 import { NavLink, useLocation } from 'react-router-dom';
-import styles from './Header.module.css';
 
-const selected = styles.selected;
+const selected = 'selected';
 
-const notSelected = styles.notSelected;
+const notSelected = 'notSelected';
 
 export const Header = () => {
 	const location = useLocation();
 
 	return (
-		<header className={styles.container}>
-			<ul className={styles.list}>
-				<li>
-					<NavLink to={'/'}>
-						<span
-							className={
-								location.pathname == `/`
-									? selected
-									: notSelected
-							}>
-							HOME
-						</span>
-					</NavLink>
-				</li>
+		<header>
+			<NavLink
+				to={'/'}
+				className={location.pathname == `/` ? selected : notSelected}>
+				HOME
+			</NavLink>
 
-				<div className={styles.listLinks}>
-					<li>
-						<NavLink to={'/about'}>
-							<span
-								className={
-									location.pathname == `/about`
-										? selected
-										: notSelected
-								}>
-								About
-							</span>
-						</NavLink>
-					</li>
-					<li>
-						<NavLink to={'/projects'}>
-							<span
-								className={
-									location.pathname == `/projects`
-										? selected
-										: notSelected
-								}>
-								Projects
-							</span>
-						</NavLink>
-					</li>
-					<li>
-						<NavLink to={'/contact'}>
-							<span
-								className={
-									location.pathname == `/contact`
-										? selected
-										: notSelected
-								}>
-								Contact
-							</span>
-						</NavLink>
-					</li>
+			<div className="menu-wrap">
+				<input type="checkbox" className="toggler" />
+				<div id="hamburger" className="hamburger">
+					<div id="hamburger-lines"></div>
 				</div>
-			</ul>
+
+				<div className="menu">
+					<div id="menusub1">
+						<div id="menusub2">
+							<ul id="menu-links">
+								<li>
+									<NavLink
+										to={'/'}
+										data-text="Home"
+										className={
+											location.pathname == `/`
+												? selected
+												: notSelected
+										}>
+										Home
+									</NavLink>
+								</li>
+								<li>
+									<NavLink
+										to={'/about'}
+										data-text="About"
+										className={
+											location.pathname == `/about`
+												? selected
+												: notSelected
+										}>
+										About
+									</NavLink>
+								</li>
+								<li>
+									<NavLink
+										to={'/projects'}
+										data-text="Projects"
+										className={
+											location.pathname == `/projects`
+												? selected
+												: notSelected
+										}>
+										Projects
+									</NavLink>
+								</li>
+								<li>
+									<NavLink
+										to={'/contact'}
+										data-text="Contact"
+										className={
+											location.pathname == `/contact`
+												? selected
+												: notSelected
+										}>
+										Contact
+									</NavLink>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
 		</header>
 	);
 };
