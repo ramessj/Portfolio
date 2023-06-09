@@ -1,6 +1,6 @@
 {
 	"name": "portfolio2",
-  "homepage": "https://ramessj.github.io/Portfolio",
+	"homepage": "https://ramessj.github.io/Portfolio",
 	"private": true,
 	"version": "0.0.0",
 	"type": "module",
@@ -17,6 +17,7 @@
 		"react-animated-cursor": "2.7.0",
 		"react-device-detect": "2.2.3",
 		"react-dom": "18.2.0",
+		"react-redux": "8.0.7",
 		"react-router-dom": "6.11.2"
 	},
 	"devDependencies": {

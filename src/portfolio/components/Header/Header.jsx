@@ -1,11 +1,27 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { NavLink, useLocation } from 'react-router-dom';
+import { useUiStore } from '../../../hooks/useUiStore';
+import { useEffect } from 'react';
 
 const selected = 'selected';
 
 const notSelected = 'notSelected';
 
 export const Header = () => {
+
+	const {onSetLang} = useUiStore()
+
 	const location = useLocation();
+
+	const handleClickLang = (lang) => {
+		const newLang = lang.target.getAttribute('data-lang');
+		onSetLang(newLang)
+	}
+
+	useEffect(() => {
+		onSetLang()
+	}, [])
+	
 
 	return (
 		<header>
@@ -14,6 +30,13 @@ export const Header = () => {
 				className={location.pathname == `/` ? selected : notSelected}>
 				HOME
 			</NavLink>
+
+			<div style={{position: 'fixed', top: 5, left: '50%'}}>
+				<button onClick={handleClickLang} data-lang={'ES'}>es</button>
+				<button onClick={handleClickLang} data-lang={'EN'}>en</button>
+				<button onClick={handleClickLang} data-lang={'PT'}>pt</button>
+
+			</div>
 
 			<div className="menu-wrap">
 				<input type="checkbox" className="toggler" />
