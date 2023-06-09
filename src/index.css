@@ -1,3 +1,8 @@
+@font-face {
+	font-family: proxima;
+	src: url(./assets/fonts/Proxima.ttf);
+}
+
 :root {
 	font-family: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
 		'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
@@ -60,7 +65,7 @@ h2 {
 	font-weight: 700;
 	letter-spacing: -2px;
 	line-height: 1.2;
-	position: absolute;
+
 	color: rgb(233, 220, 40);
 }
 
@@ -339,10 +344,9 @@ header {
 	text-decoration: none;
 }
 
-a{
+a {
 	text-decoration: none;
 	color: var(--white-01);
-
 }
 
 #menu-links li a::before {
@@ -407,7 +411,7 @@ a{
 		font-size: 64px;
 	}
 
-	html{
+	html {
 		cursor: none;
 	}
 }
@@ -483,3 +487,42 @@ a{
 }
 
 /* ////////////////////////////    FIN     HEADER Y MENU  /////////////////////////////// / */
+
+/* HOME 1 */
+
+.home1container {
+	display: flex;
+	justify-content: center;
+	font-family: proxima;
+	padding-left: 4rem;
+}
+
+.home1container h2 {
+	font-size: 8rem;
+}
+
+.home1container div {
+	display: flex;
+	flex-direction: column;
+
+	justify-content: center;
+}
+
+.home1container div:last-child {
+	margin-left: 4rem;
+}
+
+.home1container h3 {
+	font-size: 2rem;
+	font-family: proxima;
+}
+
+
+.home1container h2:nth-child(2) {
+	color: white;
+	
+}
+
+.hellodot {
+	color: white;
+}
