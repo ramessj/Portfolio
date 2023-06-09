@@ -9,19 +9,25 @@ const notSelected = 'notSelected';
 
 export const Header = () => {
 
-	const {onSetLang} = useUiStore()
+	const toggler = document.getElementById('menuToggler');
+
+
+	const { onSetLang } = useUiStore();
 
 	const location = useLocation();
 
 	const handleClickLang = (lang) => {
 		const newLang = lang.target.getAttribute('data-lang');
-		onSetLang(newLang)
-	}
+		onSetLang(newLang);
+	};
+
+	const handleCloseMenu = () => {
+		toggler.checked = false;
+	};
 
 	useEffect(() => {
-		onSetLang()
-	}, [])
-	
+		onSetLang();
+	}, []);
 
 	return (
 		<header>
@@ -31,15 +37,20 @@ export const Header = () => {
 				HOME
 			</NavLink>
 
-			<div style={{position: 'fixed', top: 5, left: '50%'}}>
-				<button onClick={handleClickLang} data-lang={'ES'}>es</button>
-				<button onClick={handleClickLang} data-lang={'EN'}>en</button>
-				<button onClick={handleClickLang} data-lang={'PT'}>pt</button>
-
+			<div style={{ position: 'fixed', top: 5, left: '50%' }}>
+				<button onClick={handleClickLang} data-lang={'ES'}>
+					es
+				</button>
+				<button onClick={handleClickLang} data-lang={'EN'}>
+					en
+				</button>
+				<button onClick={handleClickLang} data-lang={'PT'}>
+					pt
+				</button>
 			</div>
 
 			<div className="menu-wrap">
-				<input type="checkbox" className="toggler" />
+				<input type="checkbox" className="toggler" id="menuToggler" />
 				<div id="hamburger" className="hamburger">
 					<div id="hamburger-lines"></div>
 				</div>
@@ -52,6 +63,7 @@ export const Header = () => {
 									<NavLink
 										to={'/'}
 										data-text="Home"
+										onClick={handleCloseMenu}
 										className={
 											location.pathname == `/`
 												? selected
@@ -64,6 +76,7 @@ export const Header = () => {
 									<NavLink
 										to={'/about'}
 										data-text="About"
+										onClick={handleCloseMenu}
 										className={
 											location.pathname == `/about`
 												? selected
@@ -76,6 +89,7 @@ export const Header = () => {
 									<NavLink
 										to={'/projects'}
 										data-text="Projects"
+										onClick={handleCloseMenu}
 										className={
 											location.pathname == `/projects`
 												? selected
@@ -88,6 +102,7 @@ export const Header = () => {
 									<NavLink
 										to={'/contact'}
 										data-text="Contact"
+										onClick={handleCloseMenu}
 										className={
 											location.pathname == `/contact`
 												? selected

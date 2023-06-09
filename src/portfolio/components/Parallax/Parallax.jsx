@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
 import { motion, useScroll, useSpring, useTransform } from 'framer-motion';
+import { useEffect } from 'react';
 
 export const Parallax = ({ sections }) => {
 	const { scrollYProgress } = useScroll({
@@ -20,6 +21,10 @@ export const Parallax = ({ sections }) => {
 		visible: { opacity: 1, scale: 1 },
 		hidden: { opacity: 0, scale: 0 },
 	};
+
+	useEffect(() => {
+		window.scrollTo({ top: 0 });
+	}, []);
 
 	return (
 		<motion.div
