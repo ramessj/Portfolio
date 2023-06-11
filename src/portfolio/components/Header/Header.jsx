@@ -32,8 +32,8 @@ export const Header = () => {
 			<NavLink
 				to={'/'}
 				className={location.pathname == `/` ? selected : notSelected}>
-				<span className="rq">{`<`}</span> RQ{' '}
-				<span className="rq">{`/>`}</span>
+				<span className="rq">{`< `}</span> RQ{' '}
+				<span className="rq">{` />`}</span>
 			</NavLink>
 
 			{/* <div style={{ position: 'fixed', top: 5, left: '50%' }}>
@@ -75,19 +75,7 @@ export const Header = () => {
 										Home
 									</NavLink>
 								</li>
-								<li>
-									<NavLink
-										to={'/about'}
-										data-text="About"
-										onClick={handleCloseMenu}
-										className={
-											location.pathname == `/about`
-												? selected
-												: notSelected
-										}>
-										About
-									</NavLink>
-								</li>
+
 								<li>
 									<NavLink
 										to={'/projects'}

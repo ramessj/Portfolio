@@ -63,7 +63,7 @@ h2 {
 	margin: 0;
 	font-size: 2.5rem;
 	font-weight: 700;
-	letter-spacing: -2px;
+	/* letter-spacing: -2px; */
 	line-height: 1.2;
 	max-width: fit-content;
 	background: linear-gradient(200deg, yellow 12%, rgb(255, 105, 4));
@@ -84,12 +84,12 @@ h3 span {
 	position: fixed;
 	display: flex;
 	height: 100vh;
-	background: #f7f6f5;
-	opacity: 1.93%;
+	background: #ffffff;
+	opacity: 1.25%;
 
 	right: 0;
 	top: 0;
-	width: 40%;
+	width: 50%;
 	z-index: 1;
 }
 
@@ -142,51 +142,48 @@ header {
 	-ms-flex-pack: justify;
 	justify-content: space-between;
 	z-index: 10;
+	user-select: none;
+	-webkit-user-drag: none;
 }
 
 header > a {
-	font-size: 1.5rem;
+	font-size: 2rem;
 	font-family: proxima;
+	user-select: none;
+	-webkit-user-drag: none;
+	transition: transform 0.1s ease-out;
+	-webkit-transition: transform 0.1s ease-out;
+	-moz-transition: transform 0.1s ease-out;
+	-ms-transition: transform 0.1s ease-out;
+	-o-transition: transform 0.1s ease-out;
+	padding-top: 0.5rem;
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+}
+
+@media screen and (max-width: 500px) {
+	header > a {
+		font-size: 1.5rem;
+	}
+}
+
+header > a:hover{
+	transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	-moz-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	-o-transform: scale(1.1);
+	transition: transform 0.2s ease-in-out;
+	-webkit-transition: transform 0.2s ease-in-out;
+	-moz-transition: transform 0.2s ease-in-out;
+	-ms-transition: transform 0.2s ease-in-out;
+	-o-transition: transform 0.2s ease-in-out;
 }
 
 .rq {
 	color: yellow;
 	font-size: 1.5rem;
-}
-
-.navbrand {
-	color: var(--white-02);
-	font-size: 26px;
-	margin-left: 130px;
-}
-
-.navbrand,
-.navbrand-icon {
-	font-family: proxima_novaextrabold, monospace;
-}
-
-.navbrand-icon {
-	color: var(--bg-color);
-	font-size: 25px;
-	font-weight: 700;
-}
-
-.navbrand::after {
-	position: absolute;
-	top: 55px;
-	left: 158px;
-	width: 44px;
-	height: 44px;
-	content: '';
-	background: var(--primary-color);
-	z-index: -1;
-	-webkit-transform: translateY(-50%);
-	-ms-transform: translateY(-50%);
-	transform: translateY(-50%);
-	-webkit-border-radius: 50%;
-	-moz-border-radius: 50%;
-	-ms-border-radius: 50%;
-	border-radius: 50%;
 }
 
 .menu-wrap {
@@ -356,6 +353,7 @@ header > a {
 	line-height: 1.6;
 	font-family: proxima, futuraRegular, monospace;
 	color: var(--white-01);
+	-webkit-user-drag: none;
 }
 
 #menu-links li a.activePage::after,
@@ -431,14 +429,7 @@ a {
 		bottom: -68px;
 	}
 
-	#fp-nav {
-		bottom: -40px;
-	}
-
-	#fp-nav ul li {
-		margin: 0 0 32px;
-	}
-
+	
 	#menu-links li a {
 		font-size: 64px;
 	}
@@ -466,9 +457,7 @@ a {
 		padding: 28px 40px 0;
 	}
 
-	.navbrand:after {
-		top: 46px;
-	}
+	
 
 	.menu-wrap .toggler {
 		top: 22px;
@@ -495,16 +484,6 @@ a {
 	}
 }
 
-@media screen and (max-width: 430px) {
-	#fp-nav {
-		bottom: -44px;
-		left: 49% !important;
-	}
-
-	#fp-nav ul li {
-		margin: 0 0 32px;
-	}
-}
 
 @media screen and (max-width: 385px) {
 	#menu-links li a {
@@ -536,7 +515,7 @@ a {
 
 @media screen and (max-width: 900px) {
 	.home1left {
-		min-width: 10vw;
+		min-width: 5vw;
 	}
 }
 
@@ -552,16 +531,6 @@ a {
 	font-size: clamp(1.5vw, 15vw, 8rem);
 }
 
-.iamdiv {
-	display: flex;
-	align-items: center;
-	min-width: 80%;
-}
-
-.iamh2white {
-	color: white;
-}
-
 .helloh2 {
 	height: max-content;
 	max-width: fit-content;
@@ -571,36 +540,42 @@ a {
 }
 
 .hellodot {
-	display: inline-block;
 	color: white;
 	width: clamp(1vw, 3vw, 1.25rem);
 	height: clamp(1vw, 2.75vw, 1.25rem);
 }
 
+.iamdiv {
+	display: flex;
+	align-items: center;
+	min-width: 80%;
+}
+
+
+h2.iamh2white {
+	background: white;
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
 .iamtypewriter {
-	font-size: clamp(2vw, 3.5vw, 2rem);
+	font-size: clamp(2vw, 1.2rem, 5vw);
 	margin-left: 2rem;
+
 }
 
-.scrollDownMessage {
-	writing-mode: vertical-rl;
-	-webkit-text-orientation: sideways-right;
-	text-orientation: sideways-right;
-	color: yellow;
-	-webkit-writing-mode: vertical-rl;
-	-ms-writing-mode: vertical-rl;
-	position: fixed;
-	left: 3rem;
-	bottom: 0;
-	font-size: 1.25rem;
-}
-.scrollDownMessage::after {
-	content: '';
-	width: 0.25rem;
-	background-color: #fff;
-	height: 300px;
 
-	left: 50%;
+.home1rrr{
+	display: flex;
+	align-items: flex-end;
+	width: 2vw;
 	position: absolute;
-	top: 110%;
+	right: 20%;
+	bottom: 12%;
+}
+
+.arrowdown{
+	width: 2rem;
+	-webkit-user-drag: none;
 }
