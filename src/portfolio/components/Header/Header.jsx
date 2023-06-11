@@ -14,10 +14,10 @@ export const Header = () => {
 
 	const location = useLocation();
 
-	const handleClickLang = (lang) => {
-		const newLang = lang.target.getAttribute('data-lang');
-		onSetLang(newLang);
-	};
+	// const handleClickLang = (lang) => {
+	// 	const newLang = lang.target.getAttribute('data-lang');
+	// 	onSetLang(newLang);
+	// };
 
 	const handleCloseMenu = () => {
 		toggler.checked = false;
@@ -35,7 +35,7 @@ export const Header = () => {
 				<span className='rq'>{`<`}</span> RQ <span className='rq'>{`/>`}</span>
 			</NavLink>
 
-			<div style={{ position: 'fixed', top: 5, left: '50%' }}>
+			{/* <div style={{ position: 'fixed', top: 5, left: '50%' }}>
 				<button onClick={handleClickLang} data-lang={'ES'}>
 					es
 				</button>
@@ -45,7 +45,7 @@ export const Header = () => {
 				<button onClick={handleClickLang} data-lang={'PT'}>
 					pt
 				</button>
-			</div>
+			</div> */}
 
 			<div className="menu-wrap">
 				<input type="checkbox" className="toggler" id="menuToggler" placeholder='toggleMenu'></input>
