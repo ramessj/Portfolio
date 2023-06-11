@@ -4,7 +4,7 @@ export const Typewriter = () => {
 	const [text] = useTypewriter({
 		words: ['Programmer.', 'Web Developer.', 'Tech Enthusiast.'],
 		loop: 0,
-		typeSpeed: 180,
+		typeSpeed: 100,
 	});
 
 	return (
