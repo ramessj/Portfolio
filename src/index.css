@@ -81,7 +81,6 @@ h2 {
 	-webkit-background-clip: text;
 	background-clip: text;
 	-webkit-text-fill-color: transparent; */
-	
 }
 
 h3 span:nth-child(1) {
@@ -537,7 +536,6 @@ a {
 }
 
 .home1container h2 {
-	
 	max-width: fit-content;
 	background: linear-gradient(200deg, yellow 12%, rgb(255, 105, 4));
 	-webkit-background-clip: text;
@@ -594,9 +592,6 @@ h2.iamh2white {
 
 /* ///////////////  HOME 2 ///////////////////// */
 
-
-
-
 .home2container {
 	display: flex;
 	/* width: 100%; */
@@ -605,26 +600,28 @@ h2.iamh2white {
 	gap: 2rem;
 }
 
-.home2left{
+.home2left {
 	width: 50vw;
 	height: 75%;
 	display: flex;
 	flex-direction: column;
 }
 
-.home2right{
+.home2right {
 	/* background-color: #c4c4c4; */
 	width: auto;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	width: 30vw;
 }
 
-.home2right div{
+.home2right div {
 	background-color: #b81515;
-	width: 30vw;
+	width: 100%;
+	max-width: 16rem;
 	aspect-ratio: 1/1;
-	height: 100%;
+	padding: 1rem;
 	border-radius: 50%;
 	-webkit-border-radius: 50%;
 	-moz-border-radius: 50%;
@@ -632,38 +629,40 @@ h2.iamh2white {
 	-o-border-radius: 50%;
 }
 
-
 @media screen and (max-width: 800px) {
-	.home2container{
+	.home2container {
 		flex-direction: column-reverse;
+		height: 100%;
 	}
 
-	.home2left{
+	.home2left {
 		width: 100%;
 	}
 
-	.home2right{
-		height: 60%;
+	.home2right {
+		height: 50%;
+		width: 40vw;
+		max-width: 16rem;
 	}
 }
 
-.aboutHead{
+.aboutHead {
 	display: flex;
 	flex-direction: column;
-	/* margin-bottom: 1rem; */
 }
 
-.aboutHeadText{
+.aboutHeadText {
 	margin-left: 1rem;
 	font-family: proxima;
 }
 
-.lines{
+.lines {
 	display: flex;
 	flex-direction: column;
 }
 
-.topLine, .bottomLine{
+.topLine,
+.bottomLine {
 	background-color: #ff3e55;
 	height: 0.5rem;
 	width: 15%;
@@ -675,13 +674,12 @@ h2.iamh2white {
 	-o-border-radius: 1rem;
 }
 
-.bottomLine{
+.bottomLine {
 	background-color: #f7f6f5;
 	margin-left: 2rem;
-
 }
 
-.aboutBody{
+.aboutBody {
 	display: flex;
 	flex-direction: column;
 	gap: 2rem;
@@ -690,5 +688,5 @@ h2.iamh2white {
 }
 
 .aboutBody p {
-	font-size: clamp(0.8rem, 3vw, 1.2rem);
+	font-size: clamp(0.9rem, 3vw, 1.1rem);
 }
