@@ -3,7 +3,7 @@ import { NavLink, useLocation } from 'react-router-dom';
 import { useUiStore } from '../../../hooks/useUiStore';
 import { useEffect } from 'react';
 
-const selected = 'selected';
+const selected = 'activePage';
 
 const notSelected = 'notSelected';
 
@@ -31,8 +31,9 @@ export const Header = () => {
 		<header>
 			<NavLink
 				to={'/'}
-				className={  location.pathname == `/` ? selected : notSelected}>
-				<span className='rq'>{`<`}</span> RQ <span className='rq'>{`/>`}</span>
+				className={location.pathname == `/` ? selected : notSelected}>
+				<span className="rq">{`<`}</span> RQ{' '}
+				<span className="rq">{`/>`}</span>
 			</NavLink>
 
 			{/* <div style={{ position: 'fixed', top: 5, left: '50%' }}>
@@ -48,7 +49,11 @@ export const Header = () => {
 			</div> */}
 
 			<div className="menu-wrap">
-				<input type="checkbox" className="toggler" id="menuToggler" placeholder='toggleMenu'></input>
+				<input
+					type="checkbox"
+					className="toggler"
+					id="menuToggler"
+					placeholder="toggleMenu"></input>
 				<div id="hamburger" className="hamburger">
 					<div id="hamburger-lines"></div>
 				</div>

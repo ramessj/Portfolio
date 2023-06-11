@@ -8,10 +8,10 @@ export const Home1 = () => {
 				<div className="home1left"></div>
 				<div className="home1right">
 					<div>
-						<h2 className="helloh2">
-							Hello
+						<div className="helloh2">
+							<h2>Hello</h2>
 							<BouncingBall />
-						</h2>
+						</div>
 					</div>
 
 					<div className="iamdiv">
