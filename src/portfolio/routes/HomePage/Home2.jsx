@@ -1,8 +1,7 @@
 import profile from '/profilepicture.png';
-import cv from '/RamiroQuesadaCV.pdf'
+import cv from '/RamiroQuesadaCV.pdf';
 
 export const Home2 = () => {
-
 	return (
 		<>
 			<div className="home2container">
@@ -25,26 +24,27 @@ export const Home2 = () => {
 							consectetur impedit ehunt!
 						</p>
 						<div className="aboutLinks">
-							<div>
-								<a
-									href="https://github.com/ramessj"
-									target="_blank"
-									rel="noreferrer">
-									GitHub
-								</a>
-							</div>
-							<div>
-								<a
-									href="https://www.linkedin.com/in/ramiro-quesada-p%C3%A9rez-5796a3126"
-									target="_blank"
-									rel="noreferrer">
-									LinkedIn
-								</a>
-							</div>
+							<a
+								href="https://github.com/ramessj"
+								target="_blank"
+								rel="noreferrer">
+								<div>GitHub</div>
+							</a>
+							<a
+								href="https://www.linkedin.com/in/ramiro-quesada-p%C3%A9rez-5796a3126"
+								target="_blank"
+								rel="noreferrer">
+								<div>LinkedIn</div>
+							</a>
 						</div>
-						<a href={cv} download>
-
-						<button className="aboutCurriculum">Download CV</button>
+						<a
+							href={cv}
+							download="Ramiro Quesada CV"
+							target="_blank"
+							rel="noreferrer">
+							<button className="aboutCurriculum">
+								Download CV
+							</button>
 						</a>
 					</div>
 				</div>
