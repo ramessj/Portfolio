@@ -22,9 +22,9 @@ export const Home2 = () => {
 						</p>
 						<div className="aboutLinks">
 							<div>GitHub</div>
-							<div>Linkedin</div>
+							<div>LinkedIn</div>
 						</div>
-						<div className="aboutCurriculum">Download</div>
+						<div className="aboutCurriculum">Download CV</div>
 					</div>
 				</div>
 				<div className="home2right">

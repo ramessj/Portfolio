@@ -7,14 +7,16 @@ export const BouncingBall = () => {
 			style={{
 				background: '#FFF',
 				borderRadius: '50%',
-				marginLeft: '1rem',
+				marginLeft: '0.5rem',
 				marginRight: '1rem',
 				alignSelf: 'end',
+				// height: '0.5rem'
 			}}
 			animate={{
-				y: ['-180%', '-260%', '-270%', '-260%', '-180%'],
+				y: ['-50%', '-140%', '-150%', '-140%', '-50%'],
+				// y: ['-0.8rem', '-1.36rem', '-1.5rem', '-1.36rem',  '-0.8rem'],
 				scaleY: [1, 1.1, 1.1, 1.1, 1],
-				scaleX: [1.25, 1.05, 1, 1.05, 1.25],
+				scaleX: [1.3, 1.05, 1, 1.05, 1.3],
 			}}
 			transition={{
 				repeat: Infinity,

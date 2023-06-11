@@ -12,7 +12,7 @@ export const Home1 = () => {
 				<div className="home1right">
 					<div>
 						<div className="helloh2">
-							<h2>Hello</h2>
+							<h2 className='helloh2text'>Hello</h2>
 							<BouncingBall />
 						</div>
 					</div>
@@ -22,7 +22,7 @@ export const Home1 = () => {
 						<Typewriter />
 					</div>
 					<div>
-						<h2>RAMIRO</h2>
+						<h2 className='home1Ramiro'>RAMIRO</h2>
 					</div>
 				</div>
 
