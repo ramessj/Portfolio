@@ -30,6 +30,7 @@ export const App = () => {
 						'textarea',
 						'button',
 						'.link',
+						'.imgDragContainer'
 					]}
 				/>
 			)}

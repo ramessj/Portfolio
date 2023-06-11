@@ -1,7 +1,13 @@
+import { motion, useDragControls } from 'framer-motion';
+
 import profile from '/profilepicture.png';
 import cv from '/RamiroQuesadaCV.pdf';
 
+
 export const Home2 = () => {
+
+	const controls = useDragControls()
+
 	return (
 		<>
 			<div className="home2container">
@@ -11,8 +17,22 @@ export const Home2 = () => {
 							<h2>About Me</h2>
 						</div>
 						<div className="lines">
-							<span className="topLine"></span>
-							<span className="bottomLine"></span>
+							<motion.span
+							initial={{opacity: 0, x: '-10rem'}}
+							whileInView={{
+								opacity: 1,
+								x: '0rem',
+								transition: { type:'spring', delay: 0.3,  duration: 2},
+							}}
+							className="topLine"></motion.span>
+							<motion.span
+							initial={{opacity: 0, x: '-10rem'}}
+							whileInView={{
+								opacity: 1,
+								x: '0rem',
+								transition: { type:'spring', delay: 0.2,  duration: 2},
+							}}
+							className="bottomLine"></motion.span>
 						</div>
 					</div>
 					<div className="aboutBody">
@@ -49,9 +69,25 @@ export const Home2 = () => {
 					</div>
 				</div>
 				<div className="home2right">
-					<div>
-						<img className="profileImg" src={profile} alt="" />
-					</div>
+					<motion.div
+					className='imgDragContainer'
+					
+					initial={{y: 0, dragListener:false}}
+						drag={true}
+						dragControls={controls}
+						whileDrag={{ scale: 1.2}} 
+						dragSnapToOrigin
+						animate={{
+							y: [0, 20, 0],
+							dragListener:true,
+							transition: { duration: 10, repeat: Infinity,   },
+						}}
+						style={{ touchAction: "none" }}
+					>
+						<motion.img
+					
+						className="profileImg" src={profile} alt="Programmer" />
+					</motion.div>
 				</div>
 			</div>
 		</>
