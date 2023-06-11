@@ -12,9 +12,9 @@ export const BouncingBall = () => {
 				alignSelf: 'end',
 			}}
 			animate={{
-				y: ['-170%', '-260%', '-270%', '-260%', '-170%'],
+				y: ['-180%', '-260%', '-270%', '-260%', '-180%'],
 				scaleY: [1, 1.1, 1.1, 1.1, 1],
-				scaleX: [1.5, 1.2, 1, 1.2, 1.5],
+				scaleX: [1.25, 1.05, 1, 1.05, 1.25],
 			}}
 			transition={{
 				repeat: Infinity,
