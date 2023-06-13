@@ -3,6 +3,8 @@ import { NavLink, useLocation } from 'react-router-dom';
 import { useUiStore } from '../../../hooks/useUiStore';
 import { useEffect } from 'react';
 
+import './header.css'
+
 const selected = 'activePage';
 
 const notSelected = 'notSelected';

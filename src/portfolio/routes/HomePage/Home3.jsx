@@ -1,4 +1,5 @@
 import { Lines } from '../../components/Lines/Lines';
+import { WebSkills } from './components/WebSkills';
 
 export const Home3 = () => {
 	return (
@@ -11,10 +12,16 @@ export const Home3 = () => {
 						</div>
 						<Lines />
 					</div>
-					<div className="skillsBody"></div>
+					<div className="skillsBody">
+						<p>
+							An individual eager to learn and explore new fields
+							of life and technology, with good listening skills
+							and fast learning abilities.
+						</p>
+					</div>
 				</div>
 				<div className="home3right">
-					<div className="technologies"></div>
+					<WebSkills />
 				</div>
 			</div>
 		</>

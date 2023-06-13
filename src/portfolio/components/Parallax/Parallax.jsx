@@ -2,6 +2,8 @@
 import { motion, useScroll, useSpring, useTransform } from 'framer-motion';
 import { useEffect } from 'react';
 
+import './parallax.css'
+
 export const Parallax = ({ sections }) => {
 	const { scrollYProgress } = useScroll({
 		offset: ['0.1', 'end end'],

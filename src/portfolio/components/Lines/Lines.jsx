@@ -1,5 +1,7 @@
 import { motion } from 'framer-motion';
 
+import './lines.css'
+
 export const Lines = () => {
 	return (
 		<>

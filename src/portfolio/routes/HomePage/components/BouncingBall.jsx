@@ -1,5 +1,7 @@
 import { motion } from 'framer-motion';
 
+import './bouncingBall.css'
+
 export const BouncingBall = () => {
 	return (
 		<motion.span

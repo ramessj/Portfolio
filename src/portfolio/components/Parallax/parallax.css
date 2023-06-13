@@ -1,0 +1,41 @@
+
+.bgLighterEffect {
+	pointer-events: none;
+	position: fixed;
+	display: flex;
+	height: 100vh;
+	background: #ffffff;
+	opacity: 1.25%;
+
+	right: 0;
+	top: 0;
+	width: 50%;
+	z-index: 1;
+}
+
+section {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	scroll-snap-align: center;
+	overflow-y: hidden;
+}
+
+section > div {
+	width: 90dvw;
+	height: calc(100dvh - 12rem);
+	margin: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.progress {
+	position: fixed;
+	left: 22%;
+	right: 22%;
+	height: 2px;
+
+	bottom: 3rem;
+}

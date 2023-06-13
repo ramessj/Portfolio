@@ -1,0 +1,366 @@
+
+input[type='radio'],
+input[type='checkbox'] {
+	box-sizing: border-box;
+	padding: 0;
+}
+
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 38px 40px 0;
+	color: var(--white-01);
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	z-index: 10;
+	user-select: none;
+	-webkit-user-drag: none;
+}
+
+header > a {
+	font-size: 2rem;
+	font-family: proxima;
+	user-select: none;
+	-webkit-user-drag: none;
+	transition: transform 0.1s ease-out;
+	-webkit-transition: transform 0.1s ease-out;
+	-moz-transition: transform 0.1s ease-out;
+	-ms-transition: transform 0.1s ease-out;
+	-o-transition: transform 0.1s ease-out;
+	padding-top: 0.5rem;
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+}
+
+@media screen and (max-width: 500px) {
+	header > a {
+		font-size: 1.5rem;
+	}
+}
+
+header > a:hover {
+	transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	-moz-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	-o-transform: scale(1.1);
+	transition: transform 0.2s ease-in-out;
+	-webkit-transition: transform 0.2s ease-in-out;
+	-moz-transition: transform 0.2s ease-in-out;
+	-ms-transition: transform 0.2s ease-in-out;
+	-o-transition: transform 0.2s ease-in-out;
+}
+
+.rq {
+	color: yellow;
+	font-size: 1.5rem;
+}
+
+.menu-wrap {
+	position: fixed;
+	top: 0;
+	right: 40px;
+	z-index: 1;
+}
+
+.menu-wrap .toggler {
+	position: absolute;
+	top: 32px;
+	right: 10px;
+	z-index: 2;
+	cursor: pointer;
+	width: 60px;
+	height: 50px;
+	opacity: 0;
+}
+
+.menu-wrap .hamburger {
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 1;
+	width: 50px;
+	height: 60px;
+	padding: 1rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.menu-wrap .hamburger > #hamburger-lines {
+	position: relative;
+	flex: none;
+	width: 100%;
+	height: 3px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: all 0.4s ease;
+	top: 10px;
+}
+
+.menu-wrap .hamburger > #hamburger-lines::after,
+.menu-wrap .hamburger > #hamburger-lines::before {
+	content: '';
+	position: absolute;
+	z-index: 1;
+	top: -10px;
+	width: 100%;
+	height: 3.1px;
+	background-color: var(--white-01);
+}
+
+.menu-wrap .hamburger > #hamburger-lines::after {
+	top: 10px;
+}
+
+.menu-wrap .toggler:checked + .hamburger > #hamburger-lines::before {
+	top: 0;
+	transform: rotate(135deg);
+}
+
+.menu-wrap .toggler:checked + .hamburger > #hamburger-lines::after {
+	top: 0;
+	transform: rotate(225deg);
+}
+
+.menu-wrap .toggler:checked + .hamburger > #hamburger-lines {
+	transform: rotate(180deg);
+}
+
+.menu-wrap .toggler:checked ~ .menu {
+	visibility: visible;
+}
+
+.menu-wrap .toggler:checked ~ .menu > #menusub1 {
+	transform: scale(1);
+	transition-duration: 0.75s;
+}
+
+.menu-wrap .toggler:checked ~ .menu > #menusub1 > #menusub2 {
+	opacity: 1;
+	transition: opacity 0.2s ease 0.2s;
+}
+
+.menu-wrap .menu {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	visibility: hidden;
+	overflow: hidden;
+}
+
+.menu-wrap .menu,
+.menu-wrap .menu > #menusub1 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.menu-wrap .menu > #menusub1 {
+	background-image: -webkit-linear-gradient(
+		100deg,
+		#fd8059 40%,
+		rgb(255, 255, 1)
+	);
+	background-image: -o-linear-gradient(
+		200deg,
+		#fd8059 33%,
+		rgb(141, 141, 37)
+	);
+	background-image: linear-gradient(200deg, #fd8059 33%, rgb(141, 141, 37));
+	width: 100vw;
+	height: 100vh;
+	flex: none;
+	-webkit-transform: translate3d(0, -150%, 0);
+	transform: translate3d(0, -150%, 0);
+	transition: all 0.65s ease;
+	-webkit-transition: all 0.65s ease;
+	-moz-transition: all 0.65s ease;
+	-ms-transition: all 0.65s ease;
+	-o-transition: all 0.65s ease;
+}
+
+.menu-wrap .menu > #menusub1 > #menusub2 {
+	max-width: 90vw;
+	max-height: 80vh;
+	height: 100%;
+	opacity: 0;
+	transition: opacity 0.1s ease 0.1s;
+	-webkit-transition: opacity 0.1s ease 0.1s;
+	-moz-transition: opacity 0.1s ease 0.1s;
+	-ms-transition: opacity 0.1s ease 0.1s;
+	-o-transition: opacity 0.1s ease 0.1s;
+	display: flex;
+}
+
+#menu-links {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 5%;
+}
+
+#menu-links li {
+	list-style: none;
+	transition: 1s;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#menu-links li a {
+	position: relative;
+	text-transform: uppercase;
+	font-weight: 800;
+	letter-spacing: 8px;
+	font-size: 5rem;
+	padding: 0 10px;
+	line-height: 1.6;
+	font-family: proxima, futuraRegular, monospace;
+	color: var(--white-01);
+	-webkit-user-drag: none;
+}
+
+#menu-links li a.activePage::after,
+#menu-links li a.activePage::before {
+	background: linear-gradient(
+		90deg,
+		var(--bg-color) 33%,
+		var(--bright-color)
+	);
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+#menu-links li a,
+#menu-links li a:hover {
+	color: transparent;
+	text-decoration: none;
+}
+
+#menu-links li a::before {
+	content: attr(data-text);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	padding: 0 10px;
+	color: var(--white-01);
+	transform: translateX(0);
+	transition: 0.5s;
+	pointer-events: none;
+}
+
+#menu-links li a:hover::before {
+	transform: translateX(100%);
+	opacity: 0;
+}
+
+#menu-links li a::after {
+	content: attr(data-text);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	padding: 0 10px;
+	color: var(--white-01);
+	transform: translateX(-100%);
+	transition: 0.5s;
+	opacity: 0;
+	pointer-events: none;
+}
+
+#menu-links li a:hover::after {
+	transform: translateX(0);
+	opacity: 1;
+}
+
+@media screen and (max-width: 700px) {
+	.scrollDown {
+		font-size: 13px;
+		bottom: 52px;
+	}
+
+	.scrollDown:after {
+		height: 56px;
+		bottom: -68px;
+	}
+
+	#menu-links li a {
+		font-size: 64px;
+	}
+
+	html {
+		cursor: none;
+	}
+}
+
+@media screen and (max-width: 580px) {
+	#menu-links li a {
+		font-size: 56px;
+	}
+}
+
+@media screen and (max-width: 520px) {
+	#menu-links li a {
+		font-size: 52px;
+		letter-spacing: 8px;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	header {
+		padding: 28px 40px 0;
+	}
+
+	.menu-wrap .toggler {
+		top: 22px;
+		right: -5px;
+	}
+
+	.menu-wrap .hamburger {
+		width: 45px;
+		padding: 4px 0;
+	}
+}
+
+@media screen and (max-width: 465px) {
+	#menu-links li a {
+		font-size: 50px;
+		line-height: 1.6;
+	}
+}
+
+@media screen and (max-width: 435px) {
+	#menu-links li a {
+		font-size: 45px;
+		letter-spacing: 8px;
+	}
+}
+
+@media screen and (max-width: 385px) {
+	#menu-links li a {
+		font-size: 42px;
+	}
+}
+
+@media screen and (max-width: 360px) {
+	#menu-links li a {
+		font-size: 42px;
+	}
+}
