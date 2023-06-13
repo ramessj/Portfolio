@@ -29,9 +29,7 @@ export const Header = () => {
 
 	return (
 		<header>
-			<NavLink
-				to={'/'}
-				className={location.pathname == `/` ? selected : notSelected}>
+			<NavLink to={'/'}>
 				<span className="rq">{`< `}</span> RQ{' '}
 				<span className="rq">{` />`}</span>
 			</NavLink>

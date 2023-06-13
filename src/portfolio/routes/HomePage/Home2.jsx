@@ -1,4 +1,5 @@
 import { motion, useDragControls } from 'framer-motion';
+import { Lines } from '../../components/Lines/Lines';
 
 import profile from '/profilepicture.png';
 import cv from '/RamiroQuesadaCV.pdf';
@@ -16,24 +17,7 @@ export const Home2 = () => {
 						<div className="aboutHeadText">
 							<h2>About Me</h2>
 						</div>
-						<div className="lines">
-							<motion.span
-							initial={{opacity: 0, x: '-10rem'}}
-							whileInView={{
-								opacity: 1,
-								x: '0rem',
-								transition: { type:'spring', delay: 0.3,  duration: 2},
-							}}
-							className="topLine"></motion.span>
-							<motion.span
-							initial={{opacity: 0, x: '-10rem'}}
-							whileInView={{
-								opacity: 1,
-								x: '0rem',
-								transition: { type:'spring', delay: 0.2,  duration: 2},
-							}}
-							className="bottomLine"></motion.span>
-						</div>
+						<Lines/>
 					</div>
 					<div className="aboutBody">
 						<p>
@@ -78,9 +62,9 @@ export const Home2 = () => {
 						whileDrag={{ scale: 1.2}} 
 						dragSnapToOrigin
 						animate={{
-							y: [0, 20, 0],
+							y: [0, 25, 0],
 							dragListener:true,
-							transition: { duration: 10, repeat: Infinity,   },
+							transition: { duration: 6, repeat: Infinity },
 						}}
 						style={{ touchAction: "none" }}
 					>
