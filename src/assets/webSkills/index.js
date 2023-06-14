@@ -16,6 +16,12 @@ import mongodb from './mongodb.png'
 import mongodbBW from './mongodbBW.png'
 import git from './git.png'
 import gitBW from './gitBW.png'
+import express from './express.png'
+import expressBW from './expressBW.png'
+import firebase from './firebase.png'
+import firebaseBW from './firebaseBW.png'
+import framer from './framer.png'
+import framerBW from './framerBW.png'
 
 
 const techs = [	{
@@ -44,16 +50,17 @@ const techs = [	{
 		color: reduxC,
 		bw: reduxBW,
 	},
-	{
-		name: 'NPM',
-		color:npm,
-		bw: npmBW,
-	},
+	
 	
 	{
 		name: 'NodeJS',
 		color: nodejs,
 		bw: nodejsBW,
+	},
+	{
+		name: 'Express',
+		color: express,
+		bw: expressBW,
 	},
 	{
 		name: 'MongoDB',
@@ -64,6 +71,21 @@ const techs = [	{
 		name: 'GIT',
 		color:git,
 		bw: gitBW,
+	},
+	{
+		name: 'NPM',
+		color:npm,
+		bw: npmBW,
+	},
+	{
+		name: 'Firebase',
+		color: firebase,
+		bw: firebaseBW,
+	},
+	{
+		name: 'Framer Motion',
+		color: framer,
+		bw: framerBW,
 	},
 
 ];

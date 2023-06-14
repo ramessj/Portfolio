@@ -2,16 +2,16 @@
 .technologies {
 	width: 100%;
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(27%, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(20%, 1fr));
 	grid-auto-flow: dense;
-	grid-gap: 1rem; 
+	grid-gap: 0.25rem; 
 	place-items: center;
-	row-gap: 1rem;
+	/* row-gap: 1rem; */
 }
 
 @media (min-width: 900px) {
 	.technologies{
-		row-gap: 4rem;
+		row-gap: 2rem;
 	}
 }
 
@@ -24,7 +24,7 @@
 
 .tech{
 	background: linear-gradient(140deg, rgb(240, 27, 27) 2%, rgba(179, 214, 23, 0.459));
-	width: 6.25rem;
+	width: 6rem;
 	aspect-ratio: 1/1;
 	border-radius: 50%;
 	-webkit-border-radius: 50%;
@@ -38,12 +38,27 @@
 	position: relative;
 	
 }
+@media (max-width: 500px) {
+	.tech{
+		width: 4rem;
+	}
 
+}
 @media (max-width: 376px) {
 	.tech{
 		width: 4rem;
 	}
+
+	.skillsHeadText h2{
+		font-size: 2rem;
+	}
+
+	.skillsBody p{
+		font-size: 0.75rem;
+	}
 }
+
+
 
 .techLogo, .techLogoBW {
 	

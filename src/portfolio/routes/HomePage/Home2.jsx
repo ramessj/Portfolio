@@ -4,10 +4,8 @@ import { Lines } from '../../components/Lines/Lines';
 import profile from '/profilepicture.png';
 import cv from '/RamiroQuesadaCV.pdf';
 
-
 export const Home2 = () => {
-
-	const controls = useDragControls()
+	const controls = useDragControls();
 
 	return (
 		<>
@@ -17,7 +15,7 @@ export const Home2 = () => {
 						<div className="aboutHeadText">
 							<h2>About Me</h2>
 						</div>
-						<Lines/>
+						<Lines />
 					</div>
 					<div className="aboutBody">
 						<p>
@@ -54,23 +52,23 @@ export const Home2 = () => {
 				</div>
 				<div className="home2right">
 					<motion.div
-					className='imgDragContainer'
-					
-					initial={{y: 0, dragListener:false}}
+						className="imgDragContainer"
+						initial={{ y: 0, dragListener: false }}
 						drag={true}
 						dragControls={controls}
-						whileDrag={{ scale: 1.2}} 
+						whileDrag={{ scale: 1.2 }}
 						dragSnapToOrigin
 						animate={{
 							y: [0, 25, 0],
-							dragListener:true,
+							dragListener: true,
 							transition: { duration: 6, repeat: Infinity },
 						}}
-						style={{ touchAction: "none" }}
-					>
+						style={{ touchAction: 'none' }}>
 						<motion.img
-					
-						className="profileImg" src={profile} alt="Programmer" />
+							className="profileImg"
+							src={profile}
+							alt="Programmer"
+						/>
 					</motion.div>
 				</div>
 			</div>

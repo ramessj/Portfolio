@@ -3,7 +3,7 @@ import { NavLink, useLocation } from 'react-router-dom';
 import { useUiStore } from '../../../hooks/useUiStore';
 import { useEffect } from 'react';
 
-import './header.css'
+import './header.css';
 
 const selected = 'activePage';
 
@@ -64,7 +64,7 @@ export const Header = () => {
 							<ul id="menu-links">
 								<li>
 									<NavLink
-										to={'/'}
+										to="home"
 										data-text="Home"
 										onClick={handleCloseMenu}
 										className={
@@ -75,7 +75,6 @@ export const Header = () => {
 										Home
 									</NavLink>
 								</li>
-
 								<li>
 									<NavLink
 										to={'/projects'}

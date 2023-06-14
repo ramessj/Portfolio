@@ -2,7 +2,7 @@
 import { motion, useScroll, useSpring, useTransform } from 'framer-motion';
 import { useEffect } from 'react';
 
-import './parallax.css'
+import './parallax.css';
 
 export const Parallax = ({ sections }) => {
 	const { scrollYProgress } = useScroll({
@@ -34,7 +34,9 @@ export const Parallax = ({ sections }) => {
 			whileInView={{ opacity: 1 }}
 			transition={{ duration: 0.5 }}>
 			{sections.map((section) => (
-				<section key={sections.indexOf(section) + 1}>
+				<section
+					id={section.props.id}
+					key={sections.indexOf(section) + 1}>
 					<motion.div
 						initial="hidden"
 						whileInView="visible"
