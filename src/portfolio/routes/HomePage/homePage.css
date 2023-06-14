@@ -135,6 +135,7 @@ h2.iamh2white {
 	.home2container {
 		flex-direction: column-reverse;
 		height: 100%;
+		gap: 3rem;
 	}
 
 	.home2left {
@@ -150,6 +151,7 @@ h2.iamh2white {
 	.home2right div {
 		max-width: 16rem;
 	}
+
 }
 
 .aboutHead {
@@ -172,9 +174,36 @@ h2.iamh2white {
 }
 
 .aboutBody p {
-	font-size: clamp(0.8rem, 2.5vw, 1rem);
+	font-size: 1.2rem;
 	max-width: 75ch;
 }
+
+
+@media (max-width: 1200px){
+	.aboutBody p {
+		font-size: 1rem;
+	}
+}
+
+@media (max-width: 900px){
+	.aboutBody p {
+		font-size: 0.9rem;
+	}
+	.aboutHeadText h2{
+		font-size: 2.5rem;
+	}
+}
+
+@media (max-width: 400px){
+	.aboutBody p {
+		font-size: 0.7rem;
+	}
+	.aboutHeadText h2{
+		font-size: 2.5rem;
+	}
+}
+
+
 
 .aboutLinks {
 	display: flex;
@@ -278,6 +307,7 @@ h2.iamh2white {
 	.skillsBody{
 		font-size: 1rem;
 	}
+	
 }
 
 .interests{
