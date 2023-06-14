@@ -52,6 +52,8 @@
 	display: flex;
 	align-items: center;
 	min-width: 80%;
+	/* width: 100%; */
+	justify-content: center;
 }
 
 h2.iamh2white {
@@ -59,7 +61,9 @@ h2.iamh2white {
 	-webkit-background-clip: text;
 	background-clip: text;
 	-webkit-text-fill-color: transparent;
+	margin-right:  auto;
 }
+
 
 .home1Ramiro {
 	font-size: clamp(1.5rem, 18vw, 10rem);

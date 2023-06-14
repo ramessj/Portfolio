@@ -4,15 +4,17 @@ import './typewriter.css'
 
 export const Typewriter = () => {
 	const [text] = useTypewriter({
-		words: ['Programmer.', 'Web Developer.', 'Tech Enthusiast.'],
+		words: ['Programmer', 'Web Developer', 'Tech Enthusiast'],
 		loop: 0,
-		typeSpeed: 100,
+		typeSpeed: 75,
+		deleteSpeed: 50,
+		delaySpeed: 1000
 	});
 
 	return (
 		<h3 className="iamtypewriter">
-			a {''}
-			<span className='writer'>{text}</span>
+			a 
+			<span className='writer'>&nbsp; {text}</span>
 			<Cursor cursorColor="#FFF" />
 		</h3>
 	);
