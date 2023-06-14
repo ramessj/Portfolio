@@ -1,19 +1,27 @@
-import js from '../../../../assets/webSkills/javascript.png'
-import jsBW from '../../../../assets/webSkills/javascriptBW.png'
+import techs from "../../../../assets/webSkills";
+import './webskills.css'
 
 export const WebSkills = () => {
 
 	return (
 		<div className="technologies">
-			<div className="techContainer">
-				<div className="tech">
-					<img src={jsBW} alt="JavaScript" className='techLogoBW'/>
-					<img src={js} alt="JavaScript" className='techLogo'/>
-
+			{techs.map((tech) => (
+				<div className="techContainer" key={tech.name}>
+					<div className="tech">
+						<img
+							src={tech.bw}
+							alt={tech.name}
+							className="techLogoBW"
+						/>
+						<img
+							src={tech.color}
+							alt={tech.name}
+							className="techLogo"
+						/>
+					</div>
+					<div className="techName">{tech.name}</div>
 				</div>
-				<div className="techName">JavaScript</div>
-			</div>
-			
+			))}
 		</div>
 	);
 };
