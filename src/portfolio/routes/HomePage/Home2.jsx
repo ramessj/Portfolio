@@ -19,11 +19,7 @@ export const Home2 = () => {
 					</div>
 					<div className="aboutBody">
 						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing
-							elit. Culpa ex nostrum itaque eum incidunt soluta
-							maxime. Voluptatibus corrupti recusandae iste
-							maiores molestiae, odio in unde adipisci nobis
-							consectetur impedit ehunt!
+							I&apos;m Ramiro Quesada, a passionate Front-End Developer based in Uruguay with 1 year of experience. Currently expanding my knowledge to become a Full-Stack Developer through project-based learning. I enjoy exploring all aspects of Computer Science and constantly learning new technologies.<br/><br/> Let&apos;s connect and bring your ideas to life!
 						</p>
 						<div className="aboutLinks">
 							<a
