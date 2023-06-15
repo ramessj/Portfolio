@@ -1,3 +1,6 @@
+/* eslint-disable react-hooks/exhaustive-deps */
+import { useEffect, useRef } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { BouncingBall } from './components/BouncingBall';
 import { Typewriter } from './components/Typewriter';
 import { motion } from 'framer-motion';
@@ -5,11 +8,25 @@ import { motion } from 'framer-motion';
 import arrow from '../../../assets/icons/arrow.png';
 
 export const Home1 = () => {
+	const myRef = useRef();
 
+	
+	const navigate = useNavigate()
 
+	useEffect(() => {
+		const observer = new IntersectionObserver((entries) => {
+			const entry = entries[0]
+			if(entry.isIntersecting){
+				navigate('')
+				
+			}
+		})
+	
+		observer.observe(myRef.current)
+	}, []);
 	return (
 		<>
-			<div className="home1container" >
+			<div className="home1container" ref={myRef}>
 				<div className="home1left"></div>
 				<div className="home1right">
 					<div>

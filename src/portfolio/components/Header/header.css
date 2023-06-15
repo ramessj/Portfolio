@@ -229,12 +229,12 @@ header > a:hover {
 	padding: 0 10px;
 	line-height: 1.6;
 	font-family: proxima, futuraRegular, monospace;
-	color: var(--white-01);
+	color: #c41010;
 	-webkit-user-drag: none;
 }
 
-#menu-links li a.activePage::after,
-#menu-links li a.activePage::before {
+#menu-links li a.active::after,
+#menu-links li a.active::before {
 	background: linear-gradient(
 		90deg,
 		var(--bg-color) 33%,

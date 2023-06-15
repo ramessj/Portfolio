@@ -1,15 +1,20 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import { NavLink, useLocation } from 'react-router-dom';
+// import { NavLink, useLocation } from 'react-router-dom';
 import { useUiStore } from '../../../hooks/useUiStore';
 import { useEffect } from 'react';
+// import { Link } from 'react-router-dom';
+import {  genericHashLink } from 'react-router-hash-link';
 
 import './header.css';
+import { Link, useLocation } from 'react-router-dom';
 
-const selected = 'activePage';
+const selected = 'active';
 
 const notSelected = 'notSelected';
 
 export const Header = () => {
+	const MyHashLink = genericHashLink(Link);
+
 	const toggler = document.getElementById('menuToggler');
 
 	const { onSetLang } = useUiStore();
@@ -31,10 +36,10 @@ export const Header = () => {
 
 	return (
 		<header>
-			<NavLink to={'/'}>
+			<MyHashLink to={'#'}>
 				<span className="rq">{`< `}</span> RQ{' '}
 				<span className="rq">{` />`}</span>
-			</NavLink>
+			</MyHashLink>
 
 			{/* <div style={{ position: 'fixed', top: 5, left: '50%' }}>
 				<button onClick={handleClickLang} data-lang={'ES'}>
@@ -63,43 +68,75 @@ export const Header = () => {
 						<div id="menusub2">
 							<ul id="menu-links">
 								<li>
-									<NavLink
-										to="home"
+									<MyHashLink
+										smooth
+										
+										to="#"
 										data-text="Home"
 										onClick={handleCloseMenu}
 										className={
-											location.pathname == `/`
+											location.hash == ``
 												? selected
 												: notSelected
 										}>
 										Home
-									</NavLink>
+									</MyHashLink>
 								</li>
 								<li>
-									<NavLink
-										to={'/projects'}
+									<MyHashLink
+										smooth
+										className={
+											location.hash == `#about`
+												? selected
+												: notSelected
+										}
+										to="#about"
+										data-text="About"
+										onClick={handleCloseMenu}>
+										About
+									</MyHashLink>
+								</li>
+								<li>
+									<MyHashLink
+										smooth
+										className={
+											location.hash == `#skills`
+												? selected
+												: notSelected
+										}
+										to="#skills"
+										data-text="Skills"
+										onClick={handleCloseMenu}>
+										Skills
+									</MyHashLink>
+								</li>
+								<li>
+									<MyHashLink
+										smooth
+										className={
+											location.hash == `#projects`
+												? selected
+												: notSelected
+										}
+										to="#projects"
 										data-text="Projects"
-										onClick={handleCloseMenu}
-										className={
-											location.pathname == `/projects`
-												? selected
-												: notSelected
-										}>
+										onClick={handleCloseMenu}>
 										Projects
-									</NavLink>
+									</MyHashLink>
 								</li>
 								<li>
-									<NavLink
-										to={'/contact'}
-										data-text="Contact"
-										onClick={handleCloseMenu}
+									<MyHashLink
+										smooth
 										className={
-											location.pathname == `/contact`
+											location.hash == `#contact`
 												? selected
 												: notSelected
-										}>
+										}
+										to="#contact"
+										data-text="Contact"
+										onClick={handleCloseMenu}>
 										Contact
-									</NavLink>
+									</MyHashLink>
 								</li>
 							</ul>
 						</div>

@@ -1,16 +1,18 @@
 import { Parallax } from '../../components/Parallax/Parallax';
 import { Home1 } from './Home1';
-import { Home2 } from './Home2';
-import { Home3 } from './Home3';
-import { Home4 } from './Home4';
+import { AboutPage} from './about/AboutPage';
+import { SkillsPage } from './skills/SkillsPage';
+import { ProjectsPage } from './projects/ProjectsPage';
+import { ContactPage } from './contact/ContactPage';
 
 import './homePage.css';
 
 const homeSections = [
 	<Home1 key={0} id="home" />,
-	<Home2 key={1} id="about" />,
-	<Home3 key={2} id="skills" />,
-	<Home4 key={3} id="extra" />,
+	<AboutPage key={1} id="about" />,
+	<SkillsPage key={2} id="skills" />,
+	<ProjectsPage key={3} id="projects" />,
+	<ContactPage key={4} id="contact" />
 ];
 
 export const HomePage = () => {

@@ -8,11 +8,7 @@ export const WebSkills = () => {
 			{techs.map((tech) => (
 				<div className="techContainer" key={tech.name}>
 					<div className="tech">
-						<img
-							src={tech.bw}
-							alt={tech.name}
-							className="techLogoBW"
-						/>
+						
 						<img
 							src={tech.color}
 							alt={tech.name}

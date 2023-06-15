@@ -1,10 +1,30 @@
-import { Lines } from '../../components/Lines/Lines';
-import { WebSkills } from './components/WebSkills';
+/* eslint-disable react-hooks/exhaustive-deps */
+import { useEffect, useRef } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { Lines } from '../../../components/Lines/Lines';
+import { WebSkills } from '../components/WebSkills';
 
-export const Home3 = () => {
+export const SkillsPage = () => {
+
+	const myRef = useRef()
+	const navigate = useNavigate()
+
+useEffect(() => {
+	const observer = new IntersectionObserver((entries) => {
+		const entry = entries[0]
+		if(entry.isIntersecting){
+			navigate('#skills')
+			
+		}
+	})
+
+	observer.observe(myRef.current)
+}, []);
+
 	return (
 		<>
-			<div className="home3container">
+
+			<div className="home3container" ref={myRef}>
 				<div className="home3left">
 					<div className="skillsHead">
 						<div className="skillsHeadText">

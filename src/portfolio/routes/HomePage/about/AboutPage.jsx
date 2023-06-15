@@ -1,15 +1,37 @@
+/* eslint-disable react-hooks/exhaustive-deps */
+import { useEffect, useRef } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { motion, useDragControls } from 'framer-motion';
-import { Lines } from '../../components/Lines/Lines';
+import { Lines } from '../../../components/Lines/Lines';
 
 import profile from '/profilepicture.png';
 import cv from '/RamiroQuesadaCV.pdf';
 
-export const Home2 = () => {
+export const AboutPage = () => {
+
+	const myRef = useRef()
+
 	const controls = useDragControls();
+
+	const navigate = useNavigate()
+
+
+
+	useEffect(() => {
+		const observer = new IntersectionObserver((entries) => {
+			const entry = entries[0]
+			if(entry.isIntersecting){
+				navigate('#about')
+				
+			}
+		})
+	
+		observer.observe(myRef.current)
+	}, []);
 
 	return (
 		<>
-			<div className="home2container">
+			<div className="home2container" ref={myRef}>
 				<div className="home2left">
 					<div className="aboutHead">
 						<div className="aboutHeadText">
