@@ -1,12 +1,10 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-// import { NavLink, useLocation } from 'react-router-dom';
-import { useUiStore } from '../../../hooks/useUiStore';
 import { useEffect } from 'react';
-// import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import {  genericHashLink } from 'react-router-hash-link';
+import { useUiStore } from '../../../hooks/useUiStore';
 
 import './header.css';
-import { Link, useLocation } from 'react-router-dom';
 
 const selected = 'active';
 

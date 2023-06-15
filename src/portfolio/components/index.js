@@ -1,0 +1,6 @@
+export * from './BouncingBall/BouncingBall'
+export * from './Header/Header'
+export * from './Lines/Lines'
+export * from './Parallax/Parallax'
+export * from './Typewriter/Typewriter'
+export * from './WebSkills/WebSkills'

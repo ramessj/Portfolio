@@ -13,10 +13,9 @@ export const App = () => {
 			{!isMobile && (
 				<AnimatedCursor
 					innerSize={20}
-					outerSize={15}
-					color="255, 255, 165"
-					innerScale={0}
-					trailingSpeed={1}
+					color="250, 255, 100"
+					innerScale={0.5}
+					trailingSpeed={0}
 					clickables={[
 						'a',
 						'input[type="text"]',

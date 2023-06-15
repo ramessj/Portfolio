@@ -1,8 +1,7 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import { useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Lines } from '../../../components/Lines/Lines';
-import { WebSkills } from '../components/WebSkills';
+import { Lines, WebSkills } from '../../components';
 
 export const SkillsPage = () => {
 

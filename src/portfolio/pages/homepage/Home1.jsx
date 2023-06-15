@@ -1,9 +1,8 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import { useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { BouncingBall } from './components/BouncingBall';
-import { Typewriter } from './components/Typewriter';
 import { motion } from 'framer-motion';
+import { BouncingBall, Typewriter } from '../../components';
 
 import arrow from '../../../assets/icons/arrow.png';
 

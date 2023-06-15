@@ -1,4 +1,4 @@
-import techs from "../../../../assets/webSkills";
+import techs from "../../../assets/webSkills";
 import './webskills.css'
 
 export const WebSkills = () => {

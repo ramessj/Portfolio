@@ -1,7 +1,7 @@
 import { Navigate, Route, Routes } from 'react-router-dom';
 
-import { HomePage } from '../portfolio/routes/HomePage/HomePage';
-import { Header } from '../portfolio/components/Header/Header';
+import { HomePage } from '../portfolio/HomePage';
+import { Header } from '../portfolio/components';
 
 export const AppRouter = () => {
 	return (
