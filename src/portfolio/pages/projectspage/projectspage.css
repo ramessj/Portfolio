@@ -1,9 +1,10 @@
 .projectsContainer{
 	background: #FFF;
 	color: black;
-width: 100%;
+	width: 90%;
 height: 100%;
-position: relative;
+min-height: 80%;
+/* position: relative; */
 } 
 
 .projectsContainer h2 {
@@ -17,18 +18,31 @@ position: relative;
 
 .cardsContainer{
 	background: rgba(218, 20, 99, 0.667);
-	position: absolute;
-	width: 100%;
-	height: 92.25%;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
+	position: relative;
+	/* width: 100%; */
+
+	height: 92.5%;
 	
 }
-.cardScenario{
-	height: 50%;
+
+.cardsGallery{
+	/* position: relative; */
+	display: grid;
+	/* width: 100%; */
+	height: 90%;
+	padding: 1rem 1rem ;
+	margin: 0;
+	grid-gap: 2rem;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: repeat(2, 1fr);
+	list-style: none;
+	
 }
 
 .projectCard{
 	background-color: aqua;
+	/* max-width: 18rem; */
+	/* margin: 12px; */
+	left: auto;
+	right: auto;
 }

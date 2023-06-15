@@ -24,9 +24,14 @@ export const ProjectsPage = () => {
 			<div ref={myRef} className="projectsContainer">
 				<h2>Latests Projects</h2>
 				<div className="cardsContainer">
-					<div className="cardScenario">SS</div>
-					<div className="projectCard">1</div>
-					<div className="projectCard">2</div>
+					<ul className='cardsGallery'>
+						<li className="projectCard"></li>
+						<li className="projectCard"></li>
+						<li className="projectCard"></li>
+						<li className="projectCard"></li>
+						<li className="projectCard"></li>
+						<li className="projectCard"></li>
+					</ul>
 					
 				</div>
 			</div>
