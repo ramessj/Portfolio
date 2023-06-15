@@ -12,10 +12,14 @@ export const App = () => {
 
 			{!isMobile && (
 				<AnimatedCursor
-					innerSize={20}
-					color="250, 255, 100"
-					innerScale={0.5}
-					trailingSpeed={0}
+					innerSize={18}
+					outerSize={6}
+					color="255, 195, 120"
+					outerScale={2}
+					innerScale={0.85}
+					innerStyle={{backgroundColor: '#FFaa', boxShadow: '0px 0px 0.2rem white'}}
+					outerStyle={{backgroundColor: '#ffaa55', boxShadow: '0px 0px 0.8rem white'}}
+					trailingSpeed={1}
 					clickables={[
 						'a',
 						'input[type="text"]',
@@ -29,7 +33,8 @@ export const App = () => {
 						'textarea',
 						'button',
 						'.link',
-						'.imgDragContainer'
+						'.imgDragContainer',
+						'.techContainer'
 					]}
 				/>
 			)}

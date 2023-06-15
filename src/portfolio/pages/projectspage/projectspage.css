@@ -1,0 +1,34 @@
+.projectsContainer{
+	background: #FFF;
+	color: black;
+width: 100%;
+height: 100%;
+position: relative;
+} 
+
+.projectsContainer h2 {
+	font-size: 2rem;
+	line-height: 6vh;
+}
+
+
+
+
+
+.cardsContainer{
+	background: rgba(218, 20, 99, 0.667);
+	position: absolute;
+	width: 100%;
+	height: 92.25%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	
+}
+.cardScenario{
+	height: 50%;
+}
+
+.projectCard{
+	background-color: aqua;
+}
