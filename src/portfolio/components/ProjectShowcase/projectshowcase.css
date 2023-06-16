@@ -1,0 +1,67 @@
+.swiperContainer {
+	display: flex;
+	height: 100%;
+	background: #aa22;
+}
+
+.projectShown {
+	display: flex;
+	height: 100%;
+	width: 90%;
+}
+
+.projectImg,
+.projectInfo {
+	background: rgba(65, 124, 192, 0.1);
+	width: 50%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.projectImg {
+	border-radius: 1rem 0 0 1rem;
+	-webkit-border-radius: 1rem 0 0 1rem;
+	-moz-border-radius: 1rem 0 0 1rem;
+	-ms-border-radius: 1rem 0 0 1rem;
+	-o-border-radius: 1rem 0 0 1rem;
+}
+
+.projectInfo {
+	border-radius: 0 1rem 1rem 0;
+	-webkit-border-radius: 0 1rem 1rem 0;
+	-moz-border-radius: 0 1rem 1rem 0;
+	-ms-border-radius: 0 1rem 1rem 0;
+	-o-border-radius: 0 1rem 1rem 0;
+}
+
+.swiper-button-prev {
+	color: hsl(60, 100%, 50%) !important;
+}
+
+@media (max-width: 600px) {
+	.projectShown {
+		flex-direction: column;
+		width: 100%;
+	}
+
+	.projectInfo {
+		width: 100%;
+		border-radius: 0 0 1rem 1rem;
+		-webkit-border-radius: 0 0 1rem 1rem;
+		-moz-border-radius: 0 0 1rem 1rem;
+		-ms-border-radius: 0 0 1rem 1rem;
+		-o-border-radius: 0 0 1rem 1rem;
+	}
+
+	.projectImg {
+		width: 100%;
+		border-radius: 1rem 1rem 0 0;
+		-webkit-border-radius: 1rem 1rem 0 0;
+		-moz-border-radius: 1rem 1rem 0 0;
+		-ms-border-radius: 1rem 1rem 0 0;
+		-o-border-radius: 1rem 1rem 0 0;
+	}
+}

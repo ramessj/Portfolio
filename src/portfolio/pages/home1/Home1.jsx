@@ -42,14 +42,14 @@ export const Home1 = () => {
 						<Typewriter />
 					</div>
 					<div>
-						<h2 className='home1Ramiro'>
+						<div className='home1Ramiro'>
 							<LetterHover letter={'R'} />
 							<LetterHover letter={'A'} />
 							<LetterHover letter={'M'} />
 							<LetterHover letter={'I'} />
 							<LetterHover letter={'R'} />
 							<LetterHover letter={'O'} />
-						</h2>
+						</div>
 					</div>
 				</div>
 

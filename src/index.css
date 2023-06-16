@@ -64,7 +64,7 @@ h2 {
 	font-size: clamp(1.5rem, 14vw, 6rem);
 	margin: 0;
 	font-weight: 700;
-	line-height: 1.2;
+	/* line-height: 1.2; */
 	max-width: fit-content;
 	font-family: var(--font1);
 }
