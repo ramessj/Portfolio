@@ -1,84 +1,3 @@
-/*  HOME 1 */
-
-.home1container {
-	display: flex;
-	justify-content: center;
-	font-family: proxima;
-	width: 100%;
-	gap: 1.5rem;
-}
-
-.home1left {
-	min-width: 20vw;
-}
-
-@media screen and (max-width: 900px) {
-	.home1left {
-		min-width: 2vw;
-	}
-}
-
-.home1right {
-	display: flex;
-	flex-direction: column;
-	width: 80vw;
-	gap: 3rem;
-	user-select: none;
-}
-
-.home1container h2 {
-	max-width: fit-content;
-	background: linear-gradient(200deg, yellow 12%, rgb(255, 105, 4));
-	-webkit-background-clip: text;
-	background-clip: text;
-	-webkit-text-fill-color: transparent;
-}
-
-.helloh2 {
-	height: max-content;
-	max-width: fit-content;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-
-.helloh2text {
-	line-height: 0.8;
-	font-size: clamp(1.5rem, 16vw, 10rem);
-}
-
-.iamdiv {
-	display: flex;
-	align-items: center;
-	min-width: 80%;
-	justify-content: center;
-}
-
-h2.iamh2white {
-	background: white;
-	-webkit-background-clip: text;
-	background-clip: text;
-	-webkit-text-fill-color: transparent;
-	margin-right: auto;
-}
-
-.home1Ramiro {
-	font-size: clamp(1.5rem, 18vw, 10rem);
-}
-
-.home1rrr {
-	display: flex;
-	align-items: flex-end;
-	width: 2vw;
-	position: absolute;
-	right: 20%;
-	bottom: 12%;
-}
-
-.arrowdown {
-	width: 2.5rem;
-	-webkit-user-drag: none;
-}
 
 /*  HOME 2  */
 
@@ -206,6 +125,8 @@ h2.iamh2white {
 
 .aboutLinks {
 	display: flex;
+	gap: 1rem;
+
 }
 
 .aboutLinks a:hover div {
@@ -222,7 +143,7 @@ h2.iamh2white {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin: 0 1rem 0 0;
+	/* margin: 0 1rem 0 0; */
 	border-radius: 0.5rem;
 	-webkit-border-radius: 0.5rem;
 	-moz-border-radius: 0.5rem;
@@ -230,6 +151,10 @@ h2.iamh2white {
 	-o-border-radius: 0.5rem;
 	font-family: var(--font1);
 	font-size: clamp(0.8rem, 1.8vw, 1.5rem);
+}
+
+.aboutLink{
+	max-width: fit-content;
 }
 
 .aboutCurriculum {
@@ -264,57 +189,4 @@ h2.iamh2white {
 	-moz-transform: translateY(4px);
 	-ms-transform: translateY(4px);
 	-o-transform: translateY(4px);
-}
-
-/*  HOME 3  */
-
-.home3container {
-	width: 100%;
-	display: flex;
-	gap: 2rem;
-	height: 100%;
-	justify-content: center;
-}
-
-@media screen and (max-width: 900px) {
-	.home3container {
-		flex-direction: column;
-		/* gap: 1rem; */
-	}
-}
-
-.home3left {
-	display: flex;
-	justify-content: center;
-	flex-direction: column;
-	width: 100%;
-	gap: 1rem;
-}
-
-.skillsBody {
-	/* max-width: 55ch; */
-	font-size: 1.5rem;
-}
-
-@media (max-width: 1200px){
-	.skillsBody{
-		font-size: 1.25rem;
-	}
-}
-
-@media (max-width: 900px){
-	.skillsBody{
-		font-size: 1rem;
-	}
-	
-}
-
-.interests{
-	color: #a5a5a5;
-}
-
-.home3right {
-	width: 100%;
-	display: grid;
-	place-items: center;
 }

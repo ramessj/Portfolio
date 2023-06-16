@@ -3,6 +3,9 @@ import { useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Lines, WebSkills } from '../../components';
 
+import './skillspage.css'
+
+
 export const SkillsPage = () => {
 
 	const myRef = useRef()

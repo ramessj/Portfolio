@@ -7,6 +7,8 @@ import { Lines } from '../../components/Lines/Lines';
 import profile from '/profilepicture.png';
 import cv from '/RamiroQuesadaCV.pdf';
 
+import './aboutpage.css'
+
 export const AboutPage = () => {
 
 	const myRef = useRef()
@@ -45,12 +47,14 @@ export const AboutPage = () => {
 						</p>
 						<div className="aboutLinks">
 							<a
+							className='aboutLink'
 								href="https://github.com/ramessj"
 								target="_blank"
 								rel="noreferrer">
 								<div>GitHub</div>
 							</a>
 							<a
+							className='aboutLink'
 								href="https://www.linkedin.com/in/ramiro-quesada-p%C3%A9rez-5796a3126"
 								target="_blank"
 								rel="noreferrer">
@@ -58,6 +62,7 @@ export const AboutPage = () => {
 							</a>
 						</div>
 						<a
+						className='aboutLink'
 							href={cv}
 							download="Ramiro Quesada CV"
 							target="_blank"

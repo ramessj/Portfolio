@@ -2,9 +2,11 @@
 import { useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { BouncingBall, Typewriter } from '../../components';
+import { BouncingBall, LetterHover, Typewriter } from '../../components';
 
 import arrow from '../../../assets/icons/arrow.png';
+
+import './home1.css'
 
 export const Home1 = () => {
 	const myRef = useRef();
@@ -40,7 +42,14 @@ export const Home1 = () => {
 						<Typewriter />
 					</div>
 					<div>
-						<h2 className='home1Ramiro'>RAMIRO</h2>
+						<h2 className='home1Ramiro'>
+							<LetterHover letter={'R'} />
+							<LetterHover letter={'A'} />
+							<LetterHover letter={'M'} />
+							<LetterHover letter={'I'} />
+							<LetterHover letter={'R'} />
+							<LetterHover letter={'O'} />
+						</h2>
 					</div>
 				</div>
 

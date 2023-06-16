@@ -1,0 +1,87 @@
+/*  HOME 1 */
+
+.home1container {
+	display: flex;
+	justify-content: center;
+	font-family: proxima;
+	width: 100%;
+	gap: 1.5rem;
+}
+
+.home1left {
+	min-width: 20vw;
+}
+
+@media screen and (max-width: 900px) {
+	.home1left {
+		min-width: 2vw;
+	}
+}
+
+.home1right {
+	display: flex;
+	flex-direction: column;
+	width: 80vw;
+	gap: 3rem;
+	user-select: none;
+}
+
+.home1container h2 {
+	max-width: fit-content;
+	background: linear-gradient(200deg, yellow 12%, rgb(255, 105, 4));
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.helloh2 {
+	height: max-content;
+	max-width: fit-content;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.helloh2text {
+	line-height: 0.8;
+	font-size: clamp(1.5rem, 16vw, 10rem);
+}
+
+.iamdiv {
+	display: flex;
+	align-items: center;
+	min-width: 80%;
+	justify-content: center;
+}
+
+h2.iamh2white {
+	background: white;
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+	margin-right: auto;
+	margin-left: 0.25rem;
+}
+
+.home1Ramiro{
+	display: flex;
+}
+
+.home1Ramiro > h2 {
+	font-size: clamp(1.5rem, 18vw, 10rem);
+	
+}
+
+.home1rrr {
+	display: flex;
+	align-items: flex-end;
+	width: 2vw;
+	position: absolute;
+	right: 20%;
+	bottom: 12%;
+}
+
+.arrowdown {
+	width: 2.5rem;
+	-webkit-user-drag: none;
+}

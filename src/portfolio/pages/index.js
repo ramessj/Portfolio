@@ -1,5 +1,5 @@
 export * from './about/AboutPage'
 export * from './contact/ContactPage'
-export * from './homepage/Home1'
+export * from './home1/Home1'
 export * from './projectspage/ProjectsPage'
 export * from './skills/SkillsPage'

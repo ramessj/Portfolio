@@ -2,7 +2,7 @@
 import { useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 
-import './projectspage.css'
+import './projectspage.css';
 
 export const ProjectsPage = () => {
 	const myRef = useRef();
@@ -22,9 +22,9 @@ export const ProjectsPage = () => {
 	return (
 		<>
 			<div ref={myRef} className="projectsContainer">
-				<h2>Latests Projects</h2>
+				<h2>My Latests Projects</h2>
 				<div className="cardsContainer">
-					<ul className='cardsGallery'>
+					<ul className="cardsGallery">
 						<li className="projectCard"></li>
 						<li className="projectCard"></li>
 						<li className="projectCard"></li>
@@ -32,7 +32,6 @@ export const ProjectsPage = () => {
 						<li className="projectCard"></li>
 						<li className="projectCard"></li>
 					</ul>
-					
 				</div>
 			</div>
 		</>
