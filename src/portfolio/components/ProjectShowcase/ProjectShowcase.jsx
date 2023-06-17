@@ -1,7 +1,7 @@
+import { useEffect, useMemo, useRef } from 'react';
 import { register } from 'swiper/element/bundle';
 import { isMobile } from 'react-device-detect';
 import './projectshowcase.css';
-import { useEffect, useRef } from 'react';
 
 const projects = [
 	{
@@ -92,6 +92,23 @@ register();
 export const ProjectShowcase = () => {
 	const swiperRef = useRef(null);
 
+	const shuffledArray = useMemo(() => {
+		function shuffleArray(array) {
+			// Recorre el array de atrás hacia adelante
+			for (let i = array.length - 1; i > 0; i--) {
+				// Genera un índice aleatorio entre 0 y i
+				const j = Math.floor(Math.random() * (i + 1));
+
+				// Intercambia el elemento actual con el elemento aleatorio
+				[array[i], array[j]] = [array[j], array[i]];
+			}
+
+			return array;
+		}
+
+		return shuffleArray(projects);
+	}, [projects]);
+
 	useEffect(() => {
 		const swiperContainer = swiperRef.current;
 
@@ -104,10 +121,14 @@ export const ProjectShowcase = () => {
           .swiper-button-next,
           .swiper-button-prev {
             color: yellow;
-						cursor: none;
-						
-
+						transition: transform 0.2s linear;
           }
+					.swiper-button-next:hover,
+          .swiper-button-prev:hover {
+						transform: scale(1.15);
+					}
+
+
           .swiper-pagination-bullet{
             width: 20px;
             height: 20px;
@@ -119,7 +140,7 @@ export const ProjectShowcase = () => {
 						pointer-events: none;
 					}
 					.swiper-initialized{
-						height: 100%;
+						height: 99%;
 					}
 
 					swiper-slide{
@@ -144,18 +165,17 @@ export const ProjectShowcase = () => {
 	}, []);
 
 	const onToggleImg = (e) => {
-		if (e.target.style.height == '100%') {
+		if (e.target.style.height >= '88%') {
 			e.target.style = 'height: 33%';
 		} else {
-			e.target.style = 'height: 100%';
-			
+			e.target.style = 'height: 88%';
 		}
 	};
 
 	return (
 		<>
 			<swiper-container ref={swiperRef} init="false">
-				{projects.map(({ img, title, description, links }) => (
+				{shuffledArray.map(({ img, title, description, links }) => (
 					<swiper-slide
 						key={title}
 						style={{ display: 'flex', justifyContent: 'center' }}>

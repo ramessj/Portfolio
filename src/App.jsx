@@ -1,8 +1,7 @@
 import { HashRouter } from 'react-router-dom';
-
-import { AppRouter } from './router/AppRouter';
-import AnimatedCursor from 'react-animated-cursor';
 import { isMobile } from 'react-device-detect';
+import  AnimatedCursor from 'react-animated-cursor'
+import { AppRouter } from './router/AppRouter';
 import './index.css';
 
 export const App = () => {

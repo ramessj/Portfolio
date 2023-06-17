@@ -2,7 +2,7 @@
 import { useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { BouncingBall, LetterHover, Typewriter } from '../../components';
+import { LetterHover, Typewriter } from '../../components';
 
 import arrow from '../../../assets/icons/arrow.png';
 
@@ -32,8 +32,8 @@ export const Home1 = () => {
 				<div className="home1right">
 					<div>
 						<div className="helloh2">
-							<h2 className='helloh2text'>Hello</h2>
-							<BouncingBall />
+							<h2 className='helloh2text'>Hello<span className='hellocoma'>,</span></h2>
+							{/* <BouncingBall /> */}
 						</div>
 					</div>
 

@@ -47,6 +47,14 @@
 	font-size: clamp(1.5rem, 16vw, 10rem);
 }
 
+.hellocoma{
+	background: white;
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-size:  clamp(1.2rem, 12vw, 6rem);
+}
+
 .iamdiv {
 	display: flex;
 	align-items: center;
