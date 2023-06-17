@@ -166,7 +166,7 @@
 @media screen and (max-width: 900px) {
 	.home2container {
 		flex-direction: column-reverse;
-		height: 95vh;
+		height: 75vh;
 		gap: 3rem;
 	}
 
