@@ -20,6 +20,7 @@ export const App = () => {
 					innerStyle={{backgroundColor: '#FFaa', boxShadow: '0px 0px 0.2rem white'}}
 					outerStyle={{backgroundColor: '#ffaa55', boxShadow: '0px 0px 0.8rem white'}}
 					trailingSpeed={1}
+					showSystemCursor={false}
 					clickables={[
 						'a',
 						'input[type="text"]',
@@ -34,7 +35,9 @@ export const App = () => {
 						'button',
 						'.link',
 						'.imgDragContainer',
-						'.techContainer'
+						'.techContainer',
+						'.swiper-button-next',
+						'.swiper-button-prev'
 					]}
 				/>
 			)}

@@ -6,13 +6,21 @@
 
 .projectShown {
 	display: flex;
-	height: 100%;
+	height: 90%;
 	width: 90%;
+	border-radius: 1rem;
+	-webkit-border-radius: 1rem;
+	-moz-border-radius: 1rem;
+	-ms-border-radius: 1rem;
+	-o-border-radius: 1rem;
+	padding-right: 1rem;
+
 }
 
 .projectImg,
 .projectInfo {
-	background: rgba(65, 124, 192, 0.1);
+	background: rgba(65, 124, 192, 0.25);
+
 	width: 50%;
 	height: 100%;
 	display: flex;
@@ -27,9 +35,16 @@
 	-moz-border-radius: 1rem 0 0 1rem;
 	-ms-border-radius: 1rem 0 0 1rem;
 	-o-border-radius: 1rem 0 0 1rem;
+	transition: all 0.5s ease-in;
+	-webkit-transition: all 0.5s ease-in;
+	-moz-transition: all 0.5s ease-in;
+	-ms-transition: all 0.5s ease-in;
+	-o-transition: all 0.5s ease-in;
+	pointer-events: none;
 }
 
 .projectInfo {
+	background: #f3e7433b;
 	border-radius: 0 1rem 1rem 0;
 	-webkit-border-radius: 0 1rem 1rem 0;
 	-moz-border-radius: 0 1rem 1rem 0;
@@ -37,14 +52,32 @@
 	-o-border-radius: 0 1rem 1rem 0;
 }
 
-.swiper-button-prev {
-	color: hsl(60, 100%, 50%) !important;
+.projectInfo > div {
+	padding: 0.5rem;
 }
 
-@media (max-width: 600px) {
+
+.imgContainer {
+	width: 95%;
+	pointer-events: none;
+
+}
+
+.projectImgItem {
+	width:100%;
+	border-radius: 0.5rem;
+	-webkit-border-radius: 0.5rem;
+	-moz-border-radius: 0.5rem;
+	-ms-border-radius: 0.5rem;
+	-o-border-radius: 0.5rem;
+	pointer-events: none;
+}
+
+@media (max-width: 900px) {
 	.projectShown {
 		flex-direction: column;
 		width: 100%;
+		padding-right: 1rem;
 	}
 
 	.projectInfo {
@@ -54,14 +87,28 @@
 		-moz-border-radius: 0 0 1rem 1rem;
 		-ms-border-radius: 0 0 1rem 1rem;
 		-o-border-radius: 0 0 1rem 1rem;
+
 	}
 
 	.projectImg {
+		height: 33%;
+		overflow: hidden;
 		width: 100%;
+		transition: all 0.5s ease-in;
 		border-radius: 1rem 1rem 0 0;
 		-webkit-border-radius: 1rem 1rem 0 0;
 		-moz-border-radius: 1rem 1rem 0 0;
 		-ms-border-radius: 1rem 1rem 0 0;
 		-o-border-radius: 1rem 1rem 0 0;
+		-webkit-transition: all 0.5s ease-in;
+		-moz-transition: all 0.5s ease-in;
+		-ms-transition: all 0.5s ease-in;
+		-o-transition: all 0.5s ease-in;
+		pointer-events: all;
+}
+
+	.imgContainer{
+		width: 100%;
 	}
+	
 }
