@@ -8,7 +8,7 @@
 	gap: 1.5rem;
 }
 
-.home1left {
+/* .home1left {
 	min-width: 20vw;
 }
 
@@ -16,7 +16,7 @@
 	.home1left {
 		min-width: 2vw;
 	}
-}
+} */
 
 .home1right {
 	display: flex;
@@ -24,6 +24,7 @@
 	width: 80vw;
 	gap: 3rem;
 	user-select: none;
+	padding-left: 15vw;
 }
 
 .home1container h2 {
@@ -80,14 +81,25 @@ h2.iamh2white {
 
 .home1rrr {
 	display: flex;
-	align-items: flex-end;
-	width: 2vw;
+	justify-content: center;
+	width: 100%;
 	position: absolute;
-	right: 20%;
-	bottom: 12%;
+	right: auto;
+	left: auto;
+	bottom: -25%;
 }
 
 .arrowdown {
-	width: 2.5rem;
+	width: 3rem;
 	-webkit-user-drag: none;
+}
+
+@media screen and (max-width: 900px) {
+	.home1right {
+		padding-left: 5vw;
+	}
+
+	.home1rrr{
+		bottom: -50%;
+	}
 }

@@ -22,8 +22,11 @@ export const ProjectsPage = () => {
 	return (
 		<>
 			<div ref={myRef} className="projectsContainer">
+				<div className='projectTitle'>  
 				<h2>My Latests Projects</h2>
 				<Lines />
+
+				</div>
 				<div className="cardsContainer">
 					<ProjectShowcase />
 				</div>

@@ -48,33 +48,35 @@ export const AboutPage = () => {
 							<br />
 							<br /> Let&apos;s connect and bring your ideas to
 							life!
-						</p>
-						<div className="aboutLinks">
+						</p><div className="aboutButtons">
+							
+							<div className="aboutLinks">
+								<a
+									className="aboutLink"
+									href="https://github.com/ramessj"
+									target="_blank"
+									rel="noreferrer">
+									<div>GitHub</div>
+								</a>
+								<a
+									className="aboutLink"
+									href="https://www.linkedin.com/in/ramiro-quesada-p%C3%A9rez-5796a3126"
+									target="_blank"
+									rel="noreferrer">
+									<div>LinkedIn</div>
+								</a>
+							</div>
 							<a
 								className="aboutLink"
-								href="https://github.com/ramessj"
+								href={cv}
+								download="Ramiro Quesada CV"
 								target="_blank"
 								rel="noreferrer">
-								<div>GitHub</div>
-							</a>
-							<a
-								className="aboutLink"
-								href="https://www.linkedin.com/in/ramiro-quesada-p%C3%A9rez-5796a3126"
-								target="_blank"
-								rel="noreferrer">
-								<div>LinkedIn</div>
+								<button className="aboutCurriculum">
+									Download CV
+								</button>
 							</a>
 						</div>
-						<a
-							className="aboutLink"
-							href={cv}
-							download="Ramiro Quesada CV"
-							target="_blank"
-							rel="noreferrer">
-							<button className="aboutCurriculum">
-								Download CV
-							</button>
-						</a>
 					</div>
 				</div>
 				<div className="home2right">

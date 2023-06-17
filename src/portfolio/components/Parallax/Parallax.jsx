@@ -8,8 +8,8 @@ export const Parallax = ({ sections }) => {
 		offset: ['0.1', 'end end'],
 	});
 	const scaleX = useSpring(scrollYProgress, {
-		stiffness: 90,
-		damping: 15,
+		stiffness: 100,
+		damping: 50,
 	});
 
 	const backgroundColor = useTransform(
@@ -19,15 +19,12 @@ export const Parallax = ({ sections }) => {
 	);
 
 	const variants = {
-		visible: { opacity: 1, scale: 1 },
+		visible: { opacity: 1, scale: 0.9},
 		hidden: { opacity: 0, scale: 0 },
 	};
 
 	return (
-		<motion.div
-			initial={{ opacity: 0 }}
-			whileInView={{ opacity: 1 }}
-			transition={{ type: 'spring', duration: 0.5 }}>
+		<>
 			{sections.map((section) => (
 				<section
 					id={section.props.id}
@@ -48,7 +45,6 @@ export const Parallax = ({ sections }) => {
 					style={{ scaleX, backgroundColor }}
 				/>
 			)}
-			<div className="bgLighterEffect"></div>
-		</motion.div>
+		</>
 	);
 };

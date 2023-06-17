@@ -4,12 +4,14 @@ input[type='checkbox'] {
 	padding: 0;
 }
 
+
+
 header {
 	position: fixed;
 	top: 0;
 	left: 0;
 	width: 100%;
-	padding: 38px 40px 0;
+	padding: 0 15% ;
 	color: var(--white-01);
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -32,15 +34,22 @@ header > a {
 	-moz-transition: transform 0.1s ease-out;
 	-ms-transition: transform 0.1s ease-out;
 	-o-transition: transform 0.1s ease-out;
-	padding-top: 0.5rem;
+	padding-top: 1.5rem;
 	display: flex;
 	align-items: center;
 	gap: 0.5rem;
 }
 
 @media screen and (max-width: 500px) {
+
+	header{
+		padding: 0;
+	}
+
 	header > a {
 		font-size: 1.5rem;
+		padding-top: 0;
+
 	}
 }
 
@@ -63,21 +72,23 @@ header > a:hover {
 }
 
 .menu-wrap {
-	position: fixed;
-	top: 0;
-	right: 40px;
+	position: absolute;
+	top: 1.5rem;
+	right: 15%;
 	z-index: 1;
 }
 
+
 .menu-wrap .toggler {
 	position: absolute;
-	top: 32px;
-	right: 10px;
+	top: 0;
+	right: 30%;
 	z-index: 2;
 	cursor: pointer;
-	width: 60px;
-	height: 50px;
+	width: 4rem;
+	height: 3rem;
 	opacity: 0;
+
 }
 
 .menu-wrap .hamburger {
@@ -85,12 +96,14 @@ header > a:hover {
 	top: 0;
 	right: 0;
 	z-index: 1;
-	width: 50px;
-	height: 60px;
+	width: 2.5rem;
+	/* height: 10px; */
 	padding: 1rem;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	box-sizing: content-box;
+
 }
 
 .menu-wrap .hamburger > #hamburger-lines {
@@ -103,6 +116,10 @@ header > a:hover {
 	justify-content: center;
 	transition: all 0.4s ease;
 	top: 10px;
+	-webkit-transition: all 0.4s ease;
+	-moz-transition: all 0.4s ease;
+	-ms-transition: all 0.4s ease;
+	-o-transition: all 0.4s ease;
 }
 
 .menu-wrap .hamburger > #hamburger-lines::after,
@@ -324,18 +341,24 @@ header > a:hover {
 
 @media screen and (max-width: 500px) {
 	header {
-		padding: 28px 40px 0;
+		padding: 1rem 1rem 0;
+	}
+
+
+	.menu-wrap{
+		top: 0;
+		right: 0;
+		bottom: 0;
 	}
 
 	.menu-wrap .toggler {
-		top: 22px;
-		right: -5px;
+		/* top: 12px; */
+		/* top: 0; */
+		/* right: 0; */
+		/* right: -5px; */
 	}
 
-	.menu-wrap .hamburger {
-		width: 45px;
-		padding: 4px 0;
-	}
+
 }
 
 @media screen and (max-width: 465px) {

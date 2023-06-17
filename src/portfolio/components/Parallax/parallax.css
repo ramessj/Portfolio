@@ -12,21 +12,20 @@
 }
 
 section {
-	height: 100dvh;
+	height: 100vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	scroll-snap-align: center;
 }
 
-section > div {
-	width: 90dvw;
-	height: calc(100dvh - 12rem);
-	margin: 10px;
+/* section > div {
+	
+	width: 90vw;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-}
+} */
 
 .progress {
 	position: fixed;

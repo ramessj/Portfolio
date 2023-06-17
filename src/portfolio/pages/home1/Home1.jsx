@@ -26,7 +26,7 @@ export const Home1 = () => {
 	return (
 		<>
 			<div className="home1container" ref={myRef}>
-				<div className="home1left"></div>
+				{/* <div className="home1left"></div> */}
 				<div className="home1right">
 					<div>
 						<div className="helloh2">
@@ -52,11 +52,13 @@ export const Home1 = () => {
 					</div>
 				</div>
 
-				<motion.div
+				
+			</div>
+			<motion.div
 					initial={{ opacity: 0 }}
 					whileInView={{
 						opacity: 1,
-						transition: { delay: 3, duration: 5 },
+						transition: { delay: 2, duration: 5 },
 					}}
 					className="home1rrr">
 					<motion.img
@@ -70,7 +72,6 @@ export const Home1 = () => {
 						alt="scroll down"
 					/>
 				</motion.div>
-			</div>
 		</>
 	);
 };

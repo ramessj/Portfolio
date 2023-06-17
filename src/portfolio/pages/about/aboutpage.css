@@ -2,17 +2,19 @@
 
 .home2container {
 	display: flex;
-	width: 88%;
+	width: 100%;
 	height: 100%;
 	align-items: center;
 	gap: 2rem;
 }
 
 .home2left {
-	width: 60vw;
+	/* width: 100%; */
+
 	height: 75%;
 	display: flex;
 	flex-direction: column;
+	/* align-items: center; */
 }
 
 .home2right {
@@ -26,7 +28,7 @@
 .home2right div {
 	background-color: #ff3e54cc;
 	width: 100%;
-	max-width: 30rem;
+	max-width: 25rem;
 	aspect-ratio: 1/1;
 	border-radius: 50%;
 	-webkit-border-radius: 50%;
@@ -35,6 +37,7 @@
 	-o-border-radius: 50%;
 	overflow: hidden;
 	box-shadow: #8c8eeb81 1px 1px 3rem;
+
 }
 
 .profileImg {
@@ -48,27 +51,7 @@
 	pointer-events: none;
 }
 
-@media screen and (max-width: 900px) {
-	.home2container {
-		flex-direction: column-reverse;
-		height: 100%;
-		gap: 3rem;
-	}
 
-	.home2left {
-		width: 100%;
-		height: 70%;
-	}
-
-	.home2right {
-		height: 30%;
-		width: 50%;
-	}
-
-	.home2right div {
-		max-width: 16rem;
-	}
-}
 
 .aboutHead {
 	display: flex;
@@ -87,40 +70,28 @@
 	height: 100%;
 	padding: 0.5rem;
 	justify-content: space-around;
+	width: 100ch;
+
 }
 
 .aboutBody p {
 	font-size: 1.2rem;
-	max-width: 75ch;
+	/* max-width: 75ch; */
 }
 
-@media (max-width: 1200px) {
-	.aboutBody p {
-		font-size: 1rem;
-	}
+.aboutButtons{
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	align-items: center;
 }
 
-@media (max-width: 900px) {
-	.aboutBody p {
-		font-size: 0.9rem;
-	}
-	.aboutHeadText h2 {
-		font-size: 2.5rem;
-	}
-}
-
-@media (max-width: 400px) {
-	.aboutBody p {
-		font-size: 0.7rem;
-	}
-	.aboutHeadText h2 {
-		font-size: 2.5rem;
-	}
-}
 
 .aboutLinks {
 	display: flex;
 	gap: 1rem;
+	width: fit-content;
+
 }
 
 .aboutLinks a:hover div {
@@ -182,4 +153,65 @@
 	-moz-transform: translateY(4px);
 	-ms-transform: translateY(4px);
 	-o-transform: translateY(4px);
+}
+
+@media (max-width: 1200px) {
+	.aboutBody p {
+		font-size: 1rem;
+	}
+}
+
+
+
+@media screen and (max-width: 900px) {
+	.home2container {
+		flex-direction: column-reverse;
+		height: 95vh;
+		gap: 3rem;
+	}
+
+	.home2left {
+		width: 100%;
+		height: 70%;
+	}
+
+	.home2right {
+		height: 30%;
+		width: 50%;
+	}
+
+	.home2right div {
+		max-width: 16rem;
+	}
+
+	.aboutBody{
+		align-items: center;
+		width: 100%;
+	}
+	
+	.aboutBody p {
+		font-size: 1rem;
+		text-align: center;
+
+	}
+	.aboutHeadText h2 {
+		font-size: 2.5rem;
+	}
+
+	.aboutButtons > div > * > *{
+		font-size: 1.5rem;
+	}
+
+	.aboutButtons > * >  *{
+		font-size: 1.5rem;
+	}
+
+}
+@media (max-width: 400px) {
+	.aboutBody p {
+		font-size: 0.8rem;
+	}
+	.aboutHeadText h2 {
+		font-size: 2.5rem;
+	}
 }
