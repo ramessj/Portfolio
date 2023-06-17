@@ -1,26 +1,26 @@
 import html5 from './html5.png';
-import css from './css3.png'
-import javascript from './javascript.png'
-import reactC from './react.png'
-import reduxC from './redux.png'
-import npm from './npm.png'
-import nodejs from './node-js.png'
-import mongodb from './mongodb.png'
-import git from './git.png'
-import express from './express.png'
-import firebase from './firebase.png'
-import framer from './framer.png'
+import css from './css3.png';
+import javascript from './javascript.png';
+import reactC from './react.png';
+import reduxC from './redux.png';
+import npm from './npm.png';
+import nodejs from './node-js.png';
+import mongodb from './mongodb.png';
+import git from './git.png';
+import express from './express.png';
+import firebase from './firebase.png';
+import framer from './framer.png';
 
-
-const techs = [	{
-	name: 'HTML',
-	color: html5,
-},
+const techs = [
+	{
+		name: 'HTML',
+		color: html5,
+	},
 	{
 		name: 'CSS',
 		color: css,
 	},
-	
+
 	{
 		name: 'JavaScript',
 		color: javascript,
@@ -33,8 +33,7 @@ const techs = [	{
 		name: 'Redux',
 		color: reduxC,
 	},
-	
-	
+
 	{
 		name: 'NodeJS',
 		color: nodejs,
@@ -49,11 +48,11 @@ const techs = [	{
 	},
 	{
 		name: 'GIT',
-		color:git,
+		color: git,
 	},
 	{
 		name: 'NPM',
-		color:npm,
+		color: npm,
 	},
 	{
 		name: 'Firebase',
@@ -63,7 +62,6 @@ const techs = [	{
 		name: 'Framer Motion',
 		color: framer,
 	},
-
 ];
 
 export default techs;

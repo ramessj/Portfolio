@@ -94,12 +94,8 @@ export const ProjectShowcase = () => {
 
 	const shuffledArray = useMemo(() => {
 		function shuffleArray(array) {
-			// Recorre el array de atrás hacia adelante
 			for (let i = array.length - 1; i > 0; i--) {
-				// Genera un índice aleatorio entre 0 y i
 				const j = Math.floor(Math.random() * (i + 1));
-
-				// Intercambia el elemento actual con el elemento aleatorio
 				[array[i], array[j]] = [array[j], array[i]];
 			}
 
@@ -107,7 +103,7 @@ export const ProjectShowcase = () => {
 		}
 
 		return shuffleArray(projects);
-	}, [projects]);
+	}, []);
 
 	useEffect(() => {
 		const swiperContainer = swiperRef.current;
@@ -122,23 +118,26 @@ export const ProjectShowcase = () => {
           .swiper-button-prev {
             color: yellow;
 						transition: transform 0.2s linear;
+						cursor: none;
           }
+
 					.swiper-button-next:hover,
           .swiper-button-prev:hover {
 						transform: scale(1.15);
 					}
-
 
           .swiper-pagination-bullet{
             width: 20px;
             height: 20px;
             background-color: yellow;
           }
+
 					.swiper-button-next::after,
           .swiper-button-prev::after {
 						font-weight: 800;
 						pointer-events: none;
 					}
+
 					.swiper-initialized{
 						height: 99%;
 					}
@@ -146,15 +145,12 @@ export const ProjectShowcase = () => {
 					swiper-slide{
 						opacity: 1;
 						transition: opacity 0.5s linear;
-
 					}
 
 					swiper-slide:not(.swiper-slide-active){
 						opacity: 0;
 						transition: opacity 0.5s linear;
-
 					}
-
       `,
 			],
 		};

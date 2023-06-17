@@ -7,28 +7,24 @@ import { Lines } from '../../components/Lines/Lines';
 import profile from '/profilepicture.png';
 import cv from '/RamiroQuesadaCV.pdf';
 
-import './aboutpage.css'
+import './aboutpage.css';
 
 export const AboutPage = () => {
-
-	const myRef = useRef()
+	const myRef = useRef();
 
 	const controls = useDragControls();
 
-	const navigate = useNavigate()
-
-
+	const navigate = useNavigate();
 
 	useEffect(() => {
 		const observer = new IntersectionObserver((entries) => {
-			const entry = entries[0]
-			if(entry.isIntersecting){
-				navigate('#about')
-				
+			const entry = entries[0];
+			if (entry.isIntersecting) {
+				navigate('#about');
 			}
-		})
-	
-		observer.observe(myRef.current)
+		});
+
+		observer.observe(myRef.current);
 	}, []);
 
 	return (
@@ -43,18 +39,26 @@ export const AboutPage = () => {
 					</div>
 					<div className="aboutBody">
 						<p>
-							I&apos;m Ramiro Quesada, a passionate Front-End Developer based in Uruguay with 1 year of experience. Currently expanding my knowledge to become a Full-Stack Developer through project-based learning. I enjoy exploring all aspects of Computer Science and constantly learning new technologies.<br/><br/> Let&apos;s connect and bring your ideas to life!
+							I&apos;m Ramiro Quesada, a passionate Front-End
+							Developer based in Uruguay with 1 year of
+							experience. Currently expanding my knowledge to
+							become a Full-Stack Developer through project-based
+							learning. I enjoy exploring all aspects of Computer
+							Science and constantly learning new technologies.
+							<br />
+							<br /> Let&apos;s connect and bring your ideas to
+							life!
 						</p>
 						<div className="aboutLinks">
 							<a
-							className='aboutLink'
+								className="aboutLink"
 								href="https://github.com/ramessj"
 								target="_blank"
 								rel="noreferrer">
 								<div>GitHub</div>
 							</a>
 							<a
-							className='aboutLink'
+								className="aboutLink"
 								href="https://www.linkedin.com/in/ramiro-quesada-p%C3%A9rez-5796a3126"
 								target="_blank"
 								rel="noreferrer">
@@ -62,7 +66,7 @@ export const AboutPage = () => {
 							</a>
 						</div>
 						<a
-						className='aboutLink'
+							className="aboutLink"
 							href={cv}
 							download="Ramiro Quesada CV"
 							target="_blank"

@@ -1,4 +1,3 @@
-
 /*  HOME 2  */
 
 .home2container {
@@ -69,7 +68,6 @@
 	.home2right div {
 		max-width: 16rem;
 	}
-
 }
 
 .aboutHead {
@@ -96,37 +94,33 @@
 	max-width: 75ch;
 }
 
-
-@media (max-width: 1200px){
+@media (max-width: 1200px) {
 	.aboutBody p {
 		font-size: 1rem;
 	}
 }
 
-@media (max-width: 900px){
+@media (max-width: 900px) {
 	.aboutBody p {
 		font-size: 0.9rem;
 	}
-	.aboutHeadText h2{
+	.aboutHeadText h2 {
 		font-size: 2.5rem;
 	}
 }
 
-@media (max-width: 400px){
+@media (max-width: 400px) {
 	.aboutBody p {
 		font-size: 0.7rem;
 	}
-	.aboutHeadText h2{
+	.aboutHeadText h2 {
 		font-size: 2.5rem;
 	}
 }
-
-
 
 .aboutLinks {
 	display: flex;
 	gap: 1rem;
-
 }
 
 .aboutLinks a:hover div {
@@ -143,7 +137,6 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	/* margin: 0 1rem 0 0; */
 	border-radius: 0.5rem;
 	-webkit-border-radius: 0.5rem;
 	-moz-border-radius: 0.5rem;
@@ -153,7 +146,7 @@
 	font-size: clamp(0.8rem, 1.8vw, 1.5rem);
 }
 
-.aboutLink{
+.aboutLink {
 	max-width: fit-content;
 }
 

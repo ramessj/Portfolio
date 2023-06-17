@@ -1,11 +1,10 @@
 import { createSlice } from '@reduxjs/toolkit';
 
-
 export const uiSlice = createSlice({
 	name: 'ui',
 	initialState: {
 		lang: null,
-		texts: null
+		texts: null,
 	},
 
 	reducers: {
@@ -14,12 +13,9 @@ export const uiSlice = createSlice({
 				return;
 			} else {
 				state.lang = payload;
-				console.log(state.lang)
-				
+				console.log(state.lang);
 			}
 		},
-
-		
 	},
 });
 

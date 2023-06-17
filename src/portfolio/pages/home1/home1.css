@@ -47,12 +47,12 @@
 	font-size: clamp(1.5rem, 16vw, 10rem);
 }
 
-.hellocoma{
+.hellocoma {
 	background: white;
 	-webkit-background-clip: text;
 	background-clip: text;
 	-webkit-text-fill-color: transparent;
-	font-size:  clamp(1.2rem, 12vw, 6rem);
+	font-size: clamp(1rem, 10vw, 5rem);
 }
 
 .iamdiv {
@@ -71,13 +71,12 @@ h2.iamh2white {
 	margin-left: 0.25rem;
 }
 
-.home1Ramiro{
+.home1Ramiro {
 	display: flex;
 }
 
 .home1Ramiro > h2 {
 	font-size: clamp(1.5rem, 18vw, 10rem);
-	
 }
 
 .home1rrr {

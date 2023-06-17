@@ -1,26 +1,18 @@
-import { useDispatch, useSelector } from "react-redux"
-import { changeLang } from "../redux/uiSlice";
-
+import { useDispatch, useSelector } from 'react-redux';
+import { changeLang } from '../redux/uiSlice';
 
 export const useUiStore = () => {
 	const dispatch = useDispatch();
-	
-	const lang = useSelector(state => state.ui);
 
-	
+	const lang = useSelector((state) => state.ui);
+
 	const onSetLang = (newLang = 'EN') => {
+		dispatch(changeLang(newLang));
+	};
 
-		
-
-	
-		dispatch(changeLang(newLang))
-
-
-	}
-
-	return{
+	return {
 		lang,
 
-		onSetLang
-	}
-}
+		onSetLang,
+	};
+};

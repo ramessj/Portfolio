@@ -7,7 +7,6 @@ import {
 	ContactPage,
 } from './pages';
 
-
 const homeSections = [
 	<Home1 key={0} id="home" />,
 	<AboutPage key={1} id="about" />,

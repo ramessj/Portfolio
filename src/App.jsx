@@ -1,7 +1,7 @@
 import { HashRouter } from 'react-router-dom';
 import { isMobile } from 'react-device-detect';
-import  AnimatedCursor from 'react-animated-cursor'
 import { AppRouter } from './router/AppRouter';
+import AnimatedCursor from 'react-animated-cursor';
 import './index.css';
 
 export const App = () => {
@@ -16,8 +16,14 @@ export const App = () => {
 					color="255, 195, 120"
 					outerScale={2}
 					innerScale={0.85}
-					innerStyle={{backgroundColor: '#FFaa', boxShadow: '0px 0px 0.2rem white'}}
-					outerStyle={{backgroundColor: '#ffaa55', boxShadow: '0px 0px 0.8rem white'}}
+					innerStyle={{
+						backgroundColor: '#FFaa',
+						boxShadow: '0px 0px 0.2rem white',
+					}}
+					outerStyle={{
+						backgroundColor: '#ffaa55',
+						boxShadow: '0px 0px 0.8rem white',
+					}}
 					trailingSpeed={1}
 					showSystemCursor={false}
 					clickables={[
@@ -36,7 +42,7 @@ export const App = () => {
 						'.imgDragContainer',
 						'.techContainer',
 						'.swiper-button-next',
-						'.swiper-button-prev'
+						'.swiper-button-prev',
 					]}
 				/>
 			)}

@@ -6,24 +6,22 @@ import { LetterHover, Typewriter } from '../../components';
 
 import arrow from '../../../assets/icons/arrow.png';
 
-import './home1.css'
+import './home1.css';
 
 export const Home1 = () => {
 	const myRef = useRef();
 
-	
-	const navigate = useNavigate()
+	const navigate = useNavigate();
 
 	useEffect(() => {
 		const observer = new IntersectionObserver((entries) => {
-			const entry = entries[0]
-			if(entry.isIntersecting){
-				navigate('')
-				
+			const entry = entries[0];
+			if (entry.isIntersecting) {
+				navigate('');
 			}
-		})
-	
-		observer.observe(myRef.current)
+		});
+
+		observer.observe(myRef.current);
 	}, []);
 	return (
 		<>
@@ -32,8 +30,9 @@ export const Home1 = () => {
 				<div className="home1right">
 					<div>
 						<div className="helloh2">
-							<h2 className='helloh2text'>Hello<span className='hellocoma'>,</span></h2>
-							{/* <BouncingBall /> */}
+							<h2 className="helloh2text">
+								Hello<span className="hellocoma">,</span>
+							</h2>
 						</div>
 					</div>
 
@@ -42,7 +41,7 @@ export const Home1 = () => {
 						<Typewriter />
 					</div>
 					<div>
-						<div className='home1Ramiro'>
+						<div className="home1Ramiro">
 							<LetterHover letter={'R'} />
 							<LetterHover letter={'A'} />
 							<LetterHover letter={'M'} />

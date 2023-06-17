@@ -3,22 +3,19 @@ import { useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 export const ContactPage = () => {
-
-	const myRef = useRef()
-	const navigate = useNavigate()
+	const myRef = useRef();
+	const navigate = useNavigate();
 
 	useEffect(() => {
 		const observer = new IntersectionObserver((entries) => {
-			const entry = entries[0]
-			if(entry.isIntersecting){
-				navigate('#contact')
-				
+			const entry = entries[0];
+			if (entry.isIntersecting) {
+				navigate('#contact');
 			}
-		})
-	
-		observer.observe(myRef.current)
+		});
+
+		observer.observe(myRef.current);
 	}, []);
-	
 
 	return (
 		<>

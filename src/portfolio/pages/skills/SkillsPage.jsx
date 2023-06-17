@@ -3,29 +3,25 @@ import { useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Lines, WebSkills } from '../../components';
 
-import './skillspage.css'
-
+import './skillspage.css';
 
 export const SkillsPage = () => {
+	const myRef = useRef();
+	const navigate = useNavigate();
 
-	const myRef = useRef()
-	const navigate = useNavigate()
+	useEffect(() => {
+		const observer = new IntersectionObserver((entries) => {
+			const entry = entries[0];
+			if (entry.isIntersecting) {
+				navigate('#skills');
+			}
+		});
 
-useEffect(() => {
-	const observer = new IntersectionObserver((entries) => {
-		const entry = entries[0]
-		if(entry.isIntersecting){
-			navigate('#skills')
-			
-		}
-	})
-
-	observer.observe(myRef.current)
-}, []);
+		observer.observe(myRef.current);
+	}, []);
 
 	return (
 		<>
-
 			<div className="home3container" ref={myRef}>
 				<div className="home3left">
 					<div className="skillsHead">
@@ -41,8 +37,10 @@ useEffect(() => {
 							and fast learning abilities.
 						</p>
 						<div className="interests">
-							<p>I&apos;m also interested in learning
-							TypeScript, .NET and more JS Frameworks!</p>
+							<p>
+								I&apos;m also interested in learning TypeScript,
+								.NET and more JS Frameworks!
+							</p>
 						</div>
 					</div>
 				</div>

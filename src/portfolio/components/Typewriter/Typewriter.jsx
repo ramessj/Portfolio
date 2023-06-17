@@ -1,6 +1,6 @@
 import { useTypewriter, Cursor } from 'react-simple-typewriter';
 
-import './typewriter.css'
+import './typewriter.css';
 
 export const Typewriter = () => {
 	const [text] = useTypewriter({
@@ -8,13 +8,12 @@ export const Typewriter = () => {
 		loop: 0,
 		typeSpeed: 75,
 		deleteSpeed: 50,
-		delaySpeed: 1000
+		delaySpeed: 1000,
 	});
 
 	return (
 		<h3 className="iamtypewriter">
-			a 
-			<span className='writer'>&nbsp; {text}</span>
+			a<span className="writer">&nbsp; {text}</span>
 			<Cursor cursorColor="#FFF" />
 		</h3>
 	);

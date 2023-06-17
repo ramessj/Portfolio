@@ -18,7 +18,6 @@
 .projectImg,
 .projectInfo {
 	background: rgba(65, 124, 192, 0.25);
-
 	width: 50%;
 	height: 100%;
 	display: flex;
@@ -54,11 +53,9 @@
 	padding: 0.5rem;
 }
 
-
 .imgContainer {
 	width: 95%;
 	pointer-events: none;
-
 }
 
 .projectImgItem {
@@ -84,7 +81,6 @@
 		-moz-border-radius: 0 0 1rem 1rem;
 		-ms-border-radius: 0 0 1rem 1rem;
 		-o-border-radius: 0 0 1rem 1rem;
-
 	}
 
 	.projectImg {

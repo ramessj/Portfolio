@@ -1,7 +1,7 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import { useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import {  genericHashLink } from 'react-router-hash-link';
+import { genericHashLink } from 'react-router-hash-link';
 import { useUiStore } from '../../../hooks/useUiStore';
 
 import './header.css';
@@ -68,7 +68,6 @@ export const Header = () => {
 								<li>
 									<MyHashLink
 										smooth
-										
 										to="#"
 										data-text="Home"
 										onClick={handleCloseMenu}
