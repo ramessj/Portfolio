@@ -29,8 +29,11 @@
 	background: var(--bg-color);
 }
 
+
+
 ::-webkit-scrollbar {
-	display: none;
+	opacity: 0;
+	width: 0;
 }
 * {
 	box-sizing: border-box;
@@ -41,24 +44,21 @@
 ::after,
 ::before {
 	box-sizing: content-box;
+
 }
 
 html {
 	scroll-behavior: smooth;
 	scroll-snap-type: y mandatory;
-	
-	/* overflow: scroll; */
-	/* -webkit-overflow-scrolling: touch; */
-	/* margin: 0; */
-	height: -webkit-fill-available;
 }
 
 body {
 	min-height: 100vh;
-	/* height: fill-available; */
-	height: -webkit-fill-available;
-	margin: 0;
+	height: webkit-fill-available;
+	
+
 }
+
 
 a {
 	text-decoration: none;

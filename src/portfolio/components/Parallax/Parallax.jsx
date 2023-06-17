@@ -27,7 +27,7 @@ export const Parallax = ({ sections }) => {
 		<motion.div
 			initial={{ opacity: 0 }}
 			whileInView={{ opacity: 1 }}
-			transition={{ duration: 0.5 }}>
+			transition={{ type: 'spring', duration: 0.5 }}>
 			{sections.map((section) => (
 				<section
 					id={section.props.id}
@@ -35,7 +35,7 @@ export const Parallax = ({ sections }) => {
 					<motion.div
 						initial="hidden"
 						whileInView="visible"
-						transition={{ type: 'spring', duration: 1.3 }}
+						transition={{  duration: 1 }}
 						variants={variants}>
 						{section}
 					</motion.div>
