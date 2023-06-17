@@ -46,12 +46,15 @@
 html {
 	scroll-behavior: smooth;
 	scroll-snap-type: y mandatory;
-	overflow: scroll;
-	-webkit-overflow-scrolling: touch;
-	margin: 0;
+	/* overflow: scroll; */
+	/* -webkit-overflow-scrolling: touch; */
+	/* margin: 0; */
+	height: -webkit-fill-available;
 }
 
 body {
+	height: 100vh;
+	height: -webkit-fill-available;
 	margin: 0;
 }
 
