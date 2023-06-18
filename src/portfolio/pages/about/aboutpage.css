@@ -151,7 +151,7 @@
 @media (max-width: 900px) {
 	.home2container {
 		flex-direction: column-reverse;
-		justify-content: space-between;
+		justify-content: space-around;
 	}
 
 	.home2left {

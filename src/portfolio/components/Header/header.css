@@ -17,7 +17,7 @@ header {
 	-webkit-box-pack: justify;
 	-ms-flex-pack: justify;
 	justify-content: space-between;
-	z-index: 1000;
+	z-index: 100;
 	user-select: none;
 }
 
@@ -177,7 +177,7 @@ header > a:hover {
 	);
 	background-image: linear-gradient(200deg, #fd8059 33%, rgb(141, 141, 37));
 	width: 100vw;
-	height: 100vh;
+	height: 100svh;
 	flex: none;
 	-webkit-transform: translate3d(0, -150%, 0);
 	transform: translate3d(0, -150%, 0);
@@ -190,7 +190,7 @@ header > a:hover {
 
 .menu-wrap .menu > #menusub1 > #menusub2 {
 	max-width: 90vw;
-	max-height: 80vh;
+	max-height: 80svh;
 	height: 100%;
 	opacity: 0;
 	transition: opacity 0.1s ease 0.1s;
@@ -207,6 +207,7 @@ header > a:hover {
 	flex-direction: column;
 	justify-content: center;
 	gap: 5%;
+	padding: 0;
 }
 
 #menu-links li {

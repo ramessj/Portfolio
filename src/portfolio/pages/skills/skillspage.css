@@ -32,7 +32,7 @@
 @media (max-width: 900px) {
 	.home3container {
 		flex-direction: column;
-justify-content: space-between;
+justify-content: space-around;
 	
 	}
 	.home3left{

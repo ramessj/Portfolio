@@ -1,6 +1,7 @@
 @font-face {
 	font-family: proxima;
 	src: url(./assets/fonts/Proxima.ttf);
+	font-display: swap;
 }
 
 :root {
