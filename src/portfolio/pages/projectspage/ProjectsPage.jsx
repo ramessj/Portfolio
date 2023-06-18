@@ -1,7 +1,7 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import { useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Lines, ProjectShowcase } from '../../components/';
+import { Lines } from '../../components/';
 import './projectspage.css';
 
 export const ProjectsPage = () => {
@@ -28,7 +28,7 @@ export const ProjectsPage = () => {
 
 				</div>
 				<div className="cardsContainer">
-					<ProjectShowcase />
+					{/* <ProjectShowcase /> */}
 				</div>
 			</div>
 		</>
