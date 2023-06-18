@@ -1,15 +1,15 @@
 /* HomePage Components > TYPEWRITER */
 
 .iamtypewriter {
-	font-size: clamp(1.5vw, 1rem, 3.5vw);
-	margin-right: auto;
-	margin-left: auto;
-	min-width: 30vw;
+	font-size: clamp(1rem, 1vw, 1.4rem);
+	/* margin-right: auto; */
+	/* margin-left: auto; */
+	/* min-width: 13vw; */
 }
 
-@media (max-width: 500px) {
+@media (max-width: 900px) {
 	.iamtypewriter {
-		min-width: 35vw;
+		/* min-width: 40vw; */
 	}
 }
 

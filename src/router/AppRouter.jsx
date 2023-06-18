@@ -9,7 +9,6 @@ export const AppRouter = () => {
 			<Header></Header>
 			<Routes>
 				<Route path="/home" element={<HomePage />} />
-
 				<Route path="/*" element={<Navigate to={'/home'} />} />
 			</Routes>
 		</>

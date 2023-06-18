@@ -3,26 +3,24 @@ import { motion } from 'framer-motion';
 import './lines.css';
 
 export const Lines = () => {
+	const variants = {
+		visible: { opacity: 1, x: '0px' },
+		hidden: { opacity: 0, x: '-50px' },
+	};
 	return (
-		<>
-			<div className="lines">
-				<motion.span
-					initial={{ opacity: 0, x: '-10rem' }}
-					whileInView={{
-						opacity: 1,
-						x: '0rem',
-						transition: { type: 'spring', duration: 2.3 },
-					}}
-					className="topLine"></motion.span>
-				<motion.span
-					initial={{ opacity: 0, x: '-10rem' }}
-					whileInView={{
-						opacity: 1,
-						x: '0rem',
-						transition: { type: 'spring', delay: 0.2, duration: 2 },
-					}}
-					className="bottomLine"></motion.span>
-			</div>
-		</>
+		<div className="lines">
+			<motion.div
+				initial="hidden"
+				whileInView="visible"
+				variants={variants}
+				transition={{ type: 'spring', delay: 0.1, duration: 1.2 }}
+				className="topLine"></motion.div>
+			<motion.div
+				initial="hidden"
+				whileInView="visible"
+				variants={variants}
+				transition={{ type: 'spring', delay: 0, duration: 1.4 }}
+				className="bottomLine"></motion.div>
+		</div>
 	);
 };

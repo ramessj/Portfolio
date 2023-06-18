@@ -26,7 +26,7 @@ export const SkillsPage = () => {
 				<div className="home3left">
 					<div className="skillsHead">
 						<div className="skillsHeadText">
-							<h2>Skills</h2>
+							<h2>Skills </h2>
 						</div>
 						<Lines />
 					</div>

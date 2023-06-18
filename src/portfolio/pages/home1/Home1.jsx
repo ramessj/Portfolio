@@ -52,9 +52,7 @@ export const Home1 = () => {
 					</div>
 				</div>
 
-				
-			</div>
-			<motion.div
+				<motion.div
 					initial={{ opacity: 0 }}
 					whileInView={{
 						opacity: 1,
@@ -72,6 +70,8 @@ export const Home1 = () => {
 						alt="scroll down"
 					/>
 				</motion.div>
+			</div>
+			
 		</>
 	);
 };

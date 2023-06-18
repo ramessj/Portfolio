@@ -2,7 +2,7 @@
 import { useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { motion, useDragControls } from 'framer-motion';
-import { Lines } from '../../components/Lines/Lines';
+import { Lines } from '../../components';
 
 import profile from '/profilepicture.png';
 import cv from '/RamiroQuesadaCV.pdf';

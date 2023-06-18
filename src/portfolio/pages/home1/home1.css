@@ -1,34 +1,26 @@
 /*  HOME 1 */
 
 .home1container {
+	min-height: 100svh;
+	max-height: 100vh;
 	display: flex;
 	justify-content: center;
+	align-items: center;
 	font-family: proxima;
-	width: 100%;
-	gap: 1.5rem;
-}
+	/* margin-top: -2vw; */
 
-/* .home1left {
-	min-width: 20vw;
 }
-
-@media screen and (max-width: 900px) {
-	.home1left {
-		min-width: 2vw;
-	}
-} */
 
 .home1right {
 	display: flex;
 	flex-direction: column;
-	width: 80vw;
+	/* width: 25vw; */
 	gap: 3rem;
 	user-select: none;
-	padding-left: 15vw;
 }
 
 .home1container h2 {
-	max-width: fit-content;
+	/* max-width: fit-content; */
 	background: linear-gradient(200deg, yellow 12%, rgb(255, 105, 4));
 	-webkit-background-clip: text;
 	background-clip: text;
@@ -36,9 +28,9 @@
 }
 
 .helloh2 {
-	height: max-content;
-	max-width: fit-content;
+	/* max-width: fit-content; */
 	display: flex;
+
 	align-items: center;
 	justify-content: center;
 }
@@ -57,22 +49,29 @@
 }
 
 .iamdiv {
+	/* width: 100vw; */
 	display: flex;
 	align-items: center;
-	min-width: 80%;
-	justify-content: center;
+	/* min-width: 50vw; */
+	justify-content: space-between;
+	/* gap: 3rem; */
 }
 
 h2.iamh2white {
+	/* font-size: clamp(1.2rem, 12vw, 10rem); */
 	background: white;
 	-webkit-background-clip: text;
 	background-clip: text;
 	-webkit-text-fill-color: transparent;
-	margin-right: auto;
+	/* margin-right: auto; */
+	/* padding-left: 5vw; */
+	
+
 }
 
 .home1Ramiro {
 	display: flex;
+	justify-content: center;
 }
 
 .home1Ramiro > h2 {
@@ -80,13 +79,8 @@ h2.iamh2white {
 }
 
 .home1rrr {
-	display: flex;
-	justify-content: center;
-	width: 100%;
 	position: absolute;
-	right: auto;
-	left: auto;
-	bottom: -25%;
+	bottom: 12%;
 }
 
 .arrowdown {
@@ -94,12 +88,8 @@ h2.iamh2white {
 	-webkit-user-drag: none;
 }
 
-@media screen and (max-width: 900px) {
+@media  (max-width: 900px) {
 	.home1right {
-		padding-left: 5vw;
-	}
-
-	.home1rrr{
-		bottom: -50%;
+		/* width: 80vw; */
 	}
 }

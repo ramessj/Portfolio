@@ -1,14 +1,15 @@
 .lines {
 	display: flex;
 	flex-direction: column;
+	width: 50rem;
 }
 
 .topLine,
 .bottomLine {
 	background-color: #ff3e55;
-	height: 0.25rem;
+	height: 0.2rem;
 	width: 15%;
-	margin: 5px;
+	margin-bottom: 5px;
 	border-radius: 1rem;
 	-webkit-border-radius: 1rem;
 	-moz-border-radius: 1rem;
@@ -23,5 +24,5 @@
 
 .topLine {
 	background-color: #ff3e55;
-	margin-left: 0.01rem;
+	margin-left: 0.1rem;
 }

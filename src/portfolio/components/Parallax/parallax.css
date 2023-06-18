@@ -13,10 +13,12 @@
 
 section {
 	height: 100vh;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	scroll-snap-align: center;
+	/* display: flex; */
+	/* justify-content: center; */
+
+	/* align-items: center; */
+	/* scroll-snap-stop: always; */
+	scroll-snap-align: start;
 }
 
 /* section > div {
@@ -35,3 +37,5 @@ section {
 	bottom: 3rem;
 	pointer-events: none;
 }
+
+

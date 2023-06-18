@@ -1,26 +1,13 @@
 /* eslint-disable react/prop-types */
-import { motion, useScroll, useSpring, useTransform } from 'framer-motion';
+import { motion } from 'framer-motion';
 
 import './parallax.css';
 
 export const Parallax = ({ sections }) => {
-	const { scrollYProgress } = useScroll({
-		offset: ['0.1', 'end end'],
-	});
-	const scaleX = useSpring(scrollYProgress, {
-		stiffness: 100,
-		damping: 50,
-	});
-
-	const backgroundColor = useTransform(
-		scrollYProgress,
-		[0.1, 1],
-		['#fffbda', '#ffe600']
-	);
-
+	
 	const variants = {
-		visible: { opacity: 1, scale: 0.9},
-		hidden: { opacity: 0, scale: 0 },
+		visible: { opacity: 1},
+		hidden: { opacity: 0.1 },
 	};
 
 	return (
@@ -39,12 +26,12 @@ export const Parallax = ({ sections }) => {
 				</section>
 			))}
 
-			{sections.length > 1 && (
+			{/* {sections.length > 1 && (
 				<motion.div
 					className="progress"
 					style={{ scaleX, backgroundColor }}
 				/>
-			)}
+			)} */}
 		</>
 	);
 };
