@@ -8,26 +8,22 @@
 	right: 0;
 	top: 0;
 	width: 50%;
-	z-index: 1;
+	/* z-index: 1; */
 }
 
 section {
 	height: 100vh;
-	/* display: flex; */
-	/* justify-content: center; */
-
-	/* align-items: center; */
-	/* scroll-snap-stop: always; */
-	scroll-snap-align: start;
+	display:grid;
+	align-items: center;
+	scroll-snap-align: center;
 }
 
-/* section > div {
-	
-	width: 90vw;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-} */
+section > div {
+	height: 75%;
+	display: grid;
+	/* align-items: center; */
+}
+
 
 .progress {
 	position: fixed;

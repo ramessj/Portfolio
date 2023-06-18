@@ -1,6 +1,6 @@
 .projectsContainer {
-	width: 100%;
-	height: 100vh;
+	min-height: 100svh;
+	max-height: 100vh;
 	/* height: calc(100vh - 12rem); */
 	/* margin-top: 4rem; */
 	display: flex;
@@ -10,7 +10,7 @@
 }
 
 .projectTitle{
-	/* height: 100%; */
+	height: 100%;
 }
 
 .projectsContainer h2 {
@@ -18,7 +18,7 @@
 }
 
 .cardsContainer {
-	/* height: 100%; */
+	height: 100%;
 	/* margin-top: auto; */
 	/* margin-bottom: auto; */
 	width: 100%;

@@ -2,12 +2,10 @@
 
 .home2container {
 	display: flex;
-	width: 100%;
-	min-height: 100svh;
-	max-height: 100vh;
+
 	align-items: center;
 	justify-content: center;
-	gap: 1.5rem;
+	/* gap: 1.5rem; */
 }
 
 .home2left {
@@ -153,19 +151,18 @@
 @media (max-width: 900px) {
 	.home2container {
 		flex-direction: column-reverse;
-		min-height: 80svh;
-		height: 90vh;
+		justify-content: space-between;
 	}
 
 	.home2left {
 		width: 100%;
-		height: 60%;
+		/* height: 60%; */
 	}
 
 	.home2right {
-		margin-top: 2rem;
-		height: 40%;
-		width: 40%;
+		/* margin-top: 2rem; */
+		/* height: 40%; */
+		/* width: 40%; */
 	}
 
 	.home2right div {

@@ -2,12 +2,8 @@
 
 .home3container {
 	display: flex;
-	/* height: 100dvh; */
-	min-height: 100dvh;
-	max-height: 100vh;
 	justify-content: center;
 	align-items: center;
-	width: 100%;
 	gap: 1rem;
 
 }
@@ -15,10 +11,8 @@
 
 .home3left {
 	display: flex;
-	/* justify-content: center; */
 	flex-direction: column;
 	width: 42%;
-	/* height: 50%; */
 }
 
 .home3right {
@@ -38,16 +32,17 @@
 @media (max-width: 900px) {
 	.home3container {
 		flex-direction: column;
+justify-content: space-between;
 	
 	}
 	.home3left{
 		min-width: 90%;
-		height: 50%;
+		/* height: 50%; */
 	}
 
 	.home3right{
-		height:50%;
-		min-width: 99%;
+		/* height:50%; */
+		min-width: 100%;
 
 	}
 

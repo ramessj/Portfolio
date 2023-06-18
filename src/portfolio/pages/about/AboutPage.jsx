@@ -88,7 +88,7 @@ export const AboutPage = () => {
 						whileDrag={{ scale: 1.2 }}
 						dragSnapToOrigin
 						animate={{
-							y: [0, 20, 0],
+							y: [0, 5, 10, -10, -5,  0],
 							dragListener: true,
 							transition: { duration: 6, repeat: Infinity },
 						}}

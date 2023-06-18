@@ -1,21 +1,19 @@
 /*  HOME 1 */
 
 .home1container {
-	min-height: 100svh;
-	max-height: 100vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	font-family: proxima;
-	/* margin-top: -2vw; */
-
+	margin-top: -4vw;
 }
 
 .home1right {
 	display: flex;
 	flex-direction: column;
-	/* width: 25vw; */
-	gap: 3rem;
+	/* justify-content: center; */
+	width: 33%;
+	gap: 5rem;
 	user-select: none;
 }
 
@@ -28,14 +26,14 @@
 }
 
 .helloh2 {
-	/* max-width: fit-content; */
-	display: flex;
+	/* display: flex; */
 
-	align-items: center;
-	justify-content: center;
+	/* align-items: center; */
+	/* justify-content: center; */
 }
 
 .helloh2text {
+	text-align: center;
 	line-height: 0.8;
 	font-size: clamp(1.5rem, 16vw, 10rem);
 }
@@ -49,24 +47,35 @@
 }
 
 .iamdiv {
-	/* width: 100vw; */
 	display: flex;
-	align-items: center;
-	/* min-width: 50vw; */
+	align-items: baseline;
 	justify-content: space-between;
-	/* gap: 3rem; */
+
 }
 
-h2.iamh2white {
-	/* font-size: clamp(1.2rem, 12vw, 10rem); */
+.iamdiv > div
+{
+	/* display: flex; */
+	/* align-items: center; */
+	/* justify-content: center; */
+	text-align: center;
+	min-width: 52%;
+}
+
+.iamdiv > div:nth-child(2){
+	text-align: justify;
+	/* background-color: aqua; */
+}
+
+
+h3.iamh2white {
+	font-size: clamp(1.2rem, 10vw, 6rem);
 	background: white;
 	-webkit-background-clip: text;
 	background-clip: text;
 	-webkit-text-fill-color: transparent;
-	/* margin-right: auto; */
-	/* padding-left: 5vw; */
-	
-
+	padding: 0;
+	margin: 0;
 }
 
 .home1Ramiro {
@@ -88,8 +97,8 @@ h2.iamh2white {
 	-webkit-user-drag: none;
 }
 
-@media  (max-width: 900px) {
+@media (max-width: 900px) {
 	.home1right {
-		/* width: 80vw; */
+		width: 80%;
 	}
 }

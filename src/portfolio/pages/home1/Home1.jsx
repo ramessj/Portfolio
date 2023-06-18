@@ -37,8 +37,14 @@ export const Home1 = () => {
 					</div>
 
 					<div className="iamdiv">
-						<h2 className="iamh2white">I am </h2>
+						<div>
+
+						<h3 className="iamh2white">I am </h3>
+						</div>
+						<div>
 						<Typewriter />
+
+						</div>
 					</div>
 					<div>
 						<div className="home1Ramiro">
