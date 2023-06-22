@@ -15,8 +15,10 @@ export const Parallax = ({ sections }) => {
 			{sections.map((section) => (
 				<section
 					id={section.props.id}
-					key={sections.indexOf(section) + 1}>
+					key={sections.indexOf(section) + 1}
+					>
 					<motion.div
+					className='container-fluid'
 						initial="hidden"
 						whileInView="visible"
 						transition={{  duration: 1 }}

@@ -32,7 +32,7 @@ export const params = {
 			}
 
 			.swiper-initialized{
-				height: 99%;
+				height: 20%;
 			}
 
 			swiper-slide{

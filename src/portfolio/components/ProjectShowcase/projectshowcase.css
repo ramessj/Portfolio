@@ -1,24 +1,22 @@
-.swiperContainer {
-	display: flex;
-	height: 100%;
-	background: #aa22;
-}
+
 
 .projectShown {
 	display: flex;
-	height: 90%;
-	width: 90%;
+	height: 100%;
+	width: 100%;
 	border-radius: 1rem;
 	-webkit-border-radius: 1rem;
 	-moz-border-radius: 1rem;
 	-ms-border-radius: 1rem;
 	-o-border-radius: 1rem;
+	align-items: center;
+	justify-content: center;
 }
 
 .projectImg,
 .projectInfo {
 	background: rgba(65, 124, 192, 0.25);
-	width: 50%;
+	width: 40%;
 	height: 100%;
 	display: flex;
 	justify-content: center;

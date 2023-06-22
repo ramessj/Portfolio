@@ -1,14 +1,11 @@
-import { useEffect, useMemo, useRef } from 'react';
+import { useMemo } from 'react';
+import Carousel from 'nuka-carousel';
 
 import { projects } from './projectsData';
-
-import { params } from './params';
 
 import './projectshowcase.css';
 
 export const ProjectShowcase = () => {
-	const swiperRef = useRef(null);
-
 	const shuffledArray = useMemo(() => {
 		function shuffleArray(array) {
 			for (let i = array.length - 1; i > 0; i--) {
@@ -22,14 +19,6 @@ export const ProjectShowcase = () => {
 		return shuffleArray(projects);
 	}, []);
 
-	useEffect(() => {
-		const swiperContainer = swiperRef.current;
-
-		Object.assign(swiperContainer, params);
-
-		swiperContainer.initialize();
-	}, []);
-
 	const onToggleImg = (e) => {
 		if (e.target.style.height >= '88%') {
 			e.target.style = 'height: 33%';
@@ -40,30 +29,26 @@ export const ProjectShowcase = () => {
 
 	return (
 		<>
-			<swiper-container ref={swiperRef} init="false">
+			<Carousel wrapAround  style={{maxWidth: '80vw', padding: '2rem'}}>
 				{shuffledArray.map(({ img, title, description, links }) => (
-					<swiper-slide
-						key={title}
-						style={{ display: 'flex', justifyContent: 'center' }}>
-						<div className="projectShown">
-							<div className="projectImg" onClick={onToggleImg}>
-								<div className="imgContainer">
-									<img
-										src={img}
-										alt={title}
-										className="projectImgItem"
-									/>
-								</div>
-							</div>
-							<div className="projectInfo">
-								<div>
-									{title}, {description}, {links.repo}
-								</div>
+					<div className='projectShown' key={title}>
+						<div className='projectImg' onClick={onToggleImg}>
+							<div className='imgContainer'>
+								<img
+									src={img}
+									alt={title}
+									className='projectImgItem'
+								/>
 							</div>
 						</div>
-					</swiper-slide>
+						<div className='projectInfo'>
+							<div>
+								{title}, {description}, {links.repo}
+							</div>
+						</div>
+					</div>
 				))}
-			</swiper-container>
+			</Carousel>
 		</>
 	);
 };

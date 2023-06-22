@@ -9,7 +9,6 @@ header {
 	top: 0;
 	left: 0;
 	width: 100%;
-	padding: 0 15%;
 	color: var(--white-01);
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -21,7 +20,12 @@ header {
 	user-select: none;
 }
 
-header > a {
+.headerNav{
+	padding:  1rem;
+
+}
+
+.headerNav > a {
 	font-size: 2rem;
 	font-family: proxima;
 	user-select: none;
@@ -31,13 +35,15 @@ header > a {
 	-moz-transition: transform 0.1s ease-out;
 	-ms-transition: transform 0.1s ease-out;
 	-o-transition: transform 0.1s ease-out;
-	padding-top: 1.5rem;
+	/* padding-top: 1.5rem; */
 	display: flex;
 	align-items: center;
 	gap: 0.5rem;
+	/* position: fixed; */
+	/* left: 20%; */
 }
 
-header > a:hover {
+/* .headerNav > a:hover {
 	transform: scale(1.1);
 	-webkit-transform: scale(1.1);
 	-moz-transform: scale(1.1);
@@ -48,7 +54,7 @@ header > a:hover {
 	-moz-transition: transform 0.2s ease-in-out;
 	-ms-transition: transform 0.2s ease-in-out;
 	-o-transition: transform 0.2s ease-in-out;
-}
+} */
 
 .rq {
 	color: yellow;
@@ -56,20 +62,20 @@ header > a:hover {
 }
 
 .menu-wrap {
-	position: fixed;
-	top: 1.5rem;
-	right: 20%;
+	/* position: fixed; */
+	top: -2rem;
+	right: 0;
 	z-index: 1;
-	/* position: relative; */
+	position: relative;
 }
 
 .menu-wrap .toggler {
 	position: absolute;
 	top: 0;
-	right: 30%;
+	right: 0;
 	z-index: 2;
 	cursor: pointer;
-	width: 4rem;
+	width: 2.5rem;
 	height: 3rem;
 	opacity: 0;
 }
@@ -80,7 +86,7 @@ header > a:hover {
 	right: 0;
 	z-index: 1;
 	width: 2.5rem;
-	height: 10px;
+	/* height: 1px; */
 	padding: 0;
 	display: flex;
 	align-items: center;

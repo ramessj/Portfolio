@@ -1,9 +1,8 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import { useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Lines } from '../../components/';
+import { Lines, ProjectShowcase} from '../../components/';
 import './projectspage.css';
-
 export const ProjectsPage = () => {
 	const myRef = useRef();
 	const navigate = useNavigate();
@@ -28,7 +27,7 @@ export const ProjectsPage = () => {
 
 				</div>
 				<div className="cardsContainer">
-					{/* <ProjectShowcase /> */}
+					<ProjectShowcase />
 				</div>
 			</div>
 		</>

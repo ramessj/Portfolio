@@ -5,19 +5,21 @@
 
 	align-items: center;
 	justify-content: center;
-	/* gap: 1.5rem; */
 }
 
 .home2left {
-	width: 45%;
+	width: 100%;
 	display: flex;
 	flex-direction: column;
 }
 
 .home2right {
-	width: 25%;
+	width: 50%;
 	display: flex;
 	align-items: center;
+	justify-content: center;
+	padding: 1rem;
+
 }
 
 .home2right div {
@@ -156,22 +158,11 @@
 
 	.home2left {
 		width: 100%;
-		/* height: 60%; */
 	}
 
-	.home2right {
-		/* margin-top: 2rem; */
-		/* height: 40%; */
-		/* width: 40%; */
-	}
-
-	.home2right div {
-		max-width: 16rem;
-	}
 
 	.aboutBody {
 		align-items: center;
-		/* width: 100%; */
 	}
 
 	.aboutBody p {

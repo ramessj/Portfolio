@@ -14,17 +14,21 @@
 section {
 	/* height: 100vh; */
 	height: 100svh;
-	display:grid;
+	display:flex;
 	align-items: center;
+	justify-content: center;
 	scroll-snap-align: center;
 	/* place-items: center; */
 }
 
 
 section > div {
-	height: 75%;
-	display: grid;
+	/* height: 75%; */
+	/* width: 100%; */
+	background-color: aquamarine;
+	/* display: grid; */
 	/* align-items: center; */
+	/* place-items: center; */
 	
 
 }

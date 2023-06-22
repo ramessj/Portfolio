@@ -1,8 +1,10 @@
 .projectsContainer {
 	display: flex;
 flex-direction: column;
-	align-items: center;
+	/* align-items: center; */
+	gap: 1rem;
 	justify-content: center;
+
 }
 
 .projectTitle{
@@ -14,9 +16,9 @@ flex-direction: column;
 }
 
 .cardsContainer {
-	height: 100%;
-	margin-top: auto;
-	margin-bottom: auto;
+	max-height: 80vh;
+	overflow: scroll;
 	width: 100%;
+	background-color: rgb(145, 127, 104);
 	min-height: calc(100% - 11vw);
 }
