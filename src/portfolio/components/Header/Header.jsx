@@ -34,11 +34,12 @@ export const Header = () => {
 
 	return (
 		<header className='container-fluid'>
-			<div className="headerNav container">
-				<MyHashLink to={'#'}>
-					<span className="rq">{`< `}</span> RQ{' '}
-					<span className="rq">{` />`}</span>
-				</MyHashLink>
+			<div className='headerNav container'>
+				<div className='brandLogo'>
+					<span className='rq'>{`<`}</span>
+					<MyHashLink to={'#'}> RQ </MyHashLink>
+					<span className='rq'>{`/>`}</span>
+				</div>
 				{/* <div style={{ position: 'fixed', top: 5, left: '50%' }}>
 					<button onClick={handleClickLang} data-lang={'ES'}>
 						es
@@ -50,24 +51,24 @@ export const Header = () => {
 						pt
 					</button>
 				</div> */}
-				<div className="menu-wrap">
+				<div className='menu-wrap'>
 					<input
-						type="checkbox"
-						className="toggler"
-						id="menuToggler"
-						placeholder="toggleMenu"></input>
-					<div id="hamburger" className="hamburger">
-						<div id="hamburger-lines"></div>
+						type='checkbox'
+						className='toggler'
+						id='menuToggler'
+						placeholder='toggleMenu'></input>
+					<div id='hamburger' className='hamburger'>
+						<div id='hamburger-lines'></div>
 					</div>
-					<div className="menu">
-						<div id="menusub1">
-							<div id="menusub2">
-								<ul id="menu-links">
+					<div className='menu'>
+						<div id='menusub1'>
+							<div id='menusub2'>
+								<ul id='menu-links'>
 									<li>
 										<MyHashLink
 											smooth
-											to="#"
-											data-text="Home"
+											to='#'
+											data-text='Home'
 											onClick={handleCloseMenu}
 											className={
 												location.hash == ``
@@ -85,8 +86,8 @@ export const Header = () => {
 													? selected
 													: notSelected
 											}
-											to="#about"
-											data-text="About"
+											to='#about'
+											data-text='About'
 											onClick={handleCloseMenu}>
 											About
 										</MyHashLink>
@@ -99,8 +100,8 @@ export const Header = () => {
 													? selected
 													: notSelected
 											}
-											to="#skills"
-											data-text="Skills"
+											to='#skills'
+											data-text='Skills'
 											onClick={handleCloseMenu}>
 											Skills
 										</MyHashLink>
@@ -113,8 +114,8 @@ export const Header = () => {
 													? selected
 													: notSelected
 											}
-											to="#projects"
-											data-text="Projects"
+											to='#projects'
+											data-text='Projects'
 											onClick={handleCloseMenu}>
 											Projects
 										</MyHashLink>
@@ -127,8 +128,8 @@ export const Header = () => {
 													? selected
 													: notSelected
 											}
-											to="#contact"
-											data-text="Contact"
+											to='#contact'
+											data-text='Contact'
 											onClick={handleCloseMenu}>
 											Contact
 										</MyHashLink>

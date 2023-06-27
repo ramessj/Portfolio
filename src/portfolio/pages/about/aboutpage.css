@@ -154,11 +154,23 @@
 	.home2container {
 		flex-direction: column-reverse;
 		justify-content: space-around;
+		height: 100%;
 	}
 
 	.home2left {
 		width: 100%;
+		/* height: 100%; */
 	}
+
+	.aboutHead{
+		margin-left: 0;
+	}
+
+	.home2right {
+		width: 50%;
+		/* height: 50%; */
+	}
+
 
 
 	.aboutBody {

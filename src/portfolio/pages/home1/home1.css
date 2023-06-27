@@ -5,7 +5,8 @@
 	justify-content: center;
 	align-items: center;
 	font-family: proxima;
-	margin-top: -5svh;
+	/* margin-top: -5svh; */
+	height: 100%;
 }
 
 .home1right {
@@ -97,11 +98,11 @@ h3.iamh2white {
 
 @media (max-width: 500px) {
 	.home1right {
-		width: 90%;
-		
+		width: 100%;
 	}
 
-	.iamdiv {
-		/* gap: 1rem; */
+	.home1Ramiro{
+		max-width: 80vw;
 	}
+
 }

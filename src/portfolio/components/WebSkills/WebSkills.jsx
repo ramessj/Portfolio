@@ -4,18 +4,18 @@ import './webskills.css';
 export const WebSkills = () => {
 	return (
 		<>
-			<div>
+			<div className='webSkillsContainer'>
 				<h3>Front-End</h3>
 				<div className='technologies'>
 					{techs.map((tech) => (
 						<div className='techContainer' key={tech.name}>
-							<div className='tech'>
+							{/* <div className='tech'> */}
 								<img
 									src={tech.color}
 									alt={tech.name}
-									className='techLogo'
+									className='tech techLogo'
 								/>
-							</div>
+							{/* </div> */}
 							<div className='techName'>{tech.name}</div>
 						</div>
 					))}

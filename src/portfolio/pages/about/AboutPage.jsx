@@ -29,74 +29,68 @@ export const AboutPage = () => {
 
 	return (
 		<>
-			<div className="home2container" ref={myRef}>
-				<div className="home2left">
-					<div className="aboutHead">
-						<div className="aboutHeadText">
+			<div className='home2container' ref={myRef}>
+				<div className='home2left'>
+					<div className='aboutHead'>
+						<div className='aboutHeadText'>
 							<h2>About Me</h2>
 						</div>
 						<Lines />
 					</div>
-					<div className="aboutBody">
+					<div className='aboutBody'>
 						<p>
-							I&apos;m Ramiro Quesada, a passionate Front-End
-							Developer based in Uruguay with 1 year of
-							experience. Currently expanding my knowledge to
-							become a Full-Stack Developer through project-based
-							learning. I enjoy exploring all aspects of Computer
-							Science and constantly learning new technologies.
+							Full Stack Developer based in Uruguay with more than 1 year of
+							experience in the field of Computer Sciences. Constantly learning and expanding my knowledge through the development of new projects
 							<br />
 							<br /> Let&apos;s connect and bring your ideas to
 							life!
-						</p><div className="aboutButtons">
-							
-							<div className="aboutLinks">
+						</p>
+						<div className='aboutButtons'>
+							<div className='aboutLinks'>
 								<a
-									className="aboutLink"
-									href="https://github.com/ramessj"
-									target="_blank"
-									rel="noreferrer">
+									className='aboutLink'
+									href='https://github.com/ramessj'
+									target='_blank'
+									rel='noreferrer'>
 									<div>GitHub</div>
 								</a>
 								<a
-									className="aboutLink"
-									href="https://www.linkedin.com/in/ramiro-quesada-p%C3%A9rez-5796a3126"
-									target="_blank"
-									rel="noreferrer">
+									className='aboutLink'
+									href='https://www.linkedin.com/in/ramiro-quesada-p%C3%A9rez-5796a3126'
+									target='_blank'
+									rel='noreferrer'>
 									<div>LinkedIn</div>
 								</a>
 							</div>
 							<a
-								className="aboutLink"
+								className='aboutLink'
 								href={cv}
-								download="Ramiro Quesada CV"
-								target="_blank"
-								rel="noreferrer">
-								<button className="aboutCurriculum">
+								download='Ramiro Quesada CV'
+								target='_blank'
+								rel='noreferrer'>
+								<button className='aboutCurriculum'>
 									Download CV
 								</button>
 							</a>
 						</div>
 					</div>
 				</div>
-				<div className="home2right">
+				<div className='home2right'>
 					<motion.div
-						className="imgDragContainer"
-						initial={{ y: 0, dragListener: false }}
+						className='imgDragContainer'
+						initial={{dragListener: false }}
 						drag={true}
 						dragControls={controls}
 						whileDrag={{ scale: 1.2 }}
 						dragSnapToOrigin
 						animate={{
-							y: [0, 5, 10, -10, -5,  0],
 							dragListener: true,
-							transition: { duration: 6, repeat: Infinity },
 						}}
 						style={{ touchAction: 'none' }}>
 						<motion.img
-							className="profileImg"
+							className='profileImg'
 							src={profile}
-							alt="Programmer"
+							alt='Programmer'
 						/>
 					</motion.div>
 				</div>

@@ -2,23 +2,19 @@
 	display: flex;
 flex-direction: column;
 	/* align-items: center; */
-	gap: 1rem;
+	/* gap: 1rem; */
 	justify-content: center;
 
 }
 
-.projectTitle{
-	/* height: 100%; */
-}
-
 .projectsContainer h2 {
-	font-size: clamp(1.5rem, 6vw, 3rem);
+	font-size: clamp(1.5rem, 5vw, 2rem);
 }
 
-.cardsContainer {
+/* .cardsContainer {
 	max-height: 80vh;
-	overflow: scroll;
+	overflow-y: scroll;
 	width: 100%;
 	background-color: rgb(145, 127, 104);
 	min-height: calc(100% - 11vw);
-}
+} */

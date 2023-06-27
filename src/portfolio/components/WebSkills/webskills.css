@@ -1,9 +1,16 @@
 .technologies {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
-	grid-gap: 1rem;
+	/* grid-gap: 1rem; */
 }
 
+.webSkillsContainer{
+	display: flex;
+	flex-direction: column;
+
+	gap: 2rem;
+	width: 100%;
+}
 
 .techContainer {
 	display: flex;
@@ -14,29 +21,30 @@
 
 .tech {
 	/* width: 5rem; */
-	/* width: ; */
-	height: 4rem;
+	/* width: 4rem; */
+	width: clamp(2rem, 9vw, 5rem);
+	/* height: 3rem; */
 	aspect-ratio: 1/1;
 
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	pointer-events: none;
-	position: relative;
+	/* position: relative; */
 }
 
 
 .techLogo {
-	width: 70%;
+	/* width: 33%; */
 	/* aspect-ratio: 1/1; */
 
 	pointer-events: none;
-	opacity: 1;
+	/* opacity: 1; */
 }
 
 .techLogo {
-	position: absolute;
-	opacity: 1;
+	/* position: absolute; */
+	/* opacity: 1; */
 	transform: scale(1);
 	transition: all 0.2s ease-out;
 	-webkit-transition: all 0.2s ease-out;
@@ -50,6 +58,8 @@
 }
 
 .techName {
+	text-align: center;
+	width: 120%;
 	opacity: 0;
 	transform: scale(0.5);
 	transition: all 0.2s ease-in;
@@ -82,13 +92,14 @@
 	-o-transform: scale(1.4);
 }
 @media (max-width: 900px) {
-	.tech {
-		width: 4rem;
+	.techContainer {
+		gap: 0.5rem;
+
 	}
 	.technologies {
-		grid-template-columns: repeat(auto-fit, minmax(21%, 1fr));
+		/* grid-template-columns: repeat(auto-fit, minmax(30%, 1fr)); */
 		
-		grid-gap: 0;
+		/* grid-gap: 0; */
 	}
 	
 

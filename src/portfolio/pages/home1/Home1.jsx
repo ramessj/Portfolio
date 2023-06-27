@@ -55,6 +55,15 @@ export const Home1 = () => {
 							<LetterHover letter={'R'} />
 							<LetterHover letter={'O'} />
 						</div>
+						<div className="home1Ramiro">
+							<LetterHover letter={'Q'} />
+							<LetterHover letter={'U'} />
+							<LetterHover letter={'E'} />
+							<LetterHover letter={'S'} />
+							<LetterHover letter={'A'} />
+							<LetterHover letter={'D'} />
+							<LetterHover letter={'A'} />
+						</div>
 					</div>
 				</div>
 
