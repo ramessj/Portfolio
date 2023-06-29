@@ -14,12 +14,8 @@
 section {
 	padding-top: 4rem;
 	padding-bottom: 2rem;
-	/* max-height: 100vh; */
 	height: 100svh;
-	/* min-height: 90vh; */
 	display:flex;
-	/* align-items: stretch; */
-	/* justify-content: center; */
 	scroll-snap-align:  center ;
 	margin-bottom: 100svh;
 	margin-top: 2svh;

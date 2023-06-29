@@ -27,17 +27,11 @@ export const ProjectShowcase = () => {
 	return (
 		<>
 			<Swiper
-			modules={
-				[Navigation, Pagination]
-			}
-			loop
-
-			freeMode={true}
-			spaceBetween={1000}
-			pagination={isMobile}
-			navigation={!isMobile}
-			
-				>
+				modules={[Navigation, Pagination]}
+				loop
+				spaceBetween={1000}
+				pagination={isMobile}
+				navigation={!isMobile}>
 				{shuffledArray.map(({ img, title, description, links }) => (
 					<SwiperSlide key={title}>
 						<div className='projectShown'>
@@ -68,13 +62,11 @@ export const ProjectShowcase = () => {
 										<div className='projectTechPill'>
 											Tech4
 										</div>
-									
 									</div>
 
 									<div className='projectLinks'>
 										<a href={links.live}>Live</a>
 										<a href={links.repo}>Code</a>
-										
 									</div>
 								</div>
 							</div>

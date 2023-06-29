@@ -18,7 +18,7 @@ const homeSections = [
 export const HomePage = () => {
 	return (
 		<>
-				<Parallax sections={homeSections} />
+			<Parallax sections={homeSections} />
 			<div className='bgLighterEffect'></div>
 		</>
 	);
