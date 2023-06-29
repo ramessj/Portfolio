@@ -5,21 +5,18 @@
 	justify-content: center;
 	align-items: center;
 	font-family: proxima;
-	/* margin-top: -5svh; */
+	margin-top: -2.5rem;
 	height: 100%;
 }
 
-.home1right {
+.home1main {
 	display: flex;
 	flex-direction: column;
-	/* justify-content: center; */
-	/* width: 65%; */
 	gap: 1rem;
 	user-select: none;
 }
 
 .home1container h2 {
-	/* max-width: fit-content; */
 	background: linear-gradient(200deg, yellow 12%, rgb(255, 105, 4));
 	-webkit-background-clip: text;
 	background-clip: text;
@@ -49,22 +46,14 @@
 
 .iamdiv {
 	display: flex;
-	align-items: baseline;
+	align-items: center;
 	justify-content: center;
-	/* gap: 2rem; */
 }
 
 .iamdiv > div {
 	display: flex;
-width: 100%;
-	text-align: center;
+	width: 50%;
 	justify-content: center;
-}
-
-.iamdiv > div:nth-child(2) {
-	text-align: justify;
-	/* background-color: aqua; */
-	/* min-width: 40%; */
 }
 
 h3.iamh2white {
@@ -73,8 +62,6 @@ h3.iamh2white {
 	-webkit-background-clip: text;
 	background-clip: text;
 	-webkit-text-fill-color: transparent;
-	/* padding: 0; */
-	/* margin: 0; */
 }
 
 .home1Ramiro {
@@ -101,8 +88,7 @@ h3.iamh2white {
 		width: 100%;
 	}
 
-	.home1Ramiro{
+	.home1Ramiro {
 		max-width: 80vw;
 	}
-
 }

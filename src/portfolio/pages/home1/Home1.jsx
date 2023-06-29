@@ -25,29 +25,26 @@ export const Home1 = () => {
 	}, []);
 	return (
 		<>
-			<div className="home1container" ref={myRef}>
-				{/* <div className="home1left"></div> */}
-				<div className="home1right">
+			<div className='home1container' ref={myRef}>
+				<div className='home1main'>
 					<div>
-						<div className="helloh2">
-							<h2 className="helloh2text">
-								Hello<span className="hellocoma">,</span>
+						<div className='helloh2'>
+							<h2 className='helloh2text'>
+								Hello<span className='hellocoma'>,</span>
 							</h2>
 						</div>
 					</div>
 
-					<div className="iamdiv">
-						<div>
-
-						<h3 className="iamh2white">I am </h3>
+					<div className='iamdiv'>
+						<div className='iamh3container'>
+							<h3 className='iamh2white'>I am </h3>
 						</div>
-						<div>
-						<Typewriter />
-
+						<div className='iamh3container'>
+							<Typewriter />
 						</div>
 					</div>
 					<div>
-						<div className="home1Ramiro">
+						<div className='home1Ramiro'>
 							<LetterHover letter={'R'} />
 							<LetterHover letter={'A'} />
 							<LetterHover letter={'M'} />
@@ -55,7 +52,7 @@ export const Home1 = () => {
 							<LetterHover letter={'R'} />
 							<LetterHover letter={'O'} />
 						</div>
-						<div className="home1Ramiro">
+						<div className='home1Ramiro'>
 							<LetterHover letter={'Q'} />
 							<LetterHover letter={'U'} />
 							<LetterHover letter={'E'} />
@@ -73,20 +70,19 @@ export const Home1 = () => {
 						opacity: 1,
 						transition: { delay: 2, duration: 5 },
 					}}
-					className="home1rrr">
+					className='home1rrr'>
 					<motion.img
 						initial={{ y: 0 }}
 						animate={{
 							y: [0, 25, 0],
 							transition: { duration: 2, repeat: Infinity },
 						}}
-						className="arrowdown"
+						className='arrowdown'
 						src={arrow}
-						alt="scroll down"
+						alt='scroll down'
 					/>
 				</motion.div>
 			</div>
-			
 		</>
 	);
 };
