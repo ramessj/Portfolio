@@ -4,15 +4,11 @@
 	font-size: clamp(0.9rem, 3vw, 2rem);
 	margin-right: auto;
 	width: 100%;
-	padding-left: 1rem;
+	/* padding-left: 1rem; */
 }
 
 .writer {
-	background: linear-gradient(
-		90deg,
-		rgb(255, 103, 103) 1%,
-		rgb(255, 153, 85)
-	);
+	background: linear-gradient(33deg, rgb(255, 75, 75) 12%, rgb(238, 185, 40));
 	-webkit-background-clip: text;
 	background-clip: text;
 	-webkit-text-fill-color: transparent;
