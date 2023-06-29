@@ -26,9 +26,9 @@ export const ProjectsPage = () => {
 				<Lines />
 
 				</div>
-				<div className="cardsContainer">
+				{/* <div className="cardsContainer"> */}
 					<ProjectShowcase />
-				</div>
+				{/* </div> */}
 			</div>
 		</>
 	);

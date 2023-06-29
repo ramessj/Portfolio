@@ -1,11 +1,11 @@
 export const projects = [
 	{
 		title: 'Memory Game',
-		img: 'http://img.png',
+		img: 'https://raw.githubusercontent.com/ramiroquesada/Memory-Game/main/screenshot.png',
 		description: 'a description for the game with a valorant theme',
 		links: {
-			repo: 'https://github.com/ramessj/Memory-Game',
-			live: 'https://ramessj.github.io/Memory-Game/',
+			repo: 'https://github.com/ramiroquesada/Memory-Game',
+			live: 'https://ramiroquesada.github.io/Memory-Game/',
 		},
 	},
 	{

@@ -18,10 +18,10 @@ export const Parallax = ({ sections }) => {
 					key={sections.indexOf(section) + 1}
 					>
 					<motion.div
-					className='container-fluid'
+					className='container'
 						initial="hidden"
 						whileInView="visible"
-						transition={{  duration: 1 }}
+						// transition={{  duration: 0.5 }}
 						variants={variants}>
 						{section}
 					</motion.div>

@@ -8,47 +8,32 @@
 	right: 0;
 	top: 0;
 	width: 50%;
-	z-index: -22;
+	z-index: 22;
 }
 
 section {
-	/* height: 100vh; */
+	padding-top: 4rem;
+	padding-bottom: 2rem;
+	/* max-height: 100vh; */
 	height: 100svh;
+	/* min-height: 90vh; */
 	display:flex;
-	align-items: center;
-	justify-content: center;
-	scroll-snap-align: center;
-	/* place-items: center; */
+	/* align-items: stretch; */
+	/* justify-content: center; */
+	scroll-snap-align:  center ;
+	margin-bottom: 100svh;
+	margin-top: 2svh;
 }
 
-section > div {
 
-	background-color: aquamarine;
-	
-	
-}
-
-@media (max-width: 900px) {
+@media (min-width: 900px) {
 	
 	
 	section > div {
-		/* display: flex; */
-		height: 80%;
-		overflow-y: scroll;
-		/* align-items: center; */
-		/* justify-content: center; */
+		padding-top: 5rem;
+	padding-bottom: 4rem;
 	}
 	
-}
-
-
-.progress {
-	position: fixed;
-	left: 22%;
-	right: 22%;
-	height: 2px;
-	bottom: 3rem;
-	pointer-events: none;
 }
 
 

@@ -45,16 +45,15 @@
 
 html {
 	overflow: hidden;
-	
-
 	overflow-y: scroll;
-
 	scroll-snap-type: y mandatory;
+	scroll-behavior: unset;
 }
 
 body {	
 	padding: 0;	
 	background-color: var(--bg-color);
+	color: #c4c4c4;
 }
 
 a {
@@ -63,10 +62,11 @@ a {
 }
 
 h2 {
+	color: var(--white-01);
 	font-size: clamp(1.5rem, 14vw, 3rem);
 	margin: 0;
 	font-weight: 700;
 	font-family: var(--font1);
 }
 
-.rama{ background-color: rgba(255, 255, 255, 0.062); }
+/* .rama{ background-color: rgba(255, 255, 255, 0.062); } */
