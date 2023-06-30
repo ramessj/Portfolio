@@ -1,15 +1,38 @@
-.technologies {
-	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(21%, 1fr));
-	grid-gap: 0.5rem;
-}
 
 .webSkillsContainer {
 	display: flex;
 	flex-direction: column;
-
-	gap: 2rem;
+	min-height: 100%;
+	gap: 4rem;
 	width: 100%;
+}
+
+
+.technologies {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(21%, 1fr));
+	grid-gap: 1rem;
+	min-height: 100%;
+}
+
+.techTypeButtons {
+	display: flex;
+	justify-content: space-around;
+}
+
+.activeTech {
+	background: #ffa;
+}
+
+.techTypeButton {
+	width: 32%;
+	padding: 0.5rem;
+	font-weight: 500;
+	border-radius: 0.35rem;
+	-webkit-border-radius: 0.35rem;
+	-moz-border-radius: 0.35rem;
+	-ms-border-radius: 0.35rem;
+	-o-border-radius: 0.35rem;
 }
 
 .techContainer {
@@ -29,16 +52,10 @@
 }
 
 .techLogo {
-	/* width: 33%; */
-	/* aspect-ratio: 1/1; */
-
 	pointer-events: none;
-	/* opacity: 1; */
 }
 
 .techLogo {
-	/* position: absolute; */
-	/* opacity: 1; */
 	transform: scale(1);
 	transition: all 0.2s ease-out;
 	-webkit-transition: all 0.2s ease-out;
@@ -89,10 +106,7 @@
 }
 @media (max-width: 900px) {
 	.webSkillsContainer {
-		gap: 1.5rem;
+		gap: 2rem;
 	}
 
-	.techContainer {
-		gap: 0.75rem;
-	}
 }
