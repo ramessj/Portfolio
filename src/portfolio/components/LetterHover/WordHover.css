@@ -1,0 +1,19 @@
+.home1Ramiro {
+	display: flex;
+	justify-content: center;
+}
+
+.home1Ramiro > h2 {
+	font-size: clamp(1.5rem, 18vw, 10rem);
+}
+
+@media (max-width: 500px) {
+	.home1Ramiro {
+		max-width: 80vw;
+	}
+}
+@media (max-width: 500px) {
+	.home1Ramiro {
+		max-width: 80vw;
+	}
+}

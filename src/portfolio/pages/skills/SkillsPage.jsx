@@ -36,12 +36,6 @@ export const SkillsPage = () => {
 							of life and technology, with good listening skills
 							and fast learning abilities.
 						</p>
-						{/* <div className="interests">
-							<p>
-								I&apos;m also interested in learning TypeScript,
-								.NET and more JS Frameworks!
-							</p>
-						</div> */}
 					</div>
 				</div>
 				<div className="home3right">

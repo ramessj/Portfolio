@@ -4,7 +4,6 @@ import { motion } from 'framer-motion';
 export const LetterHover = ({ letter }) => {
 	return (
 		<motion.h2
-			className="letterHover"
 			initial={{ scaleY: 1, scaleX: 1 }}
 			whileHover={{
 				scaleY: [1,  1.2, 1.25, 1.2, 1.1, 1, 1],

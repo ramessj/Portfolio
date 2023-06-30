@@ -1,17 +1,13 @@
 .projectsContainer {
 	display: flex;
-flex-direction: column;
+	flex-direction: column;
 	gap: 1rem;
 	height: 100%;
 	max-height: 90svh;
 	align-items: stretch;
 }
 
-.projectsContainer h2 {
-	font-size: clamp(1.5rem, 5vw, 2rem);
-}
-
-.projectTitle{
+.projectTitle {
 	height: 10%;
 }
 
@@ -19,5 +15,10 @@ flex-direction: column;
 	height: 100%;
 	width: 100%;
 	background-color: rgb(185, 182, 177);
-	/* display: flex; */
+}
+
+@media (max-width: 900px) {
+	.projectsContainer h2 {
+		font-size: clamp(2rem, 6vw, 5rem);
+	}
 }

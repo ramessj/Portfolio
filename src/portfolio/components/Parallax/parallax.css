@@ -14,21 +14,23 @@ section {
 	padding-top: 4rem;
 	padding-bottom: 2rem;
 	height: 100svh;
-	display:flex;
-	scroll-snap-align:  center ;
+	display: flex;
+	scroll-snap-align: center;
 	margin-bottom: 100svh;
 	margin-top: 2svh;
 }
 
-
-@media (min-width: 900px) {
-	
-	
-	section > div {
-		padding-top: 5rem;
-	padding-bottom: 4rem;
-	}
-	
+#contact{
+	margin-bottom: 1svh;
 }
 
+#home{
+	margin-top: 1svh;
+}
 
+@media (min-width: 900px) {
+	section > div {
+		padding-top: 5rem;
+		padding-bottom: 5rem;
+	}
+}
