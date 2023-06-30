@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination } from 'swiper';
 import { isMobile } from 'react-device-detect';
 
-import { projects } from './projectsData';
+import { projects } from '../../../assets/projectsImgs/projectsData';
 
 import './projectshowcase.css';
 import 'swiper/css';

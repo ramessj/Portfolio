@@ -1,7 +1,18 @@
+import calendar from './calendar.gif'
+import gifexpert from './gifexpert.gif'
+import heroes from './heroes.gif'
+import journal from './journal.gif'
+import memory from './memory.gif'
+import rockps from './rockps.gif'
+import todos from './todos.gif'
+import weather from './weather.gif'
+import etch from './etch.gif'
+
+
 export const projects = [
 	{
 		title: 'Memory Game',
-		img: 'https://raw.githubusercontent.com/ramiroquesada/Memory-Game/main/screenshot.png',
+		img: memory,
 		description: 'a description for the game with a valorant theme',
 		links: {
 			repo: 'https://github.com/ramiroquesada/Memory-Game',
@@ -10,7 +21,7 @@ export const projects = [
 	},
 	{
 		title: 'Journal ',
-		img: 'http://imgjournal.png',
+		img: journal,
 		description: 'a description for journal',
 		links: {
 			repo: 'https://github.com/ramessj/Journal-App-React',
@@ -19,7 +30,7 @@ export const projects = [
 	},
 	{
 		title: 'TO-DO App',
-		img: 'https://raw.githubusercontent.com/ramessj/To-Do-List/main/todo-full.png',
+		img: todos,
 		description: 'todo app description',
 		links: {
 			repo: 'https://github.com/ramessj/To-Do-List',
@@ -28,7 +39,7 @@ export const projects = [
 	},
 	{
 		title: 'Heroes App',
-		img: 'https://raw.githubusercontent.com/ramessj/Heroes-SPA-React/main/screenshot.png',
+		img: heroes,
 		description: 'a description for heroes app',
 		links: {
 			repo: 'https://github.com/ramessj/Heroes-SPA-React',
@@ -37,7 +48,7 @@ export const projects = [
 	},
 	{
 		title: 'Weather App',
-		img: 'https://raw.githubusercontent.com/ramessj/Weather-App/main/desktop.png',
+		img: weather,
 		description: 'a weather app',
 		links: {
 			repo: 'https://github.com/ramessj/Weather-App',
@@ -46,7 +57,7 @@ export const projects = [
 	},
 	{
 		title: 'Gif Expert',
-		img: 'http://imgjournal.png',
+		img: gifexpert,
 		description: 'search gifs',
 		links: {
 			repo: 'https://github.com/ramessj/Gif-Expert',
@@ -55,7 +66,7 @@ export const projects = [
 	},
 	{
 		title: 'Calendar App',
-		img: 'http://imgjournal.png',
+		img: calendar,
 		description: 'colaborative calendar app',
 		links: {
 			repo: 'https://github.com/ramessj/Calendar-React',
@@ -64,7 +75,7 @@ export const projects = [
 	},
 	{
 		title: 'Rock Paper Scissors',
-		img: 'http://imgjournal.png',
+		img:  rockps,
 		description: 'a description for the game',
 		links: {
 			repo: 'https://github.com/ramessj/Rock-Paper-Scissors',
@@ -73,7 +84,7 @@ export const projects = [
 	},
 	{
 		title: 'Etch-A-Sketch',
-		img: 'http://imgjournal.png',
+		img: etch,
 		description: 'draw and be japi',
 		links: {
 			repo: 'https://github.com/ramessj/Etch-A-Sketch',
