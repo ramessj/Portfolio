@@ -4,11 +4,12 @@ import './typewriter.css';
 
 export const Typewriter = () => {
 	const [text] = useTypewriter({
-		words: ['Programmer', 'Web Developer', 'Tech Enthusiast'],
+		words: ['Web Developer', 'Programmer', 'Tech Enthusiast', 'Gamer', 'Hardworker'],
 		loop: 0,
 		typeSpeed: 75,
 		deleteSpeed: 50,
-		delaySpeed: 1000,
+		delaySpeed: 1200,
+		
 	});
 
 	return (
