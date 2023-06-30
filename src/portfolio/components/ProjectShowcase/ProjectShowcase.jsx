@@ -5,6 +5,9 @@ import { isMobile } from 'react-device-detect';
 
 import { projects } from '../../../assets/projectsImgs/projectsData';
 
+import gh from '../../../assets/icons/githubMini.png';
+import globe from '../../../assets/icons/globeMini.png';
+
 import './projectshowcase.css';
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -48,6 +51,7 @@ export const ProjectShowcase = () => {
 									<div className='projectTitleDescriptionContainer'>
 										<h3>{title}</h3>
 										<h4>{description}</h4>
+										<hr />
 									</div>
 									<div className='projectTechsContainer'>
 										<div className='projectTechPill'>
@@ -63,10 +67,31 @@ export const ProjectShowcase = () => {
 											Tech4
 										</div>
 									</div>
+									<hr />
 
 									<div className='projectLinks'>
-										<a href={links.live}>Live</a>
-										<a href={links.repo}>Code</a>
+										<a
+											href={links.live}
+											target='_blank'
+											rel='noreferrer'>
+											<img
+												src={globe}
+												alt='live app'
+												className='miniLogo'
+											/>{' '}
+											Live App
+										</a>
+										<a
+											href={links.repo}
+											target='_blank'
+											rel='noreferrer'>
+											<img
+												src={gh}
+												alt='source code'
+												className='miniLogo'
+											/>{' '}
+											Source Code
+										</a>
 									</div>
 								</div>
 							</div>
