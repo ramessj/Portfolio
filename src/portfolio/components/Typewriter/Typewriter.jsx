@@ -13,7 +13,7 @@ export const Typewriter = () => {
 
 	return (
 		<h3 className="iamtypewriter">
-			a<span className="writer">&nbsp; {text}</span>
+			<span className="writer">a&nbsp; {text}</span>
 			<Cursor cursorColor="#FFF" />
 		</h3>
 	);

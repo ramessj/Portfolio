@@ -108,6 +108,19 @@
 	max-width: fit-content;
 }
 
+.networkLogo{
+	transition: filter 0.25s linear;
+	-webkit-transition: filter 0.25s linear;
+	-moz-transition: filter 0.25s linear;
+	-ms-transition: filter 0.25s linear;
+	-o-transition: filter 0.25s linear;
+}
+
+.networkLogo:hover{
+	filter: drop-shadow(0px 0px 0.5rem white);
+	-webkit-filter: drop-shadow(0px 0px 0.5rem white);
+}
+
 .aboutCurriculum {
 	background: linear-gradient(200deg, yellow 12%, rgb(255, 105, 4));
 	color: var(--bg-color);
@@ -130,11 +143,11 @@
 
 .aboutCurriculum:hover {
 	background: linear-gradient(210deg, yellow 42%, rgb(255, 105, 4));
-	transform: scale(1.02);
-	-webkit-transform: scale(1.02);
-	-moz-transform: scale(1.02);
-	-ms-transform: scale(1.02);
-	-o-transform: scale(1.02);
+	transform: scale(1.01);
+	-webkit-transform: scale(1.01);
+	-moz-transform: scale(1.01);
+	-ms-transform: scale(1.01);
+	-o-transform: scale(1.01);
 }
 
 .aboutCurriculum:active {

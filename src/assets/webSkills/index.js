@@ -10,6 +10,18 @@ import git from './git.png';
 import express from './express.png';
 import firebase from './firebase.png';
 import framer from './framer.png';
+import angular from './angular.png'
+import nextjs from './next-js.png'
+import sql from './sql.png'
+import mysql from './mysql.png'
+import wordpress from './wordpress.png'
+import bootstrap from './bootstrap.png'
+import tailwind from './tailwind.png'
+import github from './github.png'
+import photoshop from './photoshop.png'
+import linux from './linux.png'
+import dotnet from './dotnet.png'
+import csharp from './chsarp.png'
 
 const techs = {
 	"front": [
@@ -30,15 +42,30 @@ const techs = {
 			color: reactC,
 		},
 		{
-			name: 'Redux',
-			color: reduxC,
+			name: 'Angular',
+			color: angular,
+		},
+		
+		{
+			name: 'NextJS',
+			color: nextjs,
 		},
 		{
-			name: 'Framer Motion',
-			color: framer,
-		}
+			name: 'TailwindCSS',
+			color: tailwind,
+		},
+		{
+			name: 'Bootstrap',
+			color: bootstrap,
+		},
+		
+
+		
 	],
-	"back":[
+	"back":[{
+			name: 'NodeJS',
+			color: nodejs,
+		},
 		{
 			name: 'Express',
 			color: express,
@@ -47,14 +74,30 @@ const techs = {
 			name: 'MongoDB',
 			color: mongodb,
 		},
+		
 		{
-			name: 'NodeJS',
-			color: nodejs,
+			name: 'C#',
+			color: csharp,
 		},
+		
+		{
+			name: '.NET',
+			color: dotnet,
+		},
+		
 		{
 			name: 'Firebase',
 			color: firebase,
+		},
+		{
+			name: 'SQL',
+			color: sql,
+		},
+		{
+			name: 'MySQL',
+			color: mysql,
 		}
+
 	],
 	"tools": [
 		{
@@ -64,60 +107,32 @@ const techs = {
 		{
 			name: 'NPM',
 			color: npm,
-		}
+		},
+		{
+			name: 'GitHub',
+			color: github,
+		},
+		{
+			name: 'Redux',
+			color: reduxC,
+		},
+		{
+			name: 'Framer Motion',
+			color: framer,
+		},
+		{
+			name: 'PhotoShop',
+			color: photoshop,
+		},
+		{
+			name: 'Linux',
+			color: linux,
+		},
+		{
+			name: 'Wordpress',
+			color: wordpress,
+		},
 	],
 };
-// const techs = [
-// 	{
-// 		name: 'HTML',
-// 		color: html5,
-// 	},
-// 	{
-// 		name: 'CSS',
-// 		color: css,
-// 	},
-
-// 	{
-// 		name: 'JavaScript',
-// 		color: javascript,
-// 	},
-// 	{
-// 		name: 'ReactJS',
-// 		color: reactC,
-// 	},
-// 	{
-// 		name: 'Redux',
-// 		color: reduxC,
-// 	},
-
-// 	{
-// 		name: 'NodeJS',
-// 		color: nodejs,
-// 	},
-// 	{
-// 		name: 'Express',
-// 		color: express,
-// 	},
-// 	{
-// 		name: 'MongoDB',
-// 		color: mongodb,
-// 	},
-// 	{
-// 		name: 'GIT',
-// 		color: git,
-// 	},
-// 	{
-// 		name: 'NPM',
-// 		color: npm,
-// 	},
-// 	{
-// 		name: 'Firebase',
-// 		color: firebase,
-// 	},
-// 	{
-// 		name: 'Framer Motion',
-// 		color: framer,
-// 	},
-// ];
 
 export default techs;

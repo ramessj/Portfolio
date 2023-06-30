@@ -49,7 +49,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	gap: 2rem;
+	gap: 3rem;
 }
 
 .iamdiv > div {
@@ -58,8 +58,13 @@
 	justify-content: end;
 }
 
+.iamdiv > div:first-child{
+	padding-right: 3rem;
+
+}
+
 h3.iamh2white {
-	font-size: clamp(1.2rem, 10vw, 5rem);
+	font-size: clamp(1.1rem, 9vw, 5rem);
 	background: white;
 	-webkit-background-clip: text;
 	background-clip: text;
@@ -92,5 +97,14 @@ h3.iamh2white {
 
 	.home1Ramiro {
 		max-width: 80vw;
+	}
+
+	.iamdiv {
+		gap: 1.5rem;
+	}
+
+	.iamdiv > div:first-child{
+		padding-right: 1.5rem;
+	
 	}
 }

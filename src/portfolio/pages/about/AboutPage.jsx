@@ -7,6 +7,9 @@ import { Lines } from '../../components';
 import profile from '/profilepicture.png';
 import cv from '/RamiroQuesadaCV.pdf';
 
+import linkedin from '../../../assets/icons/linkedinSmall.png'
+import github from '../../../assets/icons/githubSmall.png'
+
 import './aboutpage.css';
 
 export const AboutPage = () => {
@@ -39,8 +42,10 @@ export const AboutPage = () => {
 					</div>
 					<div className='aboutBody'>
 						<p>
-							Full Stack Developer based in Uruguay with more than 1 year of
-							experience in the field of Computer Sciences. Constantly learning and expanding my knowledge through the development of new projects
+							Full Stack Developer based in Uruguay with more than
+							1 year of experience in the field of Computer
+							Sciences. Constantly learning and expanding my
+							knowledge through the development of new projects
 							<br />
 							<br /> Let&apos;s connect and bring your ideas to
 							life!
@@ -49,17 +54,26 @@ export const AboutPage = () => {
 							<div className='aboutLinks'>
 								<a
 									className='aboutLink'
-									href='https://github.com/ramessj'
+									href='https://github.com/ramiroquesada'
 									target='_blank'
 									rel='noreferrer'>
-									<div>GitHub</div>
+									<img
+										src={github}
+										alt='github'
+										className='networkLogo'
+
+									/>
 								</a>
 								<a
 									className='aboutLink'
-									href='https://www.linkedin.com/in/ramiro-quesada-p%C3%A9rez-5796a3126'
+									href='https://www.linkedin.com/in/ramiro-quesada'
 									target='_blank'
 									rel='noreferrer'>
-									<div>LinkedIn</div>
+									<img
+										src={linkedin}
+										alt='LinkedIn'
+										className='networkLogo'
+									/>
 								</a>
 							</div>
 							<a
@@ -78,7 +92,7 @@ export const AboutPage = () => {
 				<div className='home2right'>
 					<motion.div
 						className='imgDragContainer'
-						initial={{dragListener: false }}
+						initial={{ dragListener: false }}
 						drag={true}
 						dragControls={controls}
 						whileDrag={{ scale: 1.2 }}

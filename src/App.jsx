@@ -1,19 +1,24 @@
-import { HashRouter } from 'react-router-dom';
+import { HashRouter, Navigate, Route, Routes } from 'react-router-dom';
 import { isMobile } from 'react-device-detect';
-import { AppRouter } from './router/AppRouter';
 import AnimatedCursor from 'react-animated-cursor';
+import { Header, HomePage } from './portfolio';
 import './index.css';
 
 export const App = () => {
 	return (
 		<HashRouter>
-			<AppRouter />
+			<Header />
+			<Routes>
+				<Route path='/home' element={<HomePage />} />
+
+				<Route path='/*' element={<Navigate to={'/home'} />} />
+			</Routes>
 
 			{!isMobile && (
 				<AnimatedCursor
 					innerSize={18}
 					outerSize={6}
-					color="255, 195, 120"
+					color='255, 195, 120'
 					outerScale={2}
 					innerScale={0.85}
 					innerStyle={{
