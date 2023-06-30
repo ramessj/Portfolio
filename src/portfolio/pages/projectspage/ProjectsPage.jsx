@@ -27,8 +27,10 @@ export const ProjectsPage = () => {
 					<h2>My Latests Projects</h2>
 					<Lines />
 				</div>
+				<div className='showCaseContainer'>
 
 				<ProjectShowcase />
+				</div>
 			</div>
 		</>
 	);
