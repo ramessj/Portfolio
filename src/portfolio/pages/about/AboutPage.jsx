@@ -2,11 +2,13 @@
 import { useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Lines, ProfilePictureDrag, AboutButtons } from '../../components';
+import { useTranslation } from 'react-i18next';
 
 import './aboutpage.css';
 
 export const AboutPage = () => {
 	const myRef = useRef();
+	const { t } = useTranslation();
 
 	const navigate = useNavigate();
 
@@ -27,12 +29,12 @@ export const AboutPage = () => {
 				<div className='home2left'>
 					<div className='aboutHead'>
 						<div className='aboutHeadText'>
-							<h2>About Me</h2>
+							<h2>{t('About Me')}</h2>
 						</div>
 						<Lines />
 					</div>
 					<div className='aboutBody'>
-						<p>
+						{/* <p>
 							Full Stack Developer based in Uruguay with more than
 							1 year of experience in the field of Computer
 							Sciences. Constantly learning and expanding my
@@ -40,7 +42,8 @@ export const AboutPage = () => {
 							<br />
 							<br /> Let&apos;s connect and bring your ideas to
 							life!
-						</p>
+						</p> */}
+						<p>{t('aboutP')}</p>
 						<div className='aboutButtons'>
 							<AboutButtons />
 						</div>

@@ -1,15 +1,29 @@
 /* eslint-disable react-hooks/exhaustive-deps */
+import { useEffect, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { genericHashLink } from 'react-router-hash-link';
-
+import { useTranslation } from 'react-i18next';
 
 import './header.css';
+
+import esFlag from '../../../assets/icons/es.png'
+import enFlag from '../../../assets/icons/en.png'
 
 const selected = 'active';
 
 const notSelected = 'notSelected';
 
 export const Header = () => {
+	const [lsLang, setLsLang] = useState(localStorage.getItem('lsLang'));
+
+	const { i18n } = useTranslation();
+
+	const changeLanguage = (language) => {
+		i18n.changeLanguage(language);
+		localStorage.setItem('lsLang', language);
+		setLsLang(language);
+	};
+
 	const MyHashLink = genericHashLink(Link);
 
 	const toggler = document.getElementById('menuToggler');
@@ -20,16 +34,25 @@ export const Header = () => {
 		toggler.checked = false;
 	};
 
+	useEffect(() => {
+		changeLanguage(lsLang);
+	}, []);
 
 	return (
-		<header className='container-fluid'>
-			<div className='headerNav container'>
+		<header className='container-fluid '>
+			<div className='headerNav container d-flex justify-content-between align-items-center'>
 				<div className='brandLogo'>
 					<span className='rq'>{`<`}</span>
 					<MyHashLink to={'#'}> RQ </MyHashLink>
 					<span className='rq'>{`/>`}</span>
 				</div>
-			
+				<div className='languageSelector'>
+					{lsLang == 'en' ? (
+						<button onClick={() => changeLanguage('es')}><img className='langFlag' src={esFlag}></img></button>
+					) : (
+						<button onClick={() => changeLanguage('en')}><img className='langFlag'  src={enFlag}></img></button>
+					)}
+				</div>
 				<div className='menu-wrap'>
 					<input
 						type='checkbox'

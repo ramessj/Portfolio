@@ -4,8 +4,11 @@ import linkedin from '../../../assets/icons/linkedinSmall.png'
 import github from '../../../assets/icons/githubSmall.png'
 
 import './AboutButtons.css'
+import { useTranslation } from 'react-i18next';
 
 export const AboutButtons = () => {
+	const { t } = useTranslation();
+
 	return (
 		<>
 			<div className='aboutLinks'>
@@ -34,7 +37,7 @@ export const AboutButtons = () => {
 					download='Ramiro Quesada CV'
 					target='_blank'
 					rel='noreferrer'>
-					<button type='button' className='aboutCurriculum'>Download CV</button>
+					<button type='button' className='aboutCurriculum'>{t("Download CV")}</button>
 				</a>
 			</div>
 		</>

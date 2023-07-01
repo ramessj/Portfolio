@@ -4,7 +4,11 @@ import AnimatedCursor from 'react-animated-cursor';
 import { Header, HomePage } from './portfolio';
 import './index.css';
 
+
 export const App = () => {
+
+
+
 	return (
 		<HashRouter>
 			<Header />

@@ -2,10 +2,14 @@
 import { useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Typewriter, WordHover, DownArrow } from '../../components';
+import { useTranslation } from 'react-i18next';
 
 import './home1.css';
 
 export const Home1 = () => {
+
+	const { t } = useTranslation()
+
 	const myRef = useRef();
 
 	const navigate = useNavigate();
@@ -26,13 +30,13 @@ export const Home1 = () => {
 				<div className='home1main'>
 					<div className='helloh2'>
 						<h2 className='helloh2text'>
-							Hello<span className='hellocoma'>,</span>
+							{t("Hello")}<span className='hellocoma'>,</span>
 						</h2>
 					</div>
 
 					<div className='iamdiv'>
 						<div className='iamh3container'>
-							<h3 className='iamh2white'>I am </h3>
+							<h3 className='iamh2white'>{t("I am")}</h3>
 						</div>
 						<div className='iamh3container'>
 							<Typewriter />
