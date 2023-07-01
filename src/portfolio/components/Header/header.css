@@ -26,7 +26,8 @@ header {
 }
 
 .langFlag{
-	width: 95%;
+	width: 90%;
+	opacity: 75%;
 }
 
 .headerNav{

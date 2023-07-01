@@ -7,7 +7,9 @@
 	font-family: proxima;
 	margin-top: -2.5rem;
 	height: 100%;
-	/* padding: 2rem; */
+	width: 100%;
+	overflow-x: hidden;
+	max-width: 100%;
 }
 
 .home1main {

@@ -20,17 +20,22 @@ section {
 	margin-top: 2svh;
 }
 
-#contact{
-	margin-bottom: 1svh;
-}
 
 #home{
 	margin-top: 1svh;
 }
 
+section > div {
+	height: 90dvh;
+	max-width: 100%;
+	overflow-x: hidden;
+	
+}
+
 @media (min-width: 900px) {
 	section > div {
-		padding-top: 5rem;
-		padding-bottom: 5rem;
+		padding-top: 3rem;
+		padding-bottom: 3rem;
+		/* background-color: aqua; */
 	}
 }

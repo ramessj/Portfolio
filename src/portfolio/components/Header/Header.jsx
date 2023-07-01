@@ -39,7 +39,7 @@ export const Header = () => {
 	}, []);
 
 	return (
-		<header className='container-fluid '>
+		<header className='container-fluid'>
 			<div className='headerNav container d-flex justify-content-between align-items-center'>
 				<div className='brandLogo'>
 					<span className='rq'>{`<`}</span>

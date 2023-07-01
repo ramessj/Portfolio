@@ -2,6 +2,7 @@
 import { useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Lines, WebSkills } from '../../components';
+import { motion } from 'framer-motion';
 
 import './skillspage.css';
 
@@ -22,25 +23,39 @@ export const SkillsPage = () => {
 
 	return (
 		<>
-			<div className="home3container" ref={myRef}>
-				<div className="home3left">
-					<div className="skillsHead">
-						<div className="skillsHeadText">
+			<div className='home3container' ref={myRef}>
+				<motion.div
+					initial={{ opacity: 0, x: -100 }}
+					whileInView={{
+						opacity: 1,
+						x: 0,
+						transition: { delay: 0.1, duration: 0.75 },
+					}}
+					className='home3left'>
+					<div className='skillsHead'>
+						<div className='skillsHeadText'>
 							<h2>Skills </h2>
 						</div>
 						<Lines />
 					</div>
-					<div className="skillsBody">
+					<div className='skillsBody'>
 						<p>
 							An individual eager to learn and explore new fields
 							of life and technology, with good listening skills
 							and fast learning abilities.
 						</p>
 					</div>
-				</div>
-				<div className="home3right">
+				</motion.div>
+				<motion.div
+					initial={{ opacity: 0, x: 100 }}
+					whileInView={{
+						opacity: 1,
+						x: 0,
+						transition: { delay: 0.1, duration: 0.75 },
+					}}
+					className='home3right'>
 					<WebSkills />
-				</div>
+				</motion.div>
 			</div>
 		</>
 	);

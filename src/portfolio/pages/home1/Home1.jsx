@@ -5,6 +5,7 @@ import { Typewriter, WordHover, DownArrow } from '../../components';
 import { useTranslation } from 'react-i18next';
 
 import './home1.css';
+import { motion } from 'framer-motion';
 
 export const Home1 = () => {
 
@@ -27,7 +28,10 @@ export const Home1 = () => {
 	return (
 		<>
 			<div className='home1container' ref={myRef}>
-				<div className='home1main'>
+				<motion.div
+				initial={{opacity: 0}}
+				whileInView={{opacity: 1, transition: {duration: 1.5} }}
+				className='home1main'>
 					<div className='helloh2'>
 						<h2 className='helloh2text'>
 							{t("Hello")}<span className='hellocoma'>,</span>
@@ -46,7 +50,7 @@ export const Home1 = () => {
 					<div className='RamiroQuesada'>
 						<WordHover words={['RAMIRO', 'QUESADA']} />
 					</div>
-				</div>
+				</motion.div>
 
 				<DownArrow />
 			</div>
