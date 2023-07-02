@@ -1,4 +1,4 @@
-import { HashRouter, Navigate, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
 import { isMobile } from 'react-device-detect';
 import AnimatedCursor from 'react-animated-cursor';
 import { Header, HomePage } from './portfolio';
@@ -10,7 +10,7 @@ export const App = () => {
 
 
 	return (
-		<HashRouter>
+		<BrowserRouter>
 			<Header />
 			<Routes>
 				<Route path='/' element={<HomePage />} />
@@ -55,6 +55,6 @@ export const App = () => {
 					]}
 				/>
 			)}
-		</HashRouter>
+		</BrowserRouter>
 	);
 };
