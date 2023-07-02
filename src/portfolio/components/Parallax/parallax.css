@@ -25,6 +25,10 @@ section {
 	margin-top: 1svh;
 }
 
+#contact{
+	margin-bottom: 1svh;
+}
+
 section > div {
 	height: 90dvh;
 	max-width: 100%;
