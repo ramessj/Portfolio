@@ -11,13 +11,14 @@
 }
 
 section {
-	padding-top: 4rem;
+	padding-top: 5rem;
 	padding-bottom: 2rem;
 	height: 100svh;
 	display: flex;
 	scroll-snap-align: center;
 	margin-bottom: 100svh;
 	margin-top: 2svh;
+	/* overflow-x: hidden; */
 }
 
 
@@ -30,7 +31,7 @@ section {
 }
 
 section > div {
-	height: 90dvh;
+	height: 85dvh;
 	max-width: 100%;
 	overflow-x: hidden;
 	

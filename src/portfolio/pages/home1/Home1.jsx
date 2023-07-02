@@ -3,13 +3,13 @@ import { useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Typewriter, WordHover, DownArrow } from '../../components';
 import { useTranslation } from 'react-i18next';
+import { motion } from 'framer-motion';
 
 import './home1.css';
-import { motion } from 'framer-motion';
 
 export const Home1 = () => {
 
-	const { t } = useTranslation()
+	const { t } = useTranslation();
 
 	const myRef = useRef();
 

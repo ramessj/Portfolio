@@ -32,7 +32,7 @@ export const ProjectsPage = () => {
 						transition: { delay: 0.1, duration: 0.75 },
 					}}
 					className='projectTitle'>
-					<h2>My Latests Projects</h2>
+					<h2 className='myLatestProjects'>My Latests Projects</h2>
 					<Lines />
 				</motion.div>
 				<motion.div
