@@ -1,4 +1,4 @@
-import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
+import { Navigate, Route, Routes } from 'react-router-dom';
 import { isMobile } from 'react-device-detect';
 import AnimatedCursor from 'react-animated-cursor';
 import { Header, HomePage } from './portfolio';
@@ -8,14 +8,15 @@ import './index.css';
 export const App = () => {
 	return (
 		<>
-			<BrowserRouter>
-				<Header />
+			<Header />
+			<main>
 				<Routes>
 					<Route path='/' element={<HomePage />} />
 
-					<Route path='/*' element={<Navigate to={'/'} />} />
+					<Route path='*' element={<Navigate to={'/'} />} />
 				</Routes>
-			</BrowserRouter>
+			</main>
+
 			{!isMobile && (
 				<AnimatedCursor
 					innerSize={16}
@@ -47,8 +48,10 @@ export const App = () => {
 						'.swiper-button-next',
 						'.swiper-button-prev',
 					]}
-				/>
-			)}
+					
+					/>
+					)}
+					<div className='bgLighterEffect'></div>
 		</>
 	);
 };

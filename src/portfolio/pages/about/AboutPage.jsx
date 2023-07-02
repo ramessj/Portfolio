@@ -10,7 +10,6 @@ import './aboutpage.css';
 export const AboutPage = () => {
 	const myRef = useRef();
 	const { t } = useTranslation();
-
 	const navigate = useNavigate();
 
 	useEffect(() => {
@@ -52,11 +51,11 @@ export const AboutPage = () => {
 					</div>
 				</motion.div>
 				<motion.div
-				initial={{ opacity: 0 }}
-				whileInView={{
-					opacity: 1,
-					transition: { delay: 0.25, duration: 1 },
-				}}
+					initial={{ opacity: 0 }}
+					whileInView={{
+						opacity: 1,
+						transition: { delay: 0.25, duration: 1 },
+					}}
 					className='home2right'>
 					<ProfilePictureDrag />
 				</motion.div>

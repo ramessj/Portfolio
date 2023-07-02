@@ -1,25 +1,25 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import { useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Typewriter, WordHover, DownArrow } from '../../components';
+import { useEffect, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
+import { Typewriter, WordHover, DownArrow } from '../../components';
 
 import './home1.css';
 
 export const Home1 = () => {
-
-	const { t } = useTranslation();
-
 	const myRef = useRef();
 
 	const navigate = useNavigate();
+	
+	
+	const { t } = useTranslation();
 
 	useEffect(() => {
 		const observer = new IntersectionObserver((entries) => {
 			const entry = entries[0];
 			if (entry.isIntersecting) {
-				navigate('');
+				navigate("/")
 			}
 		});
 

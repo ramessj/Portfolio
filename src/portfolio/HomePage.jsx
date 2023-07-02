@@ -1,4 +1,5 @@
 import { Parallax } from './components';
+
 import {
 	Home1,
 	AboutPage,
@@ -18,8 +19,7 @@ const homeSections = [
 export const HomePage = () => {
 	return (
 		<>
-			<Parallax sections={homeSections} />
-			<div className='bgLighterEffect'></div>
+				<Parallax sections={homeSections} />
 		</>
 	);
 };
