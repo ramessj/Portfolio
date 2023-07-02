@@ -39,6 +39,8 @@
 	box-sizing: border-box;
 	padding: 0;
 	cursor: none;
+	user-select: none;
+	-webkit-user-drag: none;
 }
 
 html {

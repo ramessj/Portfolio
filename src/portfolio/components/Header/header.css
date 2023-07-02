@@ -34,11 +34,9 @@ header {
 	padding-top: 1rem;
 }
 
-.headerNav > .brandLogo {
+.brandLogo {
 	font-size: 2rem;
 	font-family: proxima;
-	user-select: none;
-	-webkit-user-drag: none;
 	transition: transform 0.1s ease-out;
 	-webkit-transition: transform 0.1s ease-out;
 	-moz-transition: transform 0.1s ease-out;
@@ -49,6 +47,20 @@ header {
 	gap: 0.5rem;
 	width: 33%;
 }
+
+.brandLogo a{
+	transition: all 0.15s linear;
+	-webkit-transition: all 0.15s linear;
+	-moz-transition: all 0.15s linear;
+	-ms-transition: all 0.15s linear;
+	-o-transition: all 0.15s linear;
+}
+
+.brandLogo a:hover{
+	color: yellow;
+}
+
+
 
 .rq {
 	color: yellow;

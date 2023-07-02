@@ -16,17 +16,16 @@ export const App = () => {
 					<Route path='/*' element={<Navigate to={'/'} />} />
 				</Routes>
 			</BrowserRouter>
-
 			{!isMobile && (
 				<AnimatedCursor
-					innerSize={18}
-					outerSize={1}
-					outerStyle={{ display: 'none' }}
-					color='255, 195, 120'
-					innerScale={1}
+					innerSize={16}
+					outerSize={3}
+					outerStyle={{ backgroundColor: 'red' }}
+					innerScale={0.9}
+					outerScale={6}
 					innerStyle={{
-						backgroundColor: '#FFaa',
-						boxShadow: '0px 0px 0.2rem white',
+						backgroundColor: 'yellow',
+						boxShadow: '0px 0px 0.5rem white',
 					}}
 					trailingSpeed={1}
 					showSystemCursor={false}
