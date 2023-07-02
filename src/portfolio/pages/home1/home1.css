@@ -17,6 +17,7 @@
 	flex-direction: column;
 	gap: 1rem;
 	user-select: none;
+	width: 100%;
 }
 
 .home1container h2 {
