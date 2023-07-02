@@ -38,6 +38,7 @@
 * {
 	box-sizing: border-box;
 	padding: 0;
+	cursor: none;
 }
 
 
@@ -47,7 +48,7 @@ html {
 	overflow-y: scroll;
 	overflow-x: hidden;
 	scroll-snap-type: y mandatory;
-	scroll-behavior: unset;
+	scroll-behavior: smooth;
 
 }
 
