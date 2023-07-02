@@ -4,19 +4,18 @@ import { Link, useLocation } from 'react-router-dom';
 import { genericHashLink } from 'react-router-hash-link';
 import { useTranslation } from 'react-i18next';
 
+import esFlag from '../../../assets/icons/es.png';
+import enFlag from '../../../assets/icons/en.png';
+
 import './header.css';
 
-import esFlag from '../../../assets/icons/es.png'
-import enFlag from '../../../assets/icons/en.png'
-
 const selected = 'active';
-
 const notSelected = 'notSelected';
 
 export const Header = () => {
 	const [lsLang, setLsLang] = useState(localStorage.getItem('lsLang'));
 
-	const { i18n } = useTranslation();
+	const { t, i18n } = useTranslation();
 
 	const changeLanguage = (language) => {
 		i18n.changeLanguage(language);
@@ -48,9 +47,13 @@ export const Header = () => {
 				</div>
 				<div className='languageSelector'>
 					{lsLang == 'en' ? (
-						<button onClick={() => changeLanguage('es')}><img className='langFlag' src={esFlag}></img></button>
+						<button onClick={() => changeLanguage('es')}>
+							<img className='langFlag' src={esFlag}></img>
+						</button>
 					) : (
-						<button onClick={() => changeLanguage('en')}><img className='langFlag'  src={enFlag}></img></button>
+						<button onClick={() => changeLanguage('en')}>
+							<img className='langFlag' src={enFlag}></img>
+						</button>
 					)}
 				</div>
 				<div className='menu-wrap'>
@@ -70,14 +73,14 @@ export const Header = () => {
 										<MyHashLink
 											smooth
 											to='#'
-											data-text='Home'
+											data-text={t('Home')}
 											onClick={handleCloseMenu}
 											className={
 												location.hash == ``
 													? selected
 													: notSelected
 											}>
-											Home
+											{t('Home')}
 										</MyHashLink>
 									</li>
 									<li>
@@ -89,9 +92,9 @@ export const Header = () => {
 													: notSelected
 											}
 											to='#about'
-											data-text='About'
+											data-text={t('About')}
 											onClick={handleCloseMenu}>
-											About
+											{t('About')}
 										</MyHashLink>
 									</li>
 									<li>
@@ -103,9 +106,9 @@ export const Header = () => {
 													: notSelected
 											}
 											to='#skills'
-											data-text='Skills'
+											data-text={t('Skills')}
 											onClick={handleCloseMenu}>
-											Skills
+											{t('Skills')}
 										</MyHashLink>
 									</li>
 									<li>
@@ -117,9 +120,9 @@ export const Header = () => {
 													: notSelected
 											}
 											to='#projects'
-											data-text='Projects'
+											data-text={t('Projects')}
 											onClick={handleCloseMenu}>
-											Projects
+											{t('Projects')}
 										</MyHashLink>
 									</li>
 									<li>
@@ -131,9 +134,9 @@ export const Header = () => {
 													: notSelected
 											}
 											to='#contact'
-											data-text='Contact'
+											data-text={t('Contact')}
 											onClick={handleCloseMenu}>
-											Contact
+											{t('Contact')}
 										</MyHashLink>
 									</li>
 								</ul>

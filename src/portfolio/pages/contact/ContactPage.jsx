@@ -2,6 +2,7 @@
 import { useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Lines } from '../../components';
+import { motion } from 'framer-motion';
 
 import './contactpage.css';
 
@@ -22,7 +23,10 @@ export const ContactPage = () => {
 
 	return (
 		<>
-			<div className='contactContainer'>
+			<motion.div
+				initial={{ opacity: 0 }}
+				whileInView={{ opacity: 1, transition: {delay: 0.15, duration: 0.75 } }}
+				className='contactContainer'>
 				<div className='contactTitle'>
 					<h2 className='text-primary' ref={myRef}>
 						Contact Me!
@@ -38,7 +42,7 @@ export const ContactPage = () => {
 					</p>
 					<button className='btn btn-primary'>Get in touch</button>
 				</div>
-			</div>
+			</motion.div>
 		</>
 	);
 };

@@ -26,13 +26,16 @@ export const AboutPage = () => {
 
 	return (
 		<>
-			<div className='home2container' ref={myRef}>
+			<motion.div
+				initial={{ opacity: 0 }}
+				whileInView={{ opacity: 1, transition: { duration: 0.15 } }}
+				className='home2container'
+				ref={myRef}>
 				<motion.div
-					initial={{ opacity: 0, x: -100 }}
+					initial={{ opacity: 0 }}
 					whileInView={{
 						opacity: 1,
-						x: 0,
-						transition: { delay: 0.1, duration: 0.75 },
+						transition: { delay: 0.15, duration: 0.75 },
 					}}
 					className='home2left'>
 					<div className='aboutHead'>
@@ -49,16 +52,15 @@ export const AboutPage = () => {
 					</div>
 				</motion.div>
 				<motion.div
-					initial={{ opacity: 0, x: 100 }}
-					whileInView={{
-						opacity: 1,
-						x: 0,
-						transition: { delay: 0.1, duration: 0.75 },
-					}}
+				initial={{ opacity: 0 }}
+				whileInView={{
+					opacity: 1,
+					transition: { delay: 0.25, duration: 1 },
+				}}
 					className='home2right'>
 					<ProfilePictureDrag />
 				</motion.div>
-			</div>
+			</motion.div>
 		</>
 	);
 };

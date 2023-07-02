@@ -29,8 +29,8 @@ export const Home1 = () => {
 		<>
 			<div className='home1container' ref={myRef}>
 				<motion.div
-				initial={{opacity: 0}}
-				whileInView={{opacity: 1, transition: {duration: 1.5} }}
+				initial={{opacity: 0, scale: 0.7}}
+				whileInView={{opacity: 1, scale: 1, transition: {delay: 0.27, duration: 0.7} }}
 				className='home1main'>
 					<div className='helloh2'>
 						<h2 className='helloh2text'>

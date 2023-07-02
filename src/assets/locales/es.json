@@ -1,7 +1,18 @@
 {
-	"Hello":"Hola",
-	"I am":"Soy",
-	"About Me":"Sobre Mí",
-	"aboutP": "Desarrollador Full Stack radicado en Uruguay con más de 1 año de experiencia en area. Constantemente aprendiendo y ampliando mis conocimientos a través del desarrollo de nuevos proyectos",
-	"Download CV": "Descargar CV"
+	"Hello": "Hola",
+	"I am": "Soy",
+	"About Me": "Sobre Mí",
+	"aboutP": "Desarrollador Full Stack radicado en Uruguay con más de 1 año de experiencia en el area. Constantemente aprendiendo y ampliando mis conocimientos a través del desarrollo de nuevos proyectos",
+	"Download CV": "Descargar CV",
+	"typewriter1": "Desarrollador Web",
+	"typewriter2": "Programador",
+	"typewriter3": "Trabajador",
+	"typewriter4": "Entusiasta Tech",
+	"typewriter5": "Gamer",
+	"Home": "Inicio",
+	"About": "Sobre Mi",
+	"Skills": "Habilidades",
+	"Projects": "Proyectos",
+	"Contact": "Contacto",
+	"SkillsBody": "Una persona con ganas de aprender y explorar nuevos campos de la vida y la tecnología, con buenas habilidades de escucha y de aprendizaje rápido."
 }
