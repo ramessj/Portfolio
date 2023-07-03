@@ -1,46 +1,27 @@
-.bgLighterEffect {
-	pointer-events: none;
-	position: fixed;
-	display: flex;
+
+
+.sectionWrapper{
 	height: 100%;
-	background: #ffffff;
-	opacity: 1.25%;
-	right: 0;
-	top: 0;
-	width: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
 }
 
 section {
-	padding-top: 5rem;
-	padding-bottom: 2rem;
-	height: 100svh;
-	display: flex;
 	scroll-snap-align: center;
-	margin-bottom: 100svh;
-	margin-top: 2svh;
-	/* overflow-x: hidden; */
 }
 
 
-#home{
-	margin-top: 1svh;
-}
 
-#contact{
-	margin-bottom: 1svh;
-}
 
 section > div {
-	height: 85dvh;
-	max-width: 100%;
-	overflow-x: hidden;
-	
+	height: 100%;
 }
 
 @media (min-width: 900px) {
 	section > div {
-		padding-top: 3rem;
-		padding-bottom: 3rem;
-		/* background-color: aqua; */
+		/* padding-top: 3rem; */
+		/* padding-bottom: 3rem; */
 	}
 }

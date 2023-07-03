@@ -3,13 +3,14 @@
 .home1container {
 	display: flex;
 	justify-content: center;
-	align-items: center;
+	/* align-items: center; */
 	font-family: proxima;
-	margin-top: -2.5rem;
-	height: 100%;
-	width: 100%;
-	overflow-x: hidden;
-	max-width: 100%;
+	/* margin-top: -2.5rem; */
+	/* height: 100%; */
+	/* width: 100%; */
+	/* overflow-x: hidden; */
+	/* max-width: 100%; */
+	position: relative;
 }
 
 .home1main {

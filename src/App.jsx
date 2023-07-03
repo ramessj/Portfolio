@@ -1,6 +1,6 @@
 import { Navigate, Route, Routes } from 'react-router-dom';
-import { isMobile } from 'react-device-detect';
-import AnimatedCursor from 'react-animated-cursor';
+// import { isMobile } from 'react-device-detect';
+// import AnimatedCursor from 'react-animated-cursor';
 import { Header, HomePage } from './portfolio';
 
 import './index.css';
@@ -9,14 +9,14 @@ export const App = () => {
 	return (
 		<>
 			<Header />
-			<main>
+			<main className='container-fluid mainfh'>
 				<Routes>
 					<Route path='/' element={<HomePage />} />
 
 					<Route path='*' element={<Navigate to={'/'} />} />
 				</Routes>
 			</main>
-
+{/* 
 			{!isMobile && (
 				<AnimatedCursor
 					innerSize={16}
@@ -50,8 +50,7 @@ export const App = () => {
 					]}
 					
 					/>
-					)}
-					<div className='bgLighterEffect'></div>
+					)} */}
 		</>
 	);
 };
