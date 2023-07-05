@@ -58,6 +58,31 @@ export const AboutPage = () => {
 					}}
 					className='home2right'>
 					<ProfilePictureDrag />
+
+					{/* <div className='aboutSoftSkills'> */}
+					<div className='softSkillHex'>
+						<div className='containerHex'>
+							<div className='hex'>
+								<div className='hexTextContainer'>hola</div>
+							</div>
+							<div className='hex'>
+								<div className='hexTextContainer'>hola</div>
+							</div>
+							<div className='hex'>
+								<div className='hexTextContainer'>hola</div>
+							</div>
+							<div className='hex'>
+								<div className='hexTextContainer'>hola</div>
+							</div>
+							<div className='hex'>
+								<div className='hexTextContainer'>hola</div>
+							</div>
+							
+							
+							
+						</div>
+					</div>
+					{/* </div> */}
 				</motion.div>
 			</motion.div>
 		</>

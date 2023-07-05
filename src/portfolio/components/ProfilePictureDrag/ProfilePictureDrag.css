@@ -1,7 +1,10 @@
 .imgDragContainer{
 		background: linear-gradient(200deg, yellow 12%, rgb(255, 105, 4));
-		width: 100%;
-		max-width: 20rem;
+		/* width: clamp(40%, 80%, 100%); */
+		/* min-width: 40%; */
+		/* max-width: 80%; */
+		/* width: 10rem; */
+		/* max-width: 20rem; */
 		aspect-ratio: 1/1;
 		border-radius: 50%;
 		-webkit-border-radius: 50%;
@@ -21,4 +24,12 @@
 	-o-border-radius: 50%;
 	user-select: none;
 	pointer-events: none;
+}
+
+
+@media (max-width: 900px){
+
+	.imgDragContainer{
+		width: 40%;
+	}
 }

@@ -45,23 +45,24 @@ user-select: none;
 
 html {
 	/* overflow-y: scroll; */
-	overflow: hidden;
+	overflow-x: hidden;
 	/* scroll-snap-type: y mandatory; */
 	/* scroll-behavior: smooth; */
 }
 
 
 body {
-	/* padding: 0;
-	*/
-	margin: 0;
+
+	/* margin: 0; */
 	background-color: var(--bg-color);
 	color: #c4c4c4;
+	/* height: 100dvh; */
 }
 
 
 .mainfh{
-	height: 100dvh;
+height: 100dvh;
+
 	overflow-y: scroll;
 	scroll-snap-type: y mandatory;
 	scroll-behavior: smooth;

@@ -1,15 +1,17 @@
 .projectsContainer {
 	display: flex;
 	flex-direction: column;
-	/* gap: 1.5rem; */
-	height: 100%;
-	justify-content: space-around;
-	/* overflow-x: hidden; */
+	height: 95%;
 	width: 100%;
 	max-width: 100%;
+	gap: 1rem;
+
 	
 }
 
+.showCaseContainer{
+	height: 100%;
+}
 
 .myLatestProjects{
 	font-size: clamp(1rem, 5vw, 2.5rem);
