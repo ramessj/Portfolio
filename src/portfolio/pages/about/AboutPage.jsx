@@ -74,12 +74,6 @@ export const AboutPage = () => {
 							<div className='hex'>
 								<div className='hexTextContainer'>hola</div>
 							</div>
-							<div className='hex'>
-								<div className='hexTextContainer'>hola</div>
-							</div>
-							
-							
-							
 						</div>
 					</div>
 					{/* </div> */}
