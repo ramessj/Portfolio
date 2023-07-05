@@ -80,6 +80,7 @@ h2 {
 	margin: 0;
 	font-weight: 700;
 	font-family: var(--font1);
+	line-height: 1;
 }
 
 .bgLighterEffect {

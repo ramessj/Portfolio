@@ -5,5 +5,5 @@
 }
 
 .home1Ramiro > h2 {
-	font-size: clamp(1.5rem, 14vw, 9rem);
+	font-size: clamp(1.5rem, 12vw, 10rem);
 }
