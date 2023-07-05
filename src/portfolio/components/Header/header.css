@@ -138,7 +138,7 @@ header {
 	content: '';
 	position: absolute;
 	z-index: 1;
-	top: -10px;
+	top: -6px;
 	width: 100%;
 	height: 3px;
 	background-color: var(--white-01);
@@ -218,7 +218,7 @@ header {
 }
 
 .menu-wrap .menu > #menusub1 > #menusub2 {
-	max-width: 90svw;
+	max-width: 100svw;
 	max-height: 80svh;
 	height: 100%;
 	opacity: 0;
@@ -349,7 +349,14 @@ header {
 
 @media screen and (max-width: 500px) {
 	.headerNav > .brandLogo {
-		font-size: 1.5rem;
+		font-size: 1.25rem;
+	}
+
+	.menu-wrap .hamburger{
+		width: 2.5rem;
+		height: 2.5rem;
+		margin-top: -1.25rem;
+
 	}
 }
 
@@ -369,12 +376,7 @@ header {
 
 @media screen and (max-width: 385px) {
 	#menu-links li a {
-		font-size: 42px;
+		font-size: 30px;
 	}
 }
 
-@media screen and (max-width: 360px) {
-	#menu-links li a {
-		font-size: 42px;
-	}
-}

@@ -12,5 +12,11 @@ section {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	height: 88%;
+	/* height: 88%; */
+}
+
+@media (max-width: 900px){
+	section{
+		height: 88%;
+	}
 }
