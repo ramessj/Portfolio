@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { motion } from 'framer-motion';
 
 import techs from '../../../assets/webSkills';
 import './webskills.css';
@@ -7,13 +6,10 @@ import './webskills.css';
 export const WebSkills = () => {
 	const [techType, setTechType] = useState('front');
 
-	let techsData = techs[techType];
-
 	const setTech = (e) => {
 		const data = e.target.getAttribute('data');
 		if (techType != data) {
 			setTechType(data);
-			techsData = techs[techType];
 		}
 	};
 
@@ -47,22 +43,53 @@ export const WebSkills = () => {
 					</button>
 				</div>
 
-				<div className='technologies'>
-					{techsData.map((tech) => (
-						<motion.div
-							initial={{ opacity: 0 }}
-							animate={{ opacity: 1 }}
-							className='techContainer'
-							key={tech.name}>
-							{/* <div className='tech'> */}
+				<div
+					className={`technologies ${
+						techType != 'front' ? 'd-none' : ''
+					}`}>
+					{techs['front'].map((tech) => (
+						<div className='techContainer' key={tech.name}>
 							<img
 								src={tech.color}
 								alt={tech.name}
 								className='tech techLogo'
 							/>
-							{/* </div> */}
 							<div className='techName'>{tech.name}</div>
-						</motion.div>
+						</div>
+					))}
+				</div>
+
+				<div
+					className={`technologies ${
+						techType != 'back' ? 'd-none' : ''
+					}`}>
+					{techs['back'].map((tech) => (
+						<div className='techContainer' key={tech.name}>
+							<img
+								src={tech.color}
+								alt={tech.name}
+								className='tech techLogo'
+							/>
+
+							<div className='techName'>{tech.name}</div>
+						</div>
+					))}
+				</div>
+
+				<div
+					className={`technologies ${
+						techType != 'tools' ? 'd-none' : ''
+					}`}>
+					{techs['tools'].map((tech) => (
+						<div className='techContainer' key={tech.name}>
+							<img
+								src={tech.color}
+								alt={tech.name}
+								className='tech techLogo'
+							/>
+
+							<div className='techName'>{tech.name}</div>
+						</div>
 					))}
 				</div>
 			</div>
