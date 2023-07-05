@@ -3,14 +3,9 @@
 .home1container {
 	display: flex;
 	justify-content: center;
-	/* align-items: center; */
+
 	font-family: proxima;
-	/* margin-top: -2.5rem; */
-	/* height: 100%; */
-	/* width: 100%; */
-	/* overflow-x: hidden; */
-	/* max-width: 100%; */
-	position: relative;
+
 }
 
 .home1main {
@@ -75,6 +70,9 @@ h3.iamh2white {
 	-webkit-text-fill-color: transparent;
 }
 
+#home{
+	position: relative;
+}
 
 .home1rrr {
 	position: absolute;

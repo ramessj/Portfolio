@@ -38,14 +38,14 @@
 * {
 	/* box-sizing: border-box; */
 	/* padding: 0; */
-	/* cursor: none;
-	user-select: none;
-	-webkit-user-drag: none; */
+	/* cursor: none;*/
+user-select: none; 
+	-webkit-user-drag: none; 
 }
 
 html {
 	/* overflow-y: scroll; */
-	/* overflow-x: hidden; */
+	overflow: hidden;
 	/* scroll-snap-type: y mandatory; */
 	/* scroll-behavior: smooth; */
 }
@@ -53,7 +53,8 @@ html {
 
 body {
 	/* padding: 0;
-	margin: 0; */
+	*/
+	margin: 0;
 	background-color: var(--bg-color);
 	color: #c4c4c4;
 }
@@ -64,9 +65,6 @@ body {
 	overflow-y: scroll;
 	scroll-snap-type: y mandatory;
 	scroll-behavior: smooth;
-	/* display: flex; */
-	align-items: stretch;
-	/* flex-direction: column; */
 }
 
 
@@ -83,7 +81,6 @@ h2 {
 	font-family: var(--font1);
 }
 
-/* .rama{ background-color: rgba(255, 255, 255, 0.062); } */
 .bgLighterEffect {
 	pointer-events: none;
 	position: fixed;

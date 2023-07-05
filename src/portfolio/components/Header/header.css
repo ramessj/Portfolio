@@ -16,8 +16,7 @@ header {
 	-webkit-box-pack: justify;
 	-ms-flex-pack: justify;
 	justify-content: space-between;
-	z-index: 100;
-	user-select: none;
+	z-index: 2;
 }
 
 .languageSelector > button {
@@ -31,7 +30,7 @@ header {
 }
 
 .headerNav {
-	padding-top: 1rem;
+	padding-top: 0.25rem;
 }
 
 .brandLogo {
@@ -48,7 +47,7 @@ header {
 	width: 33%;
 }
 
-.brandLogo a{
+.brandLogo a {
 	transition: all 0.15s linear;
 	-webkit-transition: all 0.15s linear;
 	-moz-transition: all 0.15s linear;
@@ -56,11 +55,9 @@ header {
 	-o-transition: all 0.15s linear;
 }
 
-.brandLogo a:hover{
+.brandLogo a:hover {
 	color: yellow;
 }
-
-
 
 .rq {
 	color: yellow;
@@ -87,6 +84,10 @@ header {
 	width: 3rem;
 	height: 3.25rem;
 	opacity: 0;
+}
+
+.toggler:hover {
+	cursor: pointer;
 }
 
 .menu-wrap:hover .hamburger {

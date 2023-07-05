@@ -1,5 +1,5 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import {  useLocation } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { HashLink } from 'react-router-hash-link';
@@ -40,7 +40,10 @@ export const Header = () => {
 			<div className='headerNav container d-flex justify-content-between align-items-center'>
 				<div className='brandLogo'>
 					<span className='rq'>{`<`}</span>
-					<HashLink smooth to={'#'}> RQ </HashLink>
+					<HashLink smooth to='#home'>
+						{' '}
+						RQ{' '}
+					</HashLink>
 					<span className='rq'>{`/>`}</span>
 				</div>
 				<div className='languageSelector'>
@@ -74,7 +77,8 @@ export const Header = () => {
 											data-text={t('Home')}
 											onClick={handleCloseMenu}
 											className={
-												location.hash === ``
+												location.hash === `` ||
+												location.hash === '#home'
 													? selected
 													: notSelected
 											}>
