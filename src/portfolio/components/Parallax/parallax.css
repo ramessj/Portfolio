@@ -6,17 +6,30 @@
 	width: 100%;
 }
 
-section {
-	scroll-snap-align: center;
+/* scroll-snap-align: center; */
+/* section {
 	width: 100%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	height: 75%;
+} */
+
+.fp-overflow{
+	overflow-y: initial !important;
+	width: 100%;
+	height: 75%;
+	padding-top: 2rem;
+
+}
+
+.fp-warning, .fp-watermark{
+	display: none;
 }
 
 @media (max-width: 900px){
-	section{
+	.fp-overflow{
+		
 		height: 88%;
 	}
 }
