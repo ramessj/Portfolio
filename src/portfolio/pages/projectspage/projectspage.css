@@ -1,7 +1,7 @@
 .projectsContainer {
 	display: flex;
 	flex-direction: column;
-	height: 95%;
+	height: 100%;
 	width: 100%;
 	max-width: 100%;
 	gap: 1rem;
