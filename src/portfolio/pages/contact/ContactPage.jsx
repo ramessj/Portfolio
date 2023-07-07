@@ -44,7 +44,7 @@ export const ContactPage = () => {
 				className='contactContainer'>
 				<div className='contactLeft'>
 					<div className='contactTitle'>
-						<h2 className='text-primary'>Contact Me!</h2>
+						<h2>Contact Me!</h2>
 						<Lines />
 					</div>
 
@@ -57,12 +57,19 @@ export const ContactPage = () => {
 					</div>
 				</div>
 				{msgSent == true ? (
-					<p>Mensaje enviado, gracias por comunicarte</p>
+					<p className='text-warning'>
+						Mensaje enviado, gracias por comunicarte
+					</p>
 				) : (
 					<form onSubmit={handleSubmit} className='contactForm'>
 						<div className='formField'>
-							<label htmlFor='email'>Email Address</label>
-							<input id='email' type='email' name='email' />
+							<label htmlFor='email'>Your Email Address</label>
+							<input
+								id='email'
+								type='email'
+								name='email'
+								required
+							/>
 							<ValidationError
 								prefix='Email'
 								field='email'
@@ -71,6 +78,8 @@ export const ContactPage = () => {
 						</div>
 
 						<div className='formField'>
+							<label htmlFor='message'>Message</label>
+
 							<textarea id='message' name='message' required />
 							<ValidationError
 								prefix='Message'
@@ -78,7 +87,11 @@ export const ContactPage = () => {
 								errors={state.errors}
 							/>
 						</div>
-						<button type='submit' disabled={state.submitting}>
+
+						<button
+							className='mt-2'
+							type='submit'
+							disabled={state.submitting}>
 							Enviar
 						</button>
 					</form>
