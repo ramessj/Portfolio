@@ -8,10 +8,12 @@ import enFlag from '../../../assets/icons/en.png';
 import './header.css';
 
 export const Header = () => {
+	const [lsLang, setLsLang] = useState(localStorage.getItem('lsLang'));
+
 	const { t, i18n } = useTranslation();
 
-	const [lsLang, setLsLang] = useState(localStorage.getItem('lsLang'));
-	const toggler = document.getElementById('menuToggler');
+	// i18n.changeLanguage(lsLang);
+
 
 	const changeLanguage = (language) => {
 		i18n.changeLanguage(language);
@@ -19,13 +21,15 @@ export const Header = () => {
 		setLsLang(language);
 	};
 
+	const toggler = document.getElementById('menuToggler');
+
 	const handleCloseMenu = () => {
 		toggler.checked = false;
 	};
 
 	useEffect(() => {
 		changeLanguage(lsLang);
-	}, []);
+	}, [lsLang]);
 
 	return (
 		<header className='container-fluid'>
@@ -36,13 +40,23 @@ export const Header = () => {
 					<span className='rq'>{`/>`}</span>
 				</div>
 				<div className='languageSelector'>
-					{lsLang == 'es' ? (
-						<button title='Español' onClick={() => changeLanguage('es')}>
-							<img className='langFlag' src={esFlag} alt='Spanish'></img>
+					{lsLang == 'en' ? (
+						<button
+							title='Español'
+							onClick={() => changeLanguage('es')}>
+							<img
+								className='langFlag'
+								src={esFlag}
+								alt='Spanish'></img>
 						</button>
 					) : (
-						<button title='English' onClick={() => changeLanguage('en')}>
-							<img className='langFlag' src={enFlag} alt='English'></img>
+						<button
+							title='English'
+							onClick={() => changeLanguage('en')}>
+							<img
+								className='langFlag'
+								src={enFlag}
+								alt='English'></img>
 						</button>
 					)}
 				</div>
