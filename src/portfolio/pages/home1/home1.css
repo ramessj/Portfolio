@@ -1,4 +1,9 @@
 /*  HOME 1 */
+:root {
+	--y1: rgb(255, 255, 0);
+	--y2: rgb(236, 173, 37);
+	--y3: rgb(245, 230, 97);
+}
 
 .home1container {
 	display: flex;
@@ -15,11 +20,9 @@
 	user-select: none;
 	width: 100%;
 	justify-content: center;
-
 }
 
 .home1container h2 {
-	background: linear-gradient(200deg, yellow 12%, rgb(255, 105, 4));
 	-webkit-background-clip: text;
 	background-clip: text;
 	-webkit-text-fill-color: transparent;
@@ -36,6 +39,19 @@
 	text-align: center;
 	line-height: 0.8;
 	font-size: clamp(1.5rem, 16vw, 8rem);
+	background: linear-gradient(
+		100deg,
+		var(--y1),
+		var(--y2),
+		var(--y3),
+		var(--y1)
+	);
+	-webkit-background-clip: text;
+	background-clip: text;
+	background-size: 200%;
+	animation: bg-pan 2s linear infinite;
+	-webkit-animation: bg-pan 2s linear infinite;
+	-webkit-text-fill-color: transparent;
 }
 
 .hellocoma {
@@ -70,8 +86,6 @@
 	-webkit-text-fill-color: transparent;
 }
 
-
-
 .home1rrr {
 	position: absolute;
 	bottom: 10svh;
@@ -81,4 +95,3 @@
 	width: 3rem;
 	-webkit-user-drag: none;
 }
-

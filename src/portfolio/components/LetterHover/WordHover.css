@@ -6,4 +6,22 @@
 
 .home1Ramiro > h2 {
 	font-size: clamp(1.5rem, 12vw, 10rem);
+	background: linear-gradient(
+		to right,
+		var(--y1),
+		var(--y2),
+		var(--y3),
+		var(--y1)
+	);
+	background-size: 300%;
 }
+
+@keyframes bg-pan {
+	from {
+		background-position: 0% center;
+	}
+	to {
+		background-position: -200% center;
+	}
+}
+
