@@ -19,7 +19,7 @@
 
 
 
-@media (max-width: 900px) {
+@media (max-width: 991px) {
 	.projectsContainer h2 {
 		font-size: clamp(1.5rem, 6.5vw, 2.5rem);
 	}

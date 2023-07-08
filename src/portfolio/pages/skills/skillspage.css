@@ -21,11 +21,11 @@
 }
 
 .skillsBody {
-	font-size: clamp(0.8rem, 1vw, 1.2rem);
+	font-size: clamp(0.8rem, 2vw, 1.5rem);
 	width: 45ch;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 991px) {
 	.home3container {
 		flex-direction: column;
 		justify-content: center;

@@ -27,19 +27,15 @@
 
 .softSkillHex {
 	width: 100%;
-	/* display: flex; */
-	/* justify-content: space-around; */
-	--s: clamp(4rem, 12vw, 6rem); /* size  */
-	--r: 1; /* ratio */
 
-	/* clip-path parameter */
+	--s: clamp(4rem, 12vw, 6rem);
+	--r: 1;
+
 	--hc: 20px;
 	--vc: 30px;
 
-	--m: 0.75rem; /* vertical margin */
-	--mh: calc(
-		var(--m) + (var(--s) - 2 * var(--hc)) / 2
-	); /* horizontal margin */
+	--m: 0.75rem;
+	--mh: calc(var(--m) + (var(--s) - 2 * var(--hc)) / 2);
 	--f: calc(2 * var(--s) + 4 * var(--m) - 2 * var(--vc) - 2px);
 }
 
@@ -57,7 +53,7 @@
 	margin: var(--m);
 	height: calc(var(--s));
 	display: inline-block;
-	font-size: initial; /* we reset the font-size if we want to add some content */
+	font-size: initial;
 	clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%);
 }
 
@@ -70,8 +66,8 @@
 }
 
 .hexTextContainer i {
-	filter: drop-shadow(0 0 1rem rgb(0, 0, 0));
-	-webkit-filter: drop-shadow(0 0 1rem rgb(0, 0, 0));
+	filter: drop-shadow(0 0 1rem rgba(0, 0, 0));
+	-webkit-filter: drop-shadow(0 0 1rem rgba(0, 0, 0));
 }
 
 .aboutHead {
@@ -100,8 +96,7 @@
 	gap: 2rem;
 }
 
-
-@media (max-width: 900px) {
+@media (max-width: 991px) {
 	.home2container {
 		flex-direction: column-reverse;
 		gap: 1rem;

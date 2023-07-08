@@ -40,18 +40,8 @@
 }
 
 
-/* CSS */
-/* #g-recaptcha-response,
-.g-recaptcha {
-	display: block !important;
-	position: absolute;
-	margin: -50px 0 0 0 !important;
-	z-index: -999999;
-	opacity: 1;
-	} */
 
-
-@media (max-width: 900px){
+@media (max-width: 991px){
 	.contactContainer {
 		flex-direction: column;
 	}
@@ -59,4 +49,16 @@
 	.contactLeft{
 		width: 100%;
 	}
+
+	.contactForm {
+		width: 70%;
+	}
+	
+}
+
+@media (max-width: 576px){
+	.contactForm {
+		width:100%;
+	}
+
 }

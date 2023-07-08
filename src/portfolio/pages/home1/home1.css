@@ -52,17 +52,17 @@
 	justify-content: center;
 }
 
-.iamdiv > div {
+.iamh3container {
 	display: flex;
 	width: 100%;
 	justify-content: end;
 }
 
 .iamdiv > div:first-child {
-	padding-right: 3rem;
+	padding-right: 2rem;
 }
 
-h3.iamh2white {
+.iamh2white {
 	font-size: clamp(1.1rem, 9vw, 4rem);
 	background: white;
 	-webkit-background-clip: text;
@@ -70,9 +70,7 @@ h3.iamh2white {
 	-webkit-text-fill-color: transparent;
 }
 
-/* #home {
-	position: relative;
-} */
+
 
 .home1rrr {
 	position: absolute;
@@ -84,27 +82,3 @@ h3.iamh2white {
 	-webkit-user-drag: none;
 }
 
-@media (max-width: 900px) {
-
-	.home1container {
-		height: 100%;
-		justify-content: center;
-		align-items: center;
-	}
-
-	.home1main{
-		justify-content: center;
-
-	
-	}
-
-	.home1right {
-		width: 100%;
-	}
-
-
-
-	.iamdiv > div:first-child {
-		padding-right: 1rem;
-	}
-}
