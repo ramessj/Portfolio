@@ -12,9 +12,6 @@ export const Header = () => {
 
 	const { t, i18n } = useTranslation();
 
-	// i18n.changeLanguage(lsLang);
-
-
 	const changeLanguage = (language) => {
 		i18n.changeLanguage(language);
 		localStorage.setItem('lsLang', language);
@@ -28,7 +25,7 @@ export const Header = () => {
 	};
 
 	useEffect(() => {
-		changeLanguage(lsLang);
+		changeLanguage(lsLang ? lsLang : 'en');
 	}, [lsLang]);
 
 	return (

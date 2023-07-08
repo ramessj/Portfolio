@@ -4,9 +4,6 @@ import { Header, HomePage } from './portfolio';
 
 import './index.css';
 
-import './i18n';
-
-
 export const App = () => {
 	return (
 		<>

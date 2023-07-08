@@ -1,4 +1,4 @@
-import i18next from 'i18next';
+import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 
 import es from './assets/locales/es.json';
@@ -6,11 +6,8 @@ import en from './assets/locales/en.json';
 
 const lsLang = localStorage.getItem('lsLang');
 
-const fallback = lsLang == 'en' ? 'es' : 'en';
-
-i18next.use(initReactI18next).init({
-	lng: lsLang,
-	fallback: fallback,
+i18n.use(initReactI18next).init({
+	lng: lsLang ? lsLang : 'en',
 	resources: {
 		es: {
 			translation: es,
@@ -19,10 +16,6 @@ i18next.use(initReactI18next).init({
 			translation: en,
 		},
 	},
-
-	interpolation: {
-		escapeValue: false,
-	},
 });
 
-export default i18next;
+export default i18n;

@@ -4,16 +4,15 @@ import { useTranslation } from 'react-i18next';
 import './typewriter.css';
 
 export const Typewriter = () => {
-
-	const { t } = useTranslation()
+	const { t } = useTranslation();
 
 	const [text] = useTypewriter({
 		words: [
-			t("typewriter1"),
-			t("typewriter2"),
-			t("typewriter3"),
-			t("typewriter4"),
-			t("typewriter5"),
+			t('typewriter1'),
+			t('typewriter2'),
+			t('typewriter3'),
+			t('typewriter4'),
+			t('typewriter5'),
 		],
 		loop: 0,
 		typeSpeed: 75,

@@ -1,9 +1,9 @@
 import cv from '/RamiroQuesadaCV.pdf';
 
-import linkedin from '../../../assets/icons/linkedinSmall.png'
-import github from '../../../assets/icons/githubSmall.png'
+import linkedin from '../../../assets/icons/linkedinSmall.png';
+import github from '../../../assets/icons/githubSmall.png';
 
-import './AboutButtons.css'
+import './AboutButtons.css';
 import { useTranslation } from 'react-i18next';
 
 export const AboutButtons = () => {
@@ -37,7 +37,9 @@ export const AboutButtons = () => {
 					download='Ramiro Quesada CV'
 					target='_blank'
 					rel='noreferrer'>
-					<button type='button' className='aboutCurriculum'>{t("Download CV")}</button>
+					<button type='button' className='aboutCurriculum'>
+						{t('Download CV')}
+					</button>
 				</a>
 			</div>
 		</>

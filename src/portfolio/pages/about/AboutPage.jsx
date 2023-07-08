@@ -42,7 +42,6 @@ export const AboutPage = () => {
 					className='home2right'>
 					<ProfilePictureDrag />
 
-					{/* <div className='aboutSoftSkills'> */}
 					<div className='softSkillHex'>
 						<div className='containerHex'>
 							<div className='hex'>
@@ -59,7 +58,6 @@ export const AboutPage = () => {
 							</div>
 						</div>
 					</div>
-					{/* </div> */}
 				</motion.div>
 			</motion.div>
 		</>
