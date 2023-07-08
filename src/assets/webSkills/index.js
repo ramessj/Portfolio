@@ -11,9 +11,7 @@ import express from './express.png';
 import firebase from './firebase.png';
 import framer from './framer.png';
 import angular from './angular.png';
-import nextjs from './next-js.png';
 import sql from './sql.png';
-import mysql from './mysql.png';
 import wordpress from './wordpress.png';
 import bootstrap from './bootstrap.png';
 import tailwind from './tailwind.png';
@@ -46,10 +44,6 @@ const techs = {
 			color: angular,
 		},
 
-		{
-			name: 'NextJS',
-			color: nextjs,
-		},
 		{
 			name: 'TailwindCSS',
 			color: tailwind,
@@ -90,10 +84,6 @@ const techs = {
 		{
 			name: 'SQL',
 			color: sql,
-		},
-		{
-			name: 'MySQL',
-			color: mysql,
 		},
 	],
 	tools: [

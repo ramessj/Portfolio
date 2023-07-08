@@ -22,22 +22,21 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	/* padding: 1rem; */
 	gap: 3rem;
 }
 
 .softSkillHex {
 	width: 100%;
-	display: flex;
-	justify-content: space-evenly;
-	--s: clamp(3rem, 15vw, 5rem); /* size  */
+	/* display: flex; */
+	/* justify-content: space-around; */
+	--s: clamp(4rem, 12vw, 6rem); /* size  */
 	--r: 1; /* ratio */
 
 	/* clip-path parameter */
 	--hc: 20px;
 	--vc: 30px;
 
-	--m: 0; /* vertical margin */
+	--m: 0.75rem; /* vertical margin */
 	--mh: calc(
 		var(--m) + (var(--s) - 2 * var(--hc)) / 2
 	); /* horizontal margin */
@@ -48,27 +47,31 @@
 	font-size: 0;
 	width: 100%;
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: center;
 }
 
 .hex {
-	background: rgba(189, 178, 29, 0.76);
+	background: linear-gradient(180deg, yellow 12%, rgb(255, 105, 4));
 
 	width: var(--s);
 	margin: var(--m);
-	height: calc(var(--s) * 1.1547);
+	height: calc(var(--s));
 	display: inline-block;
 	font-size: initial; /* we reset the font-size if we want to add some content */
 	clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%);
 }
 
 .hexTextContainer {
-	display: flex;
-	align-items: center;
-	color: white;
-	justify-content: center;
+	display: grid;
+	place-items: center;
+	color: rgb(255, 255, 255);
 	height: 100%;
-	font-weight: 500;
+	font-size: clamp(2.5rem, 7.5vw, 3.5rem);
+}
+
+.hexTextContainer i {
+	filter: drop-shadow(0 0 1rem rgb(0, 0, 0));
+	-webkit-filter: drop-shadow(0 0 1rem rgb(0, 0, 0));
 }
 
 .aboutHead {
@@ -97,28 +100,25 @@
 	gap: 2rem;
 }
 
-@media (max-width: 1200px) {
-	.aboutBody p {
-		font-size: 1rem;
-	}
-}
 
 @media (max-width: 900px) {
 	.home2container {
 		flex-direction: column-reverse;
-		justify-content: space-around;
-		height: 100%;
+		gap: 1rem;
+		padding: 0.5rem;
 	}
 
 	.home2left {
 		width: 100%;
 		justify-content: center;
+		height: 100%;
 	}
 
 	.home2right {
-		width: 100%;
-	gap: 1rem;
+		gap: 0;
+		height: 80%;
 
+		justify-content: space-evenly;
 	}
 
 	.aboutBody {
@@ -130,15 +130,7 @@
 	}
 
 	.aboutBody p {
-		font-size: 1rem;
-	}
-	.aboutHeadText h2 {
-		font-size: 2.25rem;
-	}
-}
-@media (max-width: 400px) {
-	.aboutBody p {
-		font-size: 0.8rem;
+		font-size: clamp(0.8rem, 3vw, 1.2rem);
 	}
 	.aboutHeadText h2 {
 		font-size: 2.25rem;
