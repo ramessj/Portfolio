@@ -1,30 +1,14 @@
-/* eslint-disable react-hooks/exhaustive-deps */
-import { useEffect, useRef, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useEffect, useState } from 'react';
 import { Lines } from '../../components';
 import { motion } from 'framer-motion';
-
 import { useForm, ValidationError } from '@formspree/react';
+
 import './contactpage.css';
 
 export const ContactPage = () => {
 	const [state, handleSubmit] = useForm('xvojopwy');
 
 	const [msgSent, setmsgSent] = useState(false);
-
-	const myRef = useRef();
-	const navigate = useNavigate();
-
-	useEffect(() => {
-		const observer = new IntersectionObserver((entries) => {
-			const entry = entries[0];
-			if (entry.isIntersecting) {
-				navigate('#contact');
-			}
-		});
-
-		observer.observe(myRef.current);
-	}, []);
 
 	useEffect(() => {
 		if (state.succeeded) {
@@ -35,7 +19,6 @@ export const ContactPage = () => {
 	return (
 		<>
 			<motion.div
-				ref={myRef}
 				initial={{ opacity: 0 }}
 				whileInView={{
 					opacity: 1,

@@ -16,20 +16,20 @@ export const Parallax = ({ sections }) => {
 			))} */}
 
 			<ReactFullpage
-				//fullpage options
-				licenseKey={'YOUR_KEY_HERE'}
-				scrollingSpeed={750} /* Options here */
+				debug
+				menu={'#menu-links'}
+				licenseKey={''}
+				anchors={['home', 'about', 'skills', 'projects', 'contact']}
+				scrollingSpeed={750}
+				recordHistory
 				render={() => {
 					return (
 						<ReactFullpage.Wrapper>
 							{sections.map((section) => (
-								// <div
-								// 	className='section sectionWrapper container'
-								// 	key={sections.indexOf(section) + 1}
-								// 	id={section.props.id}>
-
-								// </div>
-								<section className='section container' key={sections.indexOf(section) + 1} id={section.props.id}>
+								<section
+									className='section container'
+									key={sections.indexOf(section) + 1}
+									id={sections.indexOf(section) + 1000}>
 									{section}
 								</section>
 							))}

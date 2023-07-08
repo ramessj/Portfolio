@@ -8,19 +8,19 @@ export const Lines = () => {
 		hidden: { opacity: 0, x: '-50px' },
 	};
 	return (
-		<div className="lines">
+		<div className='lines'>
 			<motion.div
-				initial="hidden"
-				whileInView="visible"
+				initial='hidden'
+				whileInView='visible'
 				variants={variants}
-				transition={{ type: 'spring', delay: 0.1, duration: 1.2 }}
-				className="topLine"></motion.div>
+				transition={{ type: 'spring', delay: 0.2, duration: 1.2 }}
+				className='topLine'></motion.div>
 			<motion.div
-				initial="hidden"
-				whileInView="visible"
+				initial='hidden'
+				whileInView='visible'
 				variants={variants}
-				transition={{ type: 'spring', delay: 0, duration: 1.4 }}
-				className="bottomLine"></motion.div>
+				transition={{ type: 'spring', duration: 1.4 }}
+				className='bottomLine'></motion.div>
 		</div>
 	);
 };
