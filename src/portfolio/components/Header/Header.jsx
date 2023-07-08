@@ -1,31 +1,23 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import { useLocation } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { HashLink } from 'react-router-hash-link';
 
 import esFlag from '../../../assets/icons/es.png';
 import enFlag from '../../../assets/icons/en.png';
 
 import './header.css';
 
-const selected = 'active';
-const notSelected = 'notSelected';
-
 export const Header = () => {
-	const [lsLang, setLsLang] = useState(localStorage.getItem('lsLang'));
-
 	const { t, i18n } = useTranslation();
+
+	const [lsLang, setLsLang] = useState(localStorage.getItem('lsLang'));
+	const toggler = document.getElementById('menuToggler');
 
 	const changeLanguage = (language) => {
 		i18n.changeLanguage(language);
 		localStorage.setItem('lsLang', language);
 		setLsLang(language);
 	};
-
-	const toggler = document.getElementById('menuToggler');
-
-	const location = useLocation();
 
 	const handleCloseMenu = () => {
 		toggler.checked = false;
@@ -40,10 +32,7 @@ export const Header = () => {
 			<div className='headerNav container d-flex justify-content-between align-items-center'>
 				<div className='brandLogo'>
 					<span className='rq'>{`<`}</span>
-					<HashLink smooth to='#home'>
-						{' '}
-						RQ{' '}
-					</HashLink>
+					<a href='#home'>RQ</a>
 					<span className='rq'>{`/>`}</span>
 				</div>
 				<div className='languageSelector'>
@@ -71,75 +60,49 @@ export const Header = () => {
 							<div id='menusub2'>
 								<ul id='menu-links'>
 									<li>
-										<HashLink
-											smooth
-											to='#'
+										<a
+											data-menuanchor='home'
+											href='#home'
 											data-text={t('Home')}
-											onClick={handleCloseMenu}
-											className={
-												location.hash === `` ||
-												location.hash === '#home'
-													? selected
-													: notSelected
-											}>
+											onClick={handleCloseMenu}>
 											{t('Home')}
-										</HashLink>
+										</a>
 									</li>
 									<li>
-										<HashLink
-											smooth
-											to='#about'
-											className={
-												location.hash == '#about'
-													? selected
-													: notSelected
-											}
+										<a
+											data-menuanchor='about'
+											href='#about'
 											data-text={t('About')}
 											onClick={handleCloseMenu}>
 											{t('About')}
-										</HashLink>
+										</a>
 									</li>
 									<li>
-										<HashLink
-											smooth
-											to='#skills'
-											className={
-												location.hash == `#skills`
-													? selected
-													: notSelected
-											}
+										<a
+											data-menuanchor='skills'
+											href='#skills'
 											data-text={t('Skills')}
 											onClick={handleCloseMenu}>
 											{t('Skills')}
-										</HashLink>
+										</a>
 									</li>
 									<li>
-										<HashLink
-											smooth
-											to='#projects'
-											className={
-												location.hash == `#projects`
-													? selected
-													: notSelected
-											}
+										<a
+											data-menuanchor='projects'
+											href='#projects'
 											data-text={t('Projects')}
 											onClick={handleCloseMenu}>
 											{t('Projects')}
-										</HashLink>
+										</a>
 									</li>
 									<li>
-										<HashLink
-											smooth
-											to='#contact'
-											className={
-												location.hash == `#contact`
-													? selected
-													: notSelected
-											}
+										<a
+											data-menuanchor='contact'
+											href='#contact'
 											data-text={t('Contact')}
 											onClick={handleCloseMenu}>
 											{t('Contact')}
-										</HashLink>
+										</a>
 									</li>
 								</ul>
 							</div>

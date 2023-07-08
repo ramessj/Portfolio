@@ -1,6 +1,3 @@
-/* eslint-disable react-hooks/exhaustive-deps */
-import { useEffect, useRef } from 'react';
-import { useNavigate } from 'react-router-dom';
 import { Lines, ProfilePictureDrag, AboutButtons } from '../../components';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
@@ -8,28 +5,14 @@ import { motion } from 'framer-motion';
 import './aboutpage.css';
 
 export const AboutPage = () => {
-	const myRef = useRef();
 	const { t } = useTranslation();
-	const navigate = useNavigate();
-
-	useEffect(() => {
-		const observer = new IntersectionObserver((entries) => {
-			const entry = entries[0];
-			if (entry.isIntersecting) {
-				navigate('#about');
-			}
-		});
-
-		observer.observe(myRef.current);
-	}, []);
 
 	return (
 		<>
 			<motion.div
 				initial={{ opacity: 0 }}
 				whileInView={{ opacity: 1, transition: { duration: 0.15 } }}
-				className='home2container'
-				ref={myRef}>
+				className='home2container'>
 				<motion.div
 					initial={{ opacity: 0 }}
 					whileInView={{
