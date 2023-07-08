@@ -5,9 +5,8 @@ export const Parallax = ({ sections }) => {
 	return (
 		<>
 			<ReactFullpage
-				debug
+				licenseKey={'gplv3-license'}
 				menu={'#menu-links'}
-				licenseKey={''}
 				anchors={['home', 'about', 'skills', 'projects', 'contact']}
 				scrollingSpeed={750}
 				recordHistory

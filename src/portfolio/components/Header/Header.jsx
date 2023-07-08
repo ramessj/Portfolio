@@ -36,13 +36,13 @@ export const Header = () => {
 					<span className='rq'>{`/>`}</span>
 				</div>
 				<div className='languageSelector'>
-					{lsLang == 'en' ? (
-						<button onClick={() => changeLanguage('es')}>
-							<img className='langFlag' src={esFlag}></img>
+					{lsLang == 'es' ? (
+						<button title='Español' onClick={() => changeLanguage('es')}>
+							<img className='langFlag' src={esFlag} alt='Spanish'></img>
 						</button>
 					) : (
-						<button onClick={() => changeLanguage('en')}>
-							<img className='langFlag' src={enFlag}></img>
+						<button title='English' onClick={() => changeLanguage('en')}>
+							<img className='langFlag' src={enFlag} alt='English'></img>
 						</button>
 					)}
 				</div>
