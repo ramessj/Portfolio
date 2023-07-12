@@ -2,8 +2,13 @@ import { Lines, ProjectShowcase } from '../../components/';
 import { motion } from 'framer-motion';
 
 import './projectspage.css';
+import { useTranslation } from 'react-i18next';
 
 export const ProjectsPage = () => {
+	const { t } = useTranslation();
+
+
+
 	return (
 		<>
 			<div className='projectsContainer'>
@@ -14,7 +19,7 @@ export const ProjectsPage = () => {
 						transition: { delay: 0.15, duration: 0.75 },
 					}}
 					className='projectTitle'>
-					<h2 className='myLatestProjects'>My Latests Projects</h2>
+					<h2 className='myLatestProjects'>{t('Latests Projects')}</h2>
 					<Lines />
 				</motion.div>
 				<motion.div

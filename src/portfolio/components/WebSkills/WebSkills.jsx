@@ -2,8 +2,12 @@ import { useState } from 'react';
 
 import techs from '../../../assets/webSkills';
 import './webskills.css';
+import { useTranslation } from 'react-i18next';
 
 export const WebSkills = () => {
+	const { t } = useTranslation();
+
+
 	const [techType, setTechType] = useState('front');
 
 	const setTech = (e) => {
@@ -39,7 +43,7 @@ export const WebSkills = () => {
 						}`}
 						onClick={setTech}
 						data='tools'>
-						Tools
+						{t('Tools')}
 					</button>
 				</div>
 

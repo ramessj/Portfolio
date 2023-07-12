@@ -4,8 +4,11 @@ import { motion } from 'framer-motion';
 import { useForm, ValidationError } from '@formspree/react';
 
 import './contactpage.css';
+import { useTranslation } from 'react-i18next';
 
 export const ContactPage = () => {
+	const { t } = useTranslation();
+
 	const [state, handleSubmit] = useForm('xvojopwy');
 
 	const [msgSent, setmsgSent] = useState(false);
@@ -27,7 +30,7 @@ export const ContactPage = () => {
 				className='contactContainer'>
 				<div className='contactLeft'>
 					<div className='contactTitle'>
-						<h2>Contact Me!</h2>
+						<h2>{t('Contact Me')}!</h2>
 						<Lines />
 					</div>
 

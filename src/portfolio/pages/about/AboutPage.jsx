@@ -55,7 +55,8 @@ export const AboutPage = () => {
 							<div
 								className='hex'
 								data-tooltip-id='autodidact'
-								data-tooltip-content='Autodidact'>
+								data-tooltip-content={t('Autodidact')}
+								>
 								<div className='hexTextContainer'>
 									<i className='fa-solid fa-book-open-reader'></i>
 								</div>
@@ -64,7 +65,7 @@ export const AboutPage = () => {
 							<div
 								className='hex'
 								data-tooltip-id='comms'
-								data-tooltip-content='Good Communication'>
+								data-tooltip-content={t('Good Communication')}>
 								<div className='hexTextContainer'>
 									<i className='fa-solid fa-comment-dots'></i>
 								</div>
@@ -72,7 +73,7 @@ export const AboutPage = () => {
 							<div
 								className='hex'
 								data-tooltip-id='problem'
-								data-tooltip-content='Problem Solver'>
+								data-tooltip-content={t('Problem Solver')}>
 								<div className='hexTextContainer'>
 									<i className="fas fa-puzzle-piece"></i>
 								</div>
@@ -80,7 +81,7 @@ export const AboutPage = () => {
 							<div
 								className='hex'
 								data-tooltip-id='teamwork'
-								data-tooltip-content='Team Player'>
+								data-tooltip-content={t('Team Player')}>
 								<div className='hexTextContainer'>
 									<i className='fa-solid fa-people-group'></i>
 								</div>

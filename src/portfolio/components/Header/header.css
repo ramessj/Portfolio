@@ -253,7 +253,7 @@ header {
 	text-transform: uppercase;
 	font-weight: 800;
 	letter-spacing: 8px;
-	font-size: 5rem;
+	font-size: clamp(2rem, 4vw, 6rem);	
 	padding: 0 10px;
 	line-height: 1.6;
 	font-family: proxima, futuraRegular, monospace;
@@ -328,23 +328,6 @@ header {
 		height: 56px;
 		bottom: -68px;
 	}
-
-	#menu-links li a {
-		font-size: 64px;
-	}
-}
-
-@media screen and (max-width: 580px) {
-	#menu-links li a {
-		font-size: 56px;
-	}
-}
-
-@media screen and (max-width: 520px) {
-	#menu-links li a {
-		font-size: 52px;
-		letter-spacing: 8px;
-	}
 }
 
 @media screen and (max-width: 500px) {
@@ -359,24 +342,3 @@ header {
 
 	}
 }
-
-@media screen and (max-width: 465px) {
-	#menu-links li a {
-		font-size: 50px;
-		line-height: 1.6;
-	}
-}
-
-@media screen and (max-width: 435px) {
-	#menu-links li a {
-		font-size: 45px;
-		letter-spacing: 8px;
-	}
-}
-
-@media screen and (max-width: 385px) {
-	#menu-links li a {
-		font-size: 30px;
-	}
-}
-
