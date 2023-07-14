@@ -36,20 +36,18 @@ export const ContactPage = () => {
 
 					<div className='contactBody'>
 						<p>
-							My inbox is always open. Whether you have a question
-							or project, or just want to say hi, i&apos;ll try my
-							best to get back to you!
+						{t('Inbox')}
 						</p>
 					</div>
 				</div>
 				{msgSent == true ? (
 					<p className='text-warning'>
-						Mensaje enviado, gracias por comunicarte
+						Mensaje enviado, gracias por comunicarte!
 					</p>
 				) : (
 					<form onSubmit={handleSubmit} className='contactForm'>
 						<div className='formField'>
-							<label htmlFor='email'>Your Email Address</label>
+							<label htmlFor='email'>{t("Email")}</label>
 							<input
 								id='email'
 								type='email'
@@ -64,7 +62,7 @@ export const ContactPage = () => {
 						</div>
 
 						<div className='formField'>
-							<label htmlFor='message'>Message</label>
+							<label htmlFor='message'>{t("Message")}</label>
 
 							<textarea id='message' name='message' required />
 							<ValidationError
@@ -78,7 +76,7 @@ export const ContactPage = () => {
 							className='mt-2'
 							type='submit'
 							disabled={state.submitting}>
-							Enviar
+							{t("Send")}
 						</button>
 					</form>
 				)}

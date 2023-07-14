@@ -13,6 +13,8 @@ export const projects = [
 		title: 'Memory Game',
 		img: memory,
 		description: '2 gamemodes with online records',
+		descriptionEs: '2 modos de juego con records online',
+
 		links: {
 			repo: 'https://github.com/ramiroquesada/Memory-Game',
 			live: 'https://ramiroquesada.github.io/Memory-Game/',
@@ -30,7 +32,9 @@ export const projects = [
 	{
 		title: 'Journal ',
 		img: journal,
-		description: 'a description for journal',
+		description: 'A personal diary to save whatever you want',
+		descriptionEs: 'Diario personal para anotar lo que quieras',
+
 		links: {
 			repo: 'https://github.com/ramiroquesada/Journal-App-React',
 			live: 'https://ramiroquesada.github.io/Journal-App-React/',
@@ -48,127 +52,85 @@ export const projects = [
 	{
 		title: 'TO-DO App',
 		img: todos,
-		description: 'todo app description',
+		description: 'Manage your time with TO-DOs',
+		descriptionEs: 'Maneja tu tiempo utilizando tareas',
+
 		links: {
 			repo: 'https://github.com/ramiroquesada/To-Do-List',
 			live: 'https://ramiroquesada.github.io/To-Do-List/',
 		},
-		techs: [
-			'React',
-			'NodeJS',
-			'Express',
-			'Firebase',
-			'MongoDB',
-			'MaterialUI',
-			'Redux',
-		],
+		techs: ['HTML', 'CSS', 'JavaScript', 'Webpack'],
 	},
 	{
 		title: 'Heroes App',
 		img: heroes,
-		description: 'a description for heroes app',
+		description: 'Get information about your favorite heroes',
+		descriptionEs: 'Obten información sobre tus heroes favoritos',
+
 		links: {
 			repo: 'https://github.com/ramiroquesada/Heroes-SPA-React',
 			live: 'https://ramiroquesada.github.io/Heroes-SPA-React/',
 		},
-		techs: [
-			'React',
-			'NodeJS',
-			'Express',
-			'Firebase',
-			'MongoDB',
-			'MaterialUI',
-			'Redux',
-		],
+		techs: ['React', 'CSS', 'Axios', 'Bootstrap'],
 	},
 	{
 		title: 'Weather App',
 		img: weather,
-		description: 'a weather app',
+		description: 'Simple weather app',
+		descriptionEs: 'Una simple aplicacion para ver el estado del tiempo',
+
 		links: {
 			repo: 'https://github.com/ramiroquesada/Weather-App',
 			live: 'https://ramiroquesada.github.io/Weather-App/',
 		},
-		techs: [
-			'React',
-			'NodeJS',
-			'Express',
-			'Firebase',
-			'MongoDB',
-			'MaterialUI',
-			'Redux',
-		],
+		techs: ['HTML', 'CSS', 'JavaScript', 'Webpack'],
 	},
 	{
 		title: 'Gif Expert',
 		img: gifexpert,
-		description: 'search gifs',
+		description: 'Search for gifs',
+		descriptionEs: 'Buscador de gifs',
+
 		links: {
 			repo: 'https://github.com/ramiroquesada/Gif-Expert',
 			live: 'https://ramiroquesada.github.io/Gif-Expert/',
 		},
-		techs: [
-			'React',
-			'NodeJS',
-			'Express',
-			'Firebase',
-			'MongoDB',
-			'MaterialUI',
-			'Redux',
-		],
+		techs: ['React', 'CSS', 'Jest'],
 	},
 	{
 		title: 'Calendar App',
 		img: calendar,
-		description: 'colaborative calendar app',
+		description: 'Colaborative calendar app',
+		descriptionEs: 'Aplicación de calendario colaborativa',
+
 		links: {
 			repo: 'https://github.com/ramiroquesada/Calendar-React',
 			live: 'https://ramiroquesada.github.io/Calendar-React/',
 		},
-		techs: [
-			'React',
-			'NodeJS',
-			'Express',
-			'Firebase',
-			'MongoDB',
-			'MaterialUI',
-			'Redux',
-		],
+		techs: ['React', 'NodeJS', 'Express', 'Firebase', 'MongoDB', 'Redux'],
 	},
 	{
 		title: 'Rock Paper Scissors',
 		img: rockps,
-		description: 'a description for the game',
+		description: 'Classic game to play vs the IA',
+		descriptionEs: 'Clasico juego, enfrentate a la IA',
+
 		links: {
 			repo: 'https://github.com/ramiroquesada/Rock-Paper-Scissors',
 			live: 'https://ramiroquesada.github.io/Rock-Paper-Scissors/',
 		},
-		techs: [
-			'React',
-			'NodeJS',
-			'Express',
-			'Firebase',
-			'MongoDB',
-			'MaterialUI',
-			'Redux',
-		],
+		techs: ['HTML', 'CSS', 'JavaScript'],
 	},
 	{
 		title: 'Etch-A-Sketch',
 		img: etch,
-		description: 'draw and be japi',
+		description: 'Create pixelart',
+		descriptionEs: 'Crea tus pixelart',
+
 		links: {
 			repo: 'https://github.com/ramiroquesada/Etch-A-Sketch',
 			live: 'https://ramiroquesada.github.io/Etch-A-Sketch/',
 		},
-		techs: [
-			'React',
-			'NodeJS',
-			'Express',
-			'Firebase',
-			'MongoDB',
-			'MaterialUI',
-			'Redux',
-		],
+		techs: ['HTML', 'CSS', 'JavaScript'],
 	},
 ];
