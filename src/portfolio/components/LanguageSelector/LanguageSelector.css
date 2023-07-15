@@ -1,0 +1,44 @@
+.circleA {
+	position: relative;
+	width: 36px;
+	height: 36px;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.langFlagHalfCircle {
+	pointer-events: none;
+	filter: grayscale(95%);
+	-webkit-filter: grayscale(95%);
+}
+
+.active {
+	filter: grayscale(0);
+	-webkit-filter: grayscale(0);
+	outline: none;
+	transition: all 2s linear;
+	-webkit-transition: all 2s linear;
+	-moz-transition: all 2s linear;
+	-ms-transition: all 2s linear;
+	-o-transition: all 2s linear;
+}
+
+.circleA .langFlagHalfCircle {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	transition: filter 0.35s linear;
+	-webkit-transition: filter 0.35s linear;
+	-moz-transition: filter 0.35s linear;
+	-ms-transition: filter 0.35s linear;
+	-o-transition: filter 0.35s linear;
+}
+
+.circleA .langFlagHalfCircle:first-child {
+	clip-path: polygon(0 0, 50% 0, 50% 100%, 0 100%);
+}
+
+.circleA .langFlagHalfCircle:last-child {
+	clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);
+}

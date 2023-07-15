@@ -23,14 +23,37 @@
 }
 
 .techTypeButton {
-	width: 32%;
-	padding: 0.5rem;
+	width: 30%;
+	font-size: clamp(0.9rem, 1.5vw, 1.5rem);
+	display: flex;
+	justify-content: center;
+	padding: 0.55rem;
 	font-weight: 500;
-	border-radius: 0.35rem;
-	-webkit-border-radius: 0.35rem;
-	-moz-border-radius: 0.35rem;
-	-ms-border-radius: 0.35rem;
-	-o-border-radius: 0.35rem;
+	border-radius: 0.75rem;
+	-o-border-radius: 0.75rem;
+	-webkit-border-radius: 0.75rem;
+	-moz-border-radius: 0.75rem;
+	-ms-border-radius: 0.75rem;
+	background: linear-gradient(
+		200deg,
+		rgba(205, 228, 0, 0.5) 12%,
+		rgba(205, 104, 4, 0.5)
+	);
+	color: var(--bg-color);
+	font-family: var(--font1);
+	border: 1px solid var(--white-01);
+}
+
+.techTypeButton:not(.activeTech):hover {
+	background: linear-gradient(
+		200deg,
+		rgba(215, 255, 0, 0.65) 12%,
+		rgba(215, 104, 4, 0.65)
+	);
+}
+
+.activeTech {
+	background: linear-gradient(0deg, yellow 12%, rgb(255, 105, 4));
 }
 
 .techContainer {
@@ -70,10 +93,7 @@
 	margin-top: 1rem;
 	text-align: center;
 	font-size: clamp(0.6rem, 3vw, 1rem);
-	/* text-wrap: nowrap; */
-	/* word-wrap: nowrap; */
 	white-space: nowrap;
-	/* width: 120%; */
 	opacity: 0;
 	font-weight: 600;
 	letter-spacing: 0.1rem;
@@ -107,8 +127,8 @@
 	-ms-transform: scale(1.4);
 	-o-transform: scale(1.4);
 }
-@media (max-width: 900px) {
+/* @media (max-width: 900px) {
 	.webSkillsContainer {
 		gap: 2rem;
 	}
-}
+} */

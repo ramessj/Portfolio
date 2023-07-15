@@ -1,32 +1,16 @@
-/* eslint-disable react-hooks/exhaustive-deps */
-import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-
-import esFlag from '../../../assets/icons/es.png';
-import enFlag from '../../../assets/icons/en.png';
+import { LanguageSelector } from '../LanguageSelector/LanguageSelector';
 
 import './header.css';
 
 export const Header = () => {
-	const [lsLang, setLsLang] = useState(localStorage.getItem('lsLang'));
-
-	const { t, i18n } = useTranslation();
-
-	const changeLanguage = (language) => {
-		i18n.changeLanguage(language);
-		localStorage.setItem('lsLang', language);
-		setLsLang(language);
-	};
+	const { t } = useTranslation();
 
 	const toggler = document.getElementById('menuToggler');
 
 	const handleCloseMenu = () => {
 		toggler.checked = false;
 	};
-
-	useEffect(() => {
-		changeLanguage(lsLang ? lsLang : 'en');
-	}, [lsLang]);
 
 	return (
 		<header className='container-fluid'>
@@ -37,25 +21,7 @@ export const Header = () => {
 					<span className='rq'>{`/>`}</span>
 				</div>
 				<div className='languageSelector'>
-					{lsLang == 'en' ? (
-						<button
-							title='Español'
-							onClick={() => changeLanguage('es')}>
-							<img
-								className='langFlag'
-								src={esFlag}
-								alt='Spanish'></img>
-						</button>
-					) : (
-						<button
-							title='English'
-							onClick={() => changeLanguage('en')}>
-							<img
-								className='langFlag'
-								src={enFlag}
-								alt='English'></img>
-						</button>
-					)}
+					<LanguageSelector />
 				</div>
 				<div className='menu-wrap'>
 					<input

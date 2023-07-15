@@ -18,17 +18,6 @@ header {
 	justify-content: space-between;
 	z-index: 2;
 }
-
-.languageSelector > button {
-	border: none;
-	background: transparent;
-}
-
-.langFlag {
-	width: 90%;
-	opacity: 75%;
-}
-
 .headerNav {
 	padding-top: 0.25rem;
 }
@@ -253,7 +242,7 @@ header {
 	text-transform: uppercase;
 	font-weight: 800;
 	letter-spacing: 8px;
-	font-size: clamp(2rem, 4vw, 6rem);	
+	font-size: clamp(2rem, 4vw, 6rem);
 	padding: 0 10px;
 	line-height: 1.6;
 	font-family: proxima, futuraRegular, monospace;
@@ -331,14 +320,17 @@ header {
 }
 
 @media screen and (max-width: 500px) {
+	.headerNav {
+		padding-top: 0.5rem;
+	}
+
 	.headerNav > .brandLogo {
 		font-size: 1.25rem;
 	}
 
-	.menu-wrap .hamburger{
+	.menu-wrap .hamburger {
 		width: 2.5rem;
 		height: 2.5rem;
 		margin-top: -1.25rem;
-
 	}
 }

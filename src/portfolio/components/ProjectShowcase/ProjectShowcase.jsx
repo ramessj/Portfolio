@@ -18,8 +18,6 @@ import 'swiper/css/pagination';
 export const ProjectShowcase = () => {
 	const { i18n } = useTranslation();
 
-	console.log(i18n.language);
-
 	const shuffledArray = useMemo(() => {
 		function shuffleArray(array) {
 			for (let i = array.length - 1; i > 0; i--) {
@@ -82,7 +80,7 @@ export const ProjectShowcase = () => {
 										<div className='projectTechsContainer'>
 											{techs.map((tech) => (
 												<div
-													key={description}
+													key={tech}
 													className='projectTechPill'>
 													{tech}
 												</div>
